@@ -30,3 +30,16 @@ def is_logistics_question(text: str) -> bool:
         "zoom", "session link"
     ]
     return any(k in text.lower() for k in keywords)
+
+
+def is_dosage_question(text: str) -> bool:
+    keywords = [
+        "dosage",
+        "dose",
+        "how much",
+        "quantity",
+        "per acre",
+        "for acres",
+        "application rate"
+    ]
+    return any(k in text.lower() for k in keywords)

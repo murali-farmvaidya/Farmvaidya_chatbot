@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 export default function Chat({ token, sessionId, setActiveSession, onMessageSent }) {
   const [messages, setMessages] = useState([]);
   const [msg, setMsg] = useState("");
+  const [sending, setSending] = useState(false);
 
   // 🔹 Load history when session changes
   useEffect(() => {
@@ -29,42 +30,47 @@ export default function Chat({ token, sessionId, setActiveSession, onMessageSent
   }, [sessionId, token]);
 
   async function send() {
-    if (!msg.trim()) return;
+    if (!msg.trim() || sending) return;
 
-    let activeSid = sessionId;
+    setSending(true);
 
-    // 🔹 Create new session if NEW or null
-    if (!activeSid || activeSid === "NEW") {
-      const s = await fetch("http://localhost:8000/sessions/", {
+    try {
+      let activeSid = sessionId;
+
+      if (!activeSid || activeSid === "NEW") {
+        const s = await fetch("http://localhost:8000/sessions/", {
+          method: "POST",
+          headers: { Authorization: `Bearer ${token}` }
+        }).then(r => r.json());
+
+        activeSid = s.session_id;
+        setActiveSession(activeSid);
+      }
+
+      const res = await fetch("http://localhost:8000/chat", {
         method: "POST",
-        headers: { Authorization: `Bearer ${token}` }
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`
+        },
+        body: JSON.stringify({
+          session_id: activeSid,
+          message: msg
+        })
       }).then(r => r.json());
 
-      activeSid = s.session_id;
-      setActiveSession(activeSid); // 🔥 IMPORTANT
-    }
-
-    const res = await fetch("http://localhost:8000/chat", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`
-      },
-      body: JSON.stringify({
-        session_id: activeSid,
-        message: msg
+      await fetch(`http://localhost:8000/messages/${activeSid}`, {
+        headers: { Authorization: `Bearer ${token}` }
       })
-    }).then(r => r.json());
+        .then(r => r.json())
+        .then(setMessages);
 
-    setMessages(m => [
-      ...m,
-      { role: "user", content: msg },
-      { role: "assistant", content: res.response || "No response" }
-    ]);
+      onMessageSent();
 
-    onMessageSent(); // 🔥 FORCE SIDEBAR REFRESH
-
-    setMsg("");
+      setMsg("");
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -82,7 +88,9 @@ export default function Chat({ token, sessionId, setActiveSession, onMessageSent
         onChange={e => setMsg(e.target.value)}
         placeholder="Type message"
       />
-      <button onClick={send}>Send</button>
+      <button onClick={send} disabled={sending}>
+        {sending ? "Sending..." : "Send"}
+      </button>
     </>
   );
 }
