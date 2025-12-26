@@ -35,7 +35,7 @@ export default function Chat({ token, sessionId, setActiveSession }) {
 
     // 🔹 Create new session if none selected
     if (!activeSid) {
-      const s = await fetch("http://localhost:8000/sessions", {
+      const s = await fetch("http://localhost:8000/sessions/", {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` }
       }).then(r => r.json());

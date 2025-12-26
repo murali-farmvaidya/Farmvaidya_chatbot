@@ -5,27 +5,40 @@ import { GoogleLogin } from "@react-oauth/google";
 export default function Login({ onLoginSuccess }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
   const [error, setError] = useState("");
+  const [isSignup, setIsSignup] = useState(false);
 
   async function handleLogin() {
     setError("");
     try {
-      const res = await login(email, password);
+      let res;
+
+      if (isSignup) {
+        res = await fetch("http://localhost:8000/auth/signup", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, password, name })
+        }).then(r => r.json());
+      } else {
+        res = await login(email, password);
+      }
 
       if (!res.access_token) {
-        setError("Invalid credentials");
+        setError(isSignup ? "Signup failed" : "Invalid credentials");
         return;
       }
 
+      localStorage.setItem("access_token", res.access_token);
       onLoginSuccess(res.access_token);
     } catch (e) {
-      setError("Login failed");
+      setError(isSignup ? "Signup failed" : "Login failed");
     }
   }
 
   return (
     <div>
-      <h3>Login</h3>
+      <h3>{isSignup ? "Create Account" : "Login"}</h3>
 
       <input
         placeholder="Email"
@@ -34,6 +47,17 @@ export default function Login({ onLoginSuccess }) {
       />
 
       <br /><br />
+
+      {isSignup && (
+        <>
+          <input
+            placeholder="Name"
+            value={name}
+            onChange={e => setName(e.target.value)}
+          />
+          <br /><br />
+        </>
+      )}
 
       <input
         type="password"
@@ -44,9 +68,15 @@ export default function Login({ onLoginSuccess }) {
 
       <br /><br />
 
-      <button onClick={handleLogin}>Login</button>
+      <button onClick={handleLogin}>{isSignup ? "Sign Up" : "Login"}</button>
 
       {error && <p style={{ color: "red" }}>{error}</p>}
+
+      <hr />
+
+      <button onClick={() => setIsSignup(!isSignup)}>
+        {isSignup ? "Already have an account?" : "Create account"}
+      </button>
 
       <hr />
 
@@ -63,6 +93,7 @@ export default function Login({ onLoginSuccess }) {
               setError("Google login failed");
               return;
             }
+            localStorage.setItem("access_token", res.access_token);
             onLoginSuccess(res.access_token);
           } catch (e) {
             setError("Google login failed");

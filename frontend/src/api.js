@@ -15,9 +15,13 @@ export const googleLogin = (token) =>
     body: JSON.stringify({ token })
   }).then(r => r.json());
 
-export const newSession = userId =>
-  fetch(`${API}/sessions?user_id=${userId}`, { method: "POST" })
-    .then(r => r.json());
+export const newSession = (token) =>
+  fetch(`${API}/sessions/`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  }).then(r => r.json());
 
 export const sendMsg = (sessionId, message) =>
   fetch(`${API}/chat`, {

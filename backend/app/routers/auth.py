@@ -1,10 +1,12 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
 from passlib.context import CryptContext
+from bson import ObjectId
 
 from app.db.mongo import users
 from app.core.security import create_jwt
 from app.core.config import GOOGLE_CLIENT_ID
+from app.middleware.auth_middleware import get_current_user
 
 from google.oauth2 import id_token
 from google.auth.transport import requests as google_requests
@@ -25,6 +27,7 @@ class GoogleToken(BaseModel):
 class SignupIn(BaseModel):
     email: str
     password: str
+    name: str
 
 # ---------------- UTILS ----------------
 
@@ -55,21 +58,21 @@ def login(data: LoginIn):
 @router.post("/signup")
 def signup(data: SignupIn):
     if users.find_one({"email": data.email}):
-        raise HTTPException(status_code=400, detail="User already exists")
-
-    hashed = pwd_context.hash(data.password)
+        raise HTTPException(status_code=400, detail="User exists")
 
     user = {
         "email": data.email,
-        "password": hashed,
+        "name": data.name,
+        "password": pwd_context.hash(data.password),
         "auth_provider": "local"
     }
 
-    result = users.insert_one(user)
+    res = users.insert_one(user)
 
     token = create_jwt({
-        "sub": str(result.inserted_id),
-        "email": data.email
+        "sub": str(res.inserted_id),
+        "email": data.email,
+        "name": data.name
     })
 
     return {"access_token": token}
@@ -107,3 +110,13 @@ def google_login(data: GoogleToken):
     })
 
     return {"access_token": token}
+
+# ---------------- PROFILE UPDATE ----------------
+
+@router.put("/me")
+def update_profile(data: dict, user_id=Depends(get_current_user)):
+    users.update_one(
+        {"_id": ObjectId(user_id)},
+        {"$set": {"name": data["name"]}}
+    )
+    return {"status": "updated"}
