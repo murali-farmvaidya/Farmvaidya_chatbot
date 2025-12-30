@@ -10,38 +10,59 @@ def normalize(text: str) -> str:
 def is_greeting_or_acknowledgment(text: str) -> bool:
     """
     Detect greetings, acknowledgments, and casual conversation
+    Returns True if the message is purely a greeting/acknowledgment
     """
-    t = text.lower().strip()
+    if not text or len(text.strip()) == 0:
+        return False
     
+    t = text.lower().strip()
+    original = text.strip()
+    
+    # English greetings (including common variations)
     greetings = [
-        "hi", "hello", "hey", "good morning", "good afternoon", 
-        "good evening", "good night", "namaste", "namaskar"
+        "hi", "hii", "hiiii", "hello", "helo", "hellooo", "hey", "heyy",
+        "good morning", "morning", "good afternoon", "afternoon",
+        "good evening", "evening", "good night", "night",
+        "namaste", "namaskar", "namaskaram"
     ]
     
+    # Acknowledgments
     acknowledgments = [
-        "ok", "okay", "noted", "thanks", "thank you", "got it",
-        "sure", "alright", "fine", "cool", "nice", "great",
-        "wonderful", "awesome", "perfect", "understood"
+        "ok", "okay", "okk", "noted", "thanks", "thank you", "thankyou",
+        "got it", "sure", "alright", "fine", "cool", "nice", "great",
+        "wonderful", "awesome", "perfect", "understood", "k", "kk"
     ]
     
     # Telugu greetings/acknowledgments
     telugu_patterns = [
-        "నమస్కారం", "హలో", "హాయ్", "శుభోదయం", "శుభ రాత్రి",
-        "సరే", "ఓకే", "థాంక్స్", "థాంక్యూ", "బాగుంది"
+        "నమస్కారం", "హలో", "హాయ్", "శుభోదయం", "శుభ మధ్యాహ్నం",
+        "శుభ సాయంత్రం", "శుభ రాత్రి", "సరే", "ఓకే", 
+        "థాంక్స్", "థాంక్యూ", "ధన్యవాదాలు", "బాగుంది"
     ]
     
     # Hindi greetings/acknowledgments
     hindi_patterns = [
-        "नमस्ते", "नमस्कार", "हेलो", "शुभ प्रभात", "शुभ रात्रि",
+        "नमस्ते", "नमस्कार", "हेलो", "हाय", "शुभ प्रभात", "सुप्रभात",
+        "शुभ दोपहर", "शुभ संध्या", "शुभ रात्रि", 
         "ठीक है", "धन्यवाद", "शुक्रिया", "अच्छा", "बढ़िया"
     ]
     
     all_patterns = greetings + acknowledgments + telugu_patterns + hindi_patterns
     
-    # Check if the entire message is just a greeting/acknowledgment (< 5 words)
+    # Check if the entire message is just a greeting/acknowledgment
+    # Allow up to 6 words (e.g., "Good morning, how are you?")
     word_count = len(t.split())
-    if word_count <= 5:
-        return any(pattern in t for pattern in all_patterns)
+    
+    if word_count <= 6:
+        # Check for exact matches or contains pattern
+        for pattern in all_patterns:
+            if pattern == t or pattern in t:
+                return True
+        
+        # Check for Unicode patterns in original text
+        for pattern in telugu_patterns + hindi_patterns:
+            if pattern in original:
+                return True
     
     return False
 
