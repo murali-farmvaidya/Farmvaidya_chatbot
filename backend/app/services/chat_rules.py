@@ -18,6 +18,11 @@ def is_greeting_or_acknowledgment(text: str) -> bool:
     t = text.lower().strip()
     original = text.strip()
     
+    # Exclude product-related queries that might contain 'k'
+    product_keywords = ["factor", "aadhaar", "poshak", "invictus", "dosage", "dose", "product", "application"]
+    if any(keyword in t for keyword in product_keywords):
+        return False
+    
     # English greetings (including common variations)
     greetings = [
         "hi", "hii", "hiiii", "hello", "helo", "hellooo", "hey", "heyy",
@@ -70,13 +75,40 @@ def is_greeting_or_acknowledgment(text: str) -> bool:
 # ---------------- DOSAGE ----------------
 def is_dosage_question(text: str) -> bool:
     keywords = [
-        "dosage", "dose", "how much",
+        "dosage", "dose", "how much", "doage", "dosge",
         "quantity", "per acre", "for acres",
         "application rate", "మోతాదు", "ఎంత వాడాలి",
         "कितना", "मात्रा", "खुराक"
     ]
+    
+    # Product names that indicate dosage questions
+    product_names = [
+        "p-factor", "pfactor", "p factor",
+        "k-factor", "kfactor", "k factor",
+        "zn-factor", "znfactor", "zn factor",
+        "aadhaar", "aadhar",
+        "poshak", "పోషక్",
+        "invictus", "ఇన్విక్టస్",
+        "bio npk", "bionpk",
+        "bio double action"
+    ]
+    
     t = text.lower()
-    return any(k in t for k in keywords)
+    
+    # Check for dosage keywords
+    if any(k in t for k in keywords):
+        return True
+    
+    # Check if asking about product (likely wants dosage info)
+    # If product name is mentioned alone or with minimal context, treat as dosage question
+    for product in product_names:
+        if product in t:
+            # If it's just the product name or with very few words (like "k factor", "dosage of pfactor")
+            word_count = len(t.split())
+            if word_count <= 4:
+                return True
+    
+    return False
 
 
 # ---------------- FACTUAL / COMPANY ----------------
