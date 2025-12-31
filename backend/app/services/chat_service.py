@@ -141,7 +141,12 @@ def handle_chat(session_id, user_message):
         messages.insert_one(message_doc(session_id, "assistant", answer))
         return answer
 
+    # Fetch session data early for all subsequent logic
     session = sessions.find_one({"_id": ObjectId(session_id)})
+    if not session:
+        # Session not found - create a new one or handle gracefully
+        print(f"⚠️ Session {session_id} not found in database")
+        session = {}
 
     # 🚫 DOSAGE → direct answer always
     if is_dosage_question(user_message):

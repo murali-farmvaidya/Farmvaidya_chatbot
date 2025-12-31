@@ -172,13 +172,15 @@ def is_direct_knowledge_question(text: str) -> bool:
 # ---------------- PROBLEM DIAGNOSIS ----------------
 def is_problem_diagnosis_question(text: str) -> bool:
     """
-    Questions about plant problems, pests, diseases that need diagnosis
+    Questions about plant problems, pests, diseases, yield issues that need diagnosis
     """
     problem_keywords = [
         "problem", "issue", "pest", "disease", "infection",
         "insect", "bug", "damaged", "dying", "yellow",
-        "wilting", "spots", "కీటకం", "సమస్య", "వ్యాధి",
-        "कीट", "समस्या", "रोग", "बीमारी"
+        "wilting", "spots", "not growing", "poor growth", "low yield",
+        "not giving", "yield", "production", "harvest",
+        "కీటకం", "సమస్య", "వ్యాధి", "దిగుబడి", "పంట రావడం లేదు",
+        "कीट", "समस्या", "रोग", "बीमारी", "उपज", "पैदावार"
     ]
     
     t = text.lower()
