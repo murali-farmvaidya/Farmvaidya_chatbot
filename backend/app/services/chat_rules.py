@@ -59,12 +59,16 @@ def is_greeting_or_acknowledgment(text: str) -> bool:
     word_count = len(t.split())
     
     if word_count <= 6:
-        # Check for exact matches or contains pattern
+        # For each greeting pattern, check if message is EXACTLY that pattern (word-for-word)
+        # This prevents "which" from matching "hi"
         for pattern in all_patterns:
-            if pattern == t or pattern in t:
+            if pattern == t:
+                return True
+            # For multi-word patterns like "good morning", check exact phrase
+            if len(pattern.split()) > 1 and pattern in t:
                 return True
         
-        # Check for Unicode patterns in original text
+        # Check for Unicode patterns in original text (Telugu/Hindi)
         for pattern in telugu_patterns + hindi_patterns:
             if pattern in original:
                 return True

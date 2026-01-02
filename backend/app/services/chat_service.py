@@ -3,6 +3,7 @@ from datetime import datetime
 from app.db.mongo import messages, sessions
 from app.models.message import message_doc
 from app.services.lightrag_service import query_lightrag
+from app.services.local_knowledge_base import synthesize_answer
 from app.utils.cleaner import clean_response
 from app.utils.language_detector import detect_language
 from app.services.chat_rules import (
@@ -174,25 +175,91 @@ def handle_chat(session_id, user_message):
         return answer
 
     # 🔁 FOLLOW-UP LOGIC FOR PROBLEM DIAGNOSIS
-    # Only ask follow-ups for problem diagnosis questions that need context
+    # Always ask follow-ups for diagnosis until we have enough context (language-agnostic)
     if is_problem_diagnosis_question(user_message) or session.get("awaiting_followup"):
-        
-        if not can_finalize(session) and needs_follow_up(session_id, detected_language):
+        # Default followup counter to 0 if missing
+        if session.get("followup_count") is None:
+            session["followup_count"] = 0
+
+        if not can_finalize(session):
             print("✅ GENERATING FOLLOW-UP QUESTION")
             followup_q = generate_followup(session_id, detected_language)
             messages.insert_one(message_doc(session_id, "assistant", followup_q))
             return followup_q
 
-        # Enough followups → finalize
+        # Enough followups → finalize and continue to final answer
         print("✅ FINALIZING AFTER FOLLOW-UPS")
         sessions.update_one(
             {"_id": ObjectId(session_id)},
             {"$set": {"awaiting_followup": False}}
         )
 
-    # ✅ FINAL ANSWER
-    print("✅ GENERATING FINAL ANSWER")
+    # ✅ FINAL ANSWER - synthesize all collected context
+    print("✅ GENERATING FINAL ANSWER WITH COLLECTED CONTEXT")
     history = get_history(session_id)[:-1]
-    answer = clean_response(query_lightrag(user_message, history, language=detected_language))
+    
+    # For diagnosis questions, build comprehensive query from follow-up context
+    if is_problem_diagnosis_question(user_message):
+        # Get all messages - pattern is: problem → Q1 → A1 → Q2 → A2 → Q3 → A3 → final_answer
+        messages_list = list(history)
+        
+        # Extract the 3 follow-up answers in sequence (skip initial problem)
+        user_messages = [msg for msg in messages_list if msg["role"] == "user"]
+        
+        # user_messages[0] = initial problem
+        # user_messages[1] = answer to Q1 (crop/stage)
+        # user_messages[2] = answer to Q2 (soil/irrigation)  
+        # user_messages[3] = answer to Q3 (fertilizers/sprays)
+        
+        ans1 = user_messages[1]["content"] if len(user_messages) > 1 else "Not provided"
+        ans2 = user_messages[2]["content"] if len(user_messages) > 2 else "Not provided"
+        ans3 = user_messages[3]["content"] if len(user_messages) > 3 else "Not provided"
+        
+        # Build comprehensive query with ALL context
+        comprehensive_query = f"""COCONUT YIELD PROBLEM DIAGNOSIS
+
+Farmer's problem: {user_message}
+
+Farmer provided the following information:
+- Crop growth stage: {ans1}
+- Soil type and irrigation method: {ans2}
+- Fertilizers and sprays already used: {ans3}
+
+Provide comprehensive recommendations including:
+1. Specific fertilizer doses based on soil type and growth stage
+2. Irrigation schedule and water management
+3. Pest/disease management if applicable
+4. Nutrient deficiency corrections if needed
+5. Any other management practices
+
+Be specific with product names, doses (kg/liters), timing (months), and application methods."""
+        
+        print(f"📝 Q1 Answer: {ans1}")
+        print(f"📝 Q2 Answer: {ans2}")
+        print(f"📝 Q3 Answer: {ans3}")
+        print(f"📝 Final Query to LightRAG: {comprehensive_query}")
+        
+        # Try LightRAG first
+        answer = clean_response(query_lightrag(comprehensive_query, [], language=detected_language))
+        
+        # If LightRAG returns [no-context] or empty, use local knowledge base
+        if "[no-context]" in answer or not answer or answer.strip() == "":
+            print("⚠️ LightRAG returned no context, using local knowledge base...")
+            
+            # Parse the collected information
+            soil_type = ans2.lower().split()[0] if ans2 and "not provided" not in ans2.lower() else "loam"
+            growth_stage = ans1.lower().split()[0] if ans1 and "not provided" not in ans1.lower() else "mid"
+            irrigation = "drip" if "drip" in ans2.lower() else ("sprinkler" if "sprinkler" in ans2.lower() else "flood")
+            
+            try:
+                # Use local knowledge base
+                answer = synthesize_answer(soil_type, growth_stage, irrigation, ans3)
+                print("✅ Generated answer using local knowledge base")
+            except Exception as e:
+                print(f"❌ Error in local knowledge base: {e}")
+                answer = f"Based on your coconut yield problem with {growth_stage}-stage coconut in {soil_type} soil with {irrigation} irrigation: Please consult our detailed guides or contact local agricultural experts for comprehensive fertilizer and irrigation recommendations."
+    else:
+        answer = clean_response(query_lightrag(user_message, history, language=detected_language))
+    
     messages.insert_one(message_doc(session_id, "assistant", answer))
     return answer

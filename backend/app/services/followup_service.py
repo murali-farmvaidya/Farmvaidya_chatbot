@@ -2,7 +2,7 @@ from app.services.lightrag_service import query_lightrag
 from app.db.mongo import sessions, messages
 from bson import ObjectId
 
-MAX_FOLLOWUPS = 2
+MAX_FOLLOWUPS = 3
 
 def needs_follow_up(session_id: str, language: str = "english") -> bool:
     """
@@ -40,22 +40,36 @@ def generate_followup(session_id: str, language: str = "english") -> str:
         session_id: The session ID
         language: The detected language of the user's question
     """
-    history = [
-        {"role": m["role"], "content": m["content"]}
-        for m in messages.find({"session_id": session_id}).sort("created_at", 1)
-    ]
-
-    # Language-specific instructions for generating follow-ups
-    followup_instructions = {
-        "telugu": "రైతుకు తప్పిపోయిన నిర్దిష్ట వివరాలను పొందడానికి ఒక స్పష్టమైన, సరళమైన ఫాలో-అప్ ప్రశ్న అడగండి. తెలుగులో మాత్రమే సమాధానం ఇవ్వండి.",
-        "hindi": "किसान से छूटी हुई विशिष्ट जानकारी प्राप्त करने के लिए एक स्पष्ट, सरल अनुवर्ती प्रश्न पूछें। केवल हिंदी में उत्तर दें।",
-        "english": "Ask ONE clear, simple follow-up question to get the missing farmer-specific details. Be specific and contextual."
+    # Deterministic follow-up sequence to avoid noisy/irrelevant questions
+    followup_sequences = {
+        "telugu": [
+            "మీరు ఏ పంటను పెంచుతున్నారు మరియు దాని పెరుగుదల దశ (ఆరంభం/మధ్య/కోలేక) ఏమిటి?",
+            "మీ నేల రకం (ఎర్ర, నల్ల, లోమీ) మరియు నీటిపారుదల విధానం (డ్రిప్/స్ప్రింక్లర్/ఎద్దులు) ఏమిటి?",
+            "ఇప్పటివరకు ఏ ఎరువులు లేదా మందులు వాడారా? ఉంటే పేర్లు/మోతాదులు చెప్పండి."
+        ],
+        "hindi": [
+            "आप कौन सी फसल उगा रहे हैं और उसका विकास चरण (शुरुआत/मध्य/कटाई के पास) क्या है?",
+            "आपकी मिट्टी का प्रकार (काली/लाल/दोमट) और सिंचाई विधि (ड्रिप/स्प्रिंकलर/बाढ़) क्या है?",
+            "अब तक कौन-कौन से उर्वरक या दवाइयाँ इस्तेमाल की हैं? नाम/मात्रा बताएं।"
+        ],
+        "english": [
+            "Which crop are you growing and what is the growth stage (early/mid/near harvest)?",
+            "What is your soil type (red/black/loam) and irrigation method (drip/sprinkler/flood)?",
+            "What fertilizers or sprays have you already used? Please mention names and doses."
+        ]
     }
 
-    query_text = followup_instructions.get(language, followup_instructions["english"])
+    sequence = followup_sequences.get(language, followup_sequences["english"])
 
-    question = query_lightrag(query_text, history, mode="bypass", language=language)
+    # Get current follow-up count
+    session_doc = sessions.find_one({"_id": ObjectId(session_id)}) or {}
+    current_count = session_doc.get("followup_count", 0)
 
+    # Pick the next question, capped at last question in sequence
+    index = min(current_count, len(sequence) - 1)
+    question = sequence[index]
+
+    # Update counters/state
     sessions.update_one(
         {"_id": ObjectId(session_id)},
         {
@@ -64,7 +78,7 @@ def generate_followup(session_id: str, language: str = "english") -> str:
         }
     )
 
-    return question.strip()
+    return question
 
 
 def can_finalize(session):
