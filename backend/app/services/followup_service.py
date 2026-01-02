@@ -43,17 +43,17 @@ def generate_followup(session_id: str, language: str = "english") -> str:
     # Deterministic follow-up sequence to avoid noisy/irrelevant questions
     followup_sequences = {
         "telugu": [
-            "మీరు ఏ పంటను పెంచుతున్నారు మరియు దాని పెరుగుదల దశ (ఆరంభం/మధ్య/కోలేక) ఏమిటి?",
+            "మీ కొబ్బరి చెట్ల పెరుగుదల దశ (ఆరంభం/మధ్య/కోలేక) ఏమిటి?",
             "మీ నేల రకం (ఎర్ర, నల్ల, లోమీ) మరియు నీటిపారుదల విధానం (డ్రిప్/స్ప్రింక్లర్/ఎద్దులు) ఏమిటి?",
             "ఇప్పటివరకు ఏ ఎరువులు లేదా మందులు వాడారా? ఉంటే పేర్లు/మోతాదులు చెప్పండి."
         ],
         "hindi": [
-            "आप कौन सी फसल उगा रहे हैं और उसका विकास चरण (शुरुआत/मध्य/कटाई के पास) क्या है?",
+            "आपकी नारियल की पेड़ों का विकास चरण (शुरुआत/मध्य/कटाई के पास) क्या है?",
             "आपकी मिट्टी का प्रकार (काली/लाल/दोमट) और सिंचाई विधि (ड्रिप/स्प्रिंकलर/बाढ़) क्या है?",
             "अब तक कौन-कौन से उर्वरक या दवाइयाँ इस्तेमाल की हैं? नाम/मात्रा बताएं।"
         ],
         "english": [
-            "Which crop are you growing and what is the growth stage (early/mid/near harvest)?",
+            "What is the growth stage of your coconut trees (early/mid/near harvest)?",
             "What is your soil type (red/black/loam) and irrigation method (drip/sprinkler/flood)?",
             "What fertilizers or sprays have you already used? Please mention names and doses."
         ]
