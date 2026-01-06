@@ -212,21 +212,27 @@ def start_lightrag():
 
 def start_backend():
     """Start Backend API server"""
-    print_info("Starting Backend API Server (port 8000)...")
-    
-    # Check if backend venv exists
-    if IS_WINDOWS:
-        venv_python = BACKEND_DIR / "venv" / "Scripts" / "python.exe"
-    else:
-        venv_python = BACKEND_DIR / "venv" / "bin" / "python"
-    
-    if not venv_python.exists():
-        print_error(f"Backend virtual environment not found at: {venv_python}")
-        print_error("Please run: python -m venv venv && pip install -r requirements.txt")
-        sys.exit(1)
-    
     # Get port from environment or use default
     port = os.getenv("PORT", "8000")
+    print_info(f"Starting Backend API Server (port {port})...")
+    
+    # On Render, use system Python (dependencies already installed)
+    # On local, use venv
+    if os.getenv("RENDER"):
+        python_cmd = sys.executable  # Use current Python
+    else:
+        # Check if backend venv exists
+        if IS_WINDOWS:
+            venv_python = BACKEND_DIR / "venv" / "Scripts" / "python.exe"
+        else:
+            venv_python = BACKEND_DIR / "venv" / "bin" / "python"
+        
+        if not venv_python.exists():
+            print_error(f"Backend virtual environment not found at: {venv_python}")
+            print_error("Please run: python -m venv venv && pip install -r requirements.txt")
+            sys.exit(1)
+        
+        python_cmd = str(venv_python)
     
     # Start backend server
     os.chdir(BACKEND_DIR)
@@ -237,7 +243,7 @@ def start_backend():
     
     # Start with direct output to avoid buffering issues
     process = subprocess.Popen(
-        [str(venv_python), "-m", "uvicorn", "app.main:app", 
+        [python_cmd, "-m", "uvicorn", "app.main:app", 
          "--host", "0.0.0.0", "--port", port,
          "--timeout-graceful-shutdown", "1"],  # Fast shutdown to free port quickly
         stdout=None,  # Direct output to terminal (no buffering)
@@ -246,44 +252,46 @@ def start_backend():
     )
     
     processes.append(process)
-    print_success(f"Backend server started (PID: {process.pid})")
+    print_success(f"Backend server started (PID: {process.pid}) on port {port}")
     return process
 
 def main():
     """Main function"""
     print_header("Starting Farm Vaidya Services")
     
-    # Check and handle ports with retry for TIME_WAIT
-    max_retries = 3
-    for retry in range(max_retries):
-        if check_port(8000):
-            if retry == 0:
-                print_warning("Port 8000 is already in use.")
-                print_info("Attempting to free port 8000...")
-                if kill_process_on_port(8000):
-                    print_success("Port 8000 freed successfully")
-                    time.sleep(2)
-                    break
+    # On Render, skip port checks (Render manages ports)
+    if not os.getenv("RENDER"):
+        # Check and handle ports with retry for TIME_WAIT
+        max_retries = 3
+        for retry in range(max_retries):
+            if check_port(8000):
+                if retry == 0:
+                    print_warning("Port 8000 is already in use.")
+                    print_info("Attempting to free port 8000...")
+                    if kill_process_on_port(8000):
+                        print_success("Port 8000 freed successfully")
+                        time.sleep(2)
+                        break
+                    else:
+                        print_info("Port may be in TIME_WAIT state, waiting...")
+                        time.sleep(3)
                 else:
-                    print_info("Port may be in TIME_WAIT state, waiting...")
+                    print_info(f"Retry {retry}/{max_retries-1}: Waiting for port 8000...")
                     time.sleep(3)
             else:
-                print_info(f"Retry {retry}/{max_retries-1}: Waiting for port 8000...")
-                time.sleep(3)
+                break
         else:
-            break
-    else:
-        print_error("Port 8000 still in use after retries. Please wait a moment and try again.")
-        sys.exit(1)
-    
-    if check_port(9621):
-        print_warning("Port 9621 is already in use.")
-        print_info("Attempting to free port 9621...")
-        if kill_process_on_port(9621):
-            print_success("Port 9621 freed successfully")
-        else:
-            print_error("Could not free port 9621. Please stop the service manually.")
+            print_error("Port 8000 still in use after retries. Please wait a moment and try again.")
             sys.exit(1)
+        
+        if check_port(9621):
+            print_warning("Port 9621 is already in use.")
+            print_info("Attempting to free port 9621...")
+            if kill_process_on_port(9621):
+                print_success("Port 9621 freed successfully")
+            else:
+                print_error("Could not free port 9621. Please stop the service manually.")
+                sys.exit(1)
     
     # Copy .env file
     copy_env_file()
@@ -295,7 +303,7 @@ def main():
     
     # Wait for LightRAG to initialize
     print_info("Waiting for LightRAG to initialize...")
-    time.sleep(5)
+    time.sleep(10)  # Increased wait time for Render
     
     # Start Backend
     backend_process = start_backend()
@@ -303,10 +311,13 @@ def main():
     # Wait for backend to initialize
     time.sleep(3)
     
+    # Get port for display
+    port = os.getenv("PORT", "8000")
+    
     # Print success info
     print_header("Services Started Successfully!", Colors.GREEN)
-    print(f"{Colors.CYAN}Backend API:{Colors.END}     http://localhost:8000")
-    print(f"{Colors.CYAN}Backend Docs:{Colors.END}    http://localhost:8000/docs")
+    print(f"{Colors.CYAN}Backend API:{Colors.END}     http://localhost:{port}")
+    print(f"{Colors.CYAN}Backend Docs:{Colors.END}    http://localhost:{port}/docs")
     print(f"{Colors.CYAN}LightRAG API:{Colors.END}    http://localhost:9621")
     print(f"{Colors.CYAN}LightRAG WebUI:{Colors.END}  http://localhost:9621/webui")
     print(f"{Colors.CYAN}LightRAG Docs:{Colors.END}   http://localhost:9621/docs")
