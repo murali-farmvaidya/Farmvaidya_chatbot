@@ -8,3 +8,4 @@ python-jose[cryptography]
 google-auth
 passlib[bcrypt]
 python-multipart
+deep-translator
