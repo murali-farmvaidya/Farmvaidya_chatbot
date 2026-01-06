@@ -287,7 +287,7 @@ def main():
     
     # Validate required environment variables on Render
     if os.getenv("RENDER"):
-        required_vars = ["GEMINI_API_KEY", "MONGODB_URI", "JWT_SECRET"]
+        required_vars = ["GEMINI_API_KEY", "MONGO_URI", "JWT_SECRET"]
         missing = [var for var in required_vars if not os.getenv(var)]
         if missing:
             print_error(f"Missing required environment variables: {', '.join(missing)}")
