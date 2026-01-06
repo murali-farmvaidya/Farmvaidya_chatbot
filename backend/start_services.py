@@ -149,9 +149,30 @@ def copy_env_file():
         shutil.copy(backend_env, lightrag_env)
         print_success(".env file synchronized")
     else:
-        # On Render, environment variables are set directly, .env not needed
+        # On Render, create .env from environment variables
         if os.getenv("RENDER"):
-            print_info("Running on Render - using environment variables")
+            print_info("Running on Render - creating .env from environment variables")
+            env_content = f"""# Auto-generated for LightRAG on Render
+GEMINI_API_KEY={os.getenv('GEMINI_API_KEY', '')}
+LLM_BINDING={os.getenv('LLM_BINDING', 'gemini')}
+LLM_MODEL={os.getenv('LLM_MODEL', 'gemini-2.0-flash-lite')}
+LLM_BINDING_HOST={os.getenv('LLM_BINDING_HOST', 'https://generativelanguage.googleapis.com')}
+LLM_BINDING_API_KEY={os.getenv('LLM_BINDING_API_KEY', os.getenv('GEMINI_API_KEY', ''))}
+EMBEDDING_BINDING={os.getenv('EMBEDDING_BINDING', 'gemini')}
+EMBEDDING_MODEL={os.getenv('EMBEDDING_MODEL', 'gemini-embedding-001')}
+EMBEDDING_BINDING_HOST={os.getenv('EMBEDDING_BINDING_HOST', 'https://generativelanguage.googleapis.com')}
+EMBEDDING_BINDING_API_KEY={os.getenv('EMBEDDING_BINDING_API_KEY', os.getenv('GEMINI_API_KEY', ''))}
+EMBEDDING_DIM={os.getenv('EMBEDDING_DIM', '768')}
+EMBEDDING_TOKEN_LIMIT={os.getenv('EMBEDDING_TOKEN_LIMIT', '2048')}
+HOST=0.0.0.0
+PORT=9621
+"""
+            try:
+                with open(lightrag_env, 'w') as f:
+                    f.write(env_content)
+                print_success(f".env created at {lightrag_env}")
+            except Exception as e:
+                print_warning(f"Failed to create .env: {e}")
         else:
             print_warning(f"No .env file found at: {backend_env}")
             print_warning("Please create a .env file in the backend/ directory")
@@ -336,9 +357,33 @@ def main():
     # Start LightRAG first
     lightrag_process = start_lightrag()
     
-    # Wait for LightRAG to initialize
+    # Wait for LightRAG to initialize and monitor for crashes
     print_info("Waiting for LightRAG to initialize...")
-    time.sleep(10)  # Increased wait time for Render
+    for i in range(10):  # Check for 10 seconds
+        time.sleep(1)
+        if lightrag_process.poll() is not None:
+            print_error("LightRAG crashed during initialization!")
+            # Print log files
+            log_file = LIGHTRAG_DIR / "lightrag_startup.log"
+            error_file = LIGHTRAG_DIR / "lightrag_error.log"
+            
+            print_error(f"\n=== LightRAG Startup Log ===")
+            try:
+                with open(log_file, 'r') as f:
+                    print(f.read())
+            except:
+                print_error("Could not read startup log")
+            
+            print_error(f"\n=== LightRAG Error Log ===")
+            try:
+                with open(error_file, 'r') as f:
+                    print(f.read())
+            except:
+                print_error("Could not read error log")
+            
+            sys.exit(1)
+    
+    print_success("LightRAG initialization complete")
     
     # Start Backend
     backend_process = start_backend()
