@@ -139,7 +139,7 @@ def kill_process_on_port(port):
     return False
 
 def copy_env_file():
-    """Copy .env file from backend to LightRAG directory"""
+    """Copy .env file from backend to LightRAG directory (optional for Render)"""
     backend_env = BACKEND_DIR / ".env"
     lightrag_env = LIGHTRAG_DIR / ".env"
     
@@ -149,9 +149,13 @@ def copy_env_file():
         shutil.copy(backend_env, lightrag_env)
         print_success(".env file synchronized")
     else:
-        print_warning(f"No .env file found at: {backend_env}")
-        print_warning("Please create a .env file in the backend/ directory")
-        print_warning("See .env.example for reference")
+        # On Render, environment variables are set directly, .env not needed
+        if os.getenv("RENDER"):
+            print_info("Running on Render - using environment variables")
+        else:
+            print_warning(f"No .env file found at: {backend_env}")
+            print_warning("Please create a .env file in the backend/ directory")
+            print_warning("See .env.example for reference")
 
 def start_lightrag():
     """Start LightRAG server"""
@@ -168,7 +172,21 @@ def start_lightrag():
     if not venv_python.exists():
         print_error(f"LightRAG virtual environment not found at: {venv_python}")
         print_error("Please run: cd lightrag/Lightrag_main && uv sync --extra api")
-        sys.exit(1)
+        
+        # On Render, try installing it now
+        if os.getenv("RENDER"):
+            print_info("Attempting to install LightRAG dependencies...")
+            os.chdir(LIGHTRAG_DIR)
+            try:
+                subprocess.run(["pip", "install", "uv"], check=True)
+                subprocess.run(["uv", "sync", "--extra", "api", "--no-cache"], check=True)
+                print_success("LightRAG dependencies installed")
+            except Exception as e:
+                print_error(f"Failed to install dependencies: {e}")
+                sys.exit(1)
+            os.chdir(BACKEND_DIR)
+        else:
+            sys.exit(1)
     
     # Start LightRAG server
     os.chdir(LIGHTRAG_DIR)
