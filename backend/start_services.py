@@ -239,13 +239,20 @@ def start_lightrag():
     log_file = LIGHTRAG_DIR / "lightrag_startup.log"
     error_file = LIGHTRAG_DIR / "lightrag_error.log"
     
-    # Use uvicorn directly to start LightRAG API
-    # This is more reliable than lightrag-server which has Gunicorn issues
-    print_info("Starting LightRAG with uvicorn")
+    # Use lightrag-server command
+    print_info("Starting LightRAG server")
+    
+    # Determine command based on environment
+    if os.getenv("RENDER"):
+        # On Render, lightrag-server should be in PATH from requirements.txt
+        lightrag_cmd = "lightrag-server"
+    else:
+        # On local, check for lightrag-server command
+        lightrag_cmd = "lightrag-server"
+    
     with open(log_file, 'w') as log_out, open(error_file, 'w') as log_err:
         process = subprocess.Popen(
-            [str(venv_python), "-m", "uvicorn", 
-             "lightrag.api.lightrag_server:app",
+            [lightrag_cmd,
              "--host", "0.0.0.0", 
              "--port", "9621"],
             stdout=log_out,
