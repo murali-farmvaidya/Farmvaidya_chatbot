@@ -152,8 +152,9 @@ def is_direct_knowledge_question(text: str) -> bool:
         "what is", "tell me", "explain",
         "usage", "how is it used", "how to use",
         "benefits", "features", "about",
-        "గురించి", "చెప్పండి", "ఏమిటి",
-        "के बारे में", "बताइए", "क्या है"
+        "fertilizer", "fertilizers",
+        "గురించి", "చెప్పండి", "ఏమిటి", "వాడే", "వాడకం", "ఎరువుల", "ఎరువులు",
+        "के बारे में", "बताइए", "क्या है", "खाद", "उर्वरक"
     ]
 
     products = [
@@ -163,14 +164,20 @@ def is_direct_knowledge_question(text: str) -> bool:
         "zn-factor", "znfactor",
         "p-factor", "pfactor", "p factor",
         "k-factor", "kfactor", "k factor",
-        "biofactor", "బయోఫ్యాక్టర్",
+        "biofactor", "bio factor", "బయోఫ్యాక్టర్", "బయో ఫ్యాక్టర్",
         "farmvaidya", "ఫార్మ్ వైద్య",
         "bio double action", "biodoubleaction",
-        "बायो डबल एक्शन"
+        "बायो डबल एक्शन", "बायोफैक्टर", "बायो फैक्टर"
     ]
 
     t = text.lower()
-    return any(k in t for k in keywords) and any(p in t for p in products)
+    original = text  # Keep original for Unicode matching
+    
+    # Check in both normalized and original text
+    keyword_match = any(k in t for k in keywords) or any(k in original for k in keywords)
+    product_match = any(p in t for p in products) or any(p in original for p in products)
+    
+    return keyword_match and product_match
 
 
 # ---------------- PROBLEM DIAGNOSIS ----------------

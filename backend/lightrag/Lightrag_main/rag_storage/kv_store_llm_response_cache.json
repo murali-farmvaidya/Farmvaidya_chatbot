@@ -1,0 +1,172 @@
+{
+  "mix:keywords:2abd1f9a838894930d935fe2c086a99a": {
+    "return": "{\"high_level_keywords\": [\"\\u0c0e\\u0c30\\u0c41\\u0c35\\u0c41\\u0c32 \\u0c35\\u0c3f\\u0c28\\u0c3f\\u0c2f\\u0c4b\\u0c17\\u0c02\", \"\\u0c2c\\u0c2f\\u0c4b \\u0c2b\\u0c4d\\u0c2f\\u0c3e\\u0c15\\u0c4d\\u0c1f\\u0c30\\u0c4d\"], \"low_level_keywords\": [\"\\u0c0e\\u0c30\\u0c41\\u0c35\\u0c41\\u0c32\\u0c41\", \"\\u0c30\\u0c38\\u0c3e\\u0c2f\\u0c28 \\u0c0e\\u0c30\\u0c41\\u0c35\\u0c41\\u0c32\\u0c41\", \"\\u0c38\\u0c47\\u0c02\\u0c26\\u0c4d\\u0c30\\u0c3f\\u0c2f \\u0c0e\\u0c30\\u0c41\\u0c35\\u0c41\\u0c32\\u0c41\", \"\\u0c2c\\u0c2f\\u0c4b \\u0c2b\\u0c4d\\u0c2f\\u0c3e\\u0c15\\u0c4d\\u0c1f\\u0c30\\u0c4d \"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Tell about the use of fertilizers in Bio Factor.\n\nIMPORTANT: You MUST respond ONLY in Telugu (తెలుగు) language. Do not use English or any other language in your response.",
+    "queryparam": {
+      "mode": "mix",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1767689879,
+    "update_time": 1767689879,
+    "_id": "mix:keywords:2abd1f9a838894930d935fe2c086a99a"
+  },
+  "mix:query:f7a40b1de36b40e9accacf8cf7ec9f45": {
+    "return": "క్షమించండి, నాకు ఆ సమాచారం లేదు.",
+    "cache_type": "query",
+    "chunk_id": null,
+    "original_prompt": "Tell about the use of fertilizers in Bio Factor.\n\nIMPORTANT: You MUST respond ONLY in Telugu (తెలుగు) language. Do not use English or any other language in your response.",
+    "queryparam": {
+      "mode": "mix",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "hl_keywords": "ఎరువుల వినియోగం, బయో ఫ్యాక్టర్",
+      "ll_keywords": "ఎరువులు, రసాయన ఎరువులు, సేంద్రియ ఎరువులు, బయో ఫ్యాక్టర్ ",
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1767689883,
+    "update_time": 1767689883,
+    "_id": "mix:query:f7a40b1de36b40e9accacf8cf7ec9f45"
+  },
+  "mix:keywords:4a829d6d98643c0ddcf6cd9e6a0b568f": {
+    "return": "{\"high_level_keywords\": [\"Fertilizers\", \"Bio Factor\", \"Agricultural practices\"], \"low_level_keywords\": [\"Nutrient application\", \"Crop yield\", \"Soil health\", \"Organic fertilizers\", \"Synthetic fertilizers\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Tell about the use of fertilizers in Bio Factor.",
+    "queryparam": {
+      "mode": "mix",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1767690075,
+    "update_time": 1767690075,
+    "_id": "mix:keywords:4a829d6d98643c0ddcf6cd9e6a0b568f"
+  },
+  "mix:query:d166181e6542f297fb08cdd8b6a7120d": {
+    "return": "Biofactor offers various bio-fertilizers, including:\n\n*   Aadhaar Gold, a granular biofertilizer that enhances soil fertility and crop productivity. It has a triple-action formula with nitrogen-fixing, phosphate-solubilizing, and potassium-mobilizing bacteria [1].\n*   INM Chakra, a liquid form bacterial consortium that provides nitrogen, phosphorus, and potassium [1].\n*   GVAMSPF, a liquid or granular form of mycorrhiza that retrieves essential nutrients, particularly phosphorus, for plant roots [1].\n*   N-Factor, a Nitrogen Fixing Bacteria that helps reduce the need for chemical fertilizers and increases crop yield [1].\n*   P-Factor, a Phosphorus Solubilizing Bacteria designed to unlock the power of phosphorus in neutral soil conditions, reducing the reliance on chemical fertilizers and increasing crop yield [1].\n*   K-Factor, which mobilizes potassium in the soil and reduces the need for chemical potassium fertilizers [1].\n*   ZN-FACTOR, which reduces the use of chemical zinc fertilizers [1].\n*   BIOFACTOR Bio Fertilizer, a liquid bio-fertilizer that helps plants under biotic and abiotic stress [1].\n*   PROCEED, used for biotic and abiotic stress relief [1].\n*   SUMCA, a bio-enriched organic manure [1].\n*   PRITHVI, used for pest control [1].\n*   BIO TRIPLE ACTION PROGRAM, which increases yields [1].\n*   BIO DOUBLE ACTION PROGRAM, which increases yields and boosts plant health [1].\n*   Biopotash, which increases yields and boosts plant health [1].\n*   Poshak Level-1, a liquid fermented organic manure designed for vegetative stage application that enhances nutrient uptake, improves soil structure, and promotes healthy foliage and root growth [1].\n\n### References\n\n- [1] Biofactor knowledge base 21112025.pdf",
+    "cache_type": "query",
+    "chunk_id": null,
+    "original_prompt": "Tell about the use of fertilizers in Bio Factor.",
+    "queryparam": {
+      "mode": "mix",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "hl_keywords": "Fertilizers, Bio Factor, Agricultural practices",
+      "ll_keywords": "Nutrient application, Crop yield, Soil health, Organic fertilizers, Synthetic fertilizers",
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1767690083,
+    "update_time": 1767690083,
+    "_id": "mix:query:d166181e6542f297fb08cdd8b6a7120d"
+  },
+  "mix:query:33cf884a31d3bdb6d200aa8af707736c": {
+    "return": "I am unable to determine which is the \"best\" fertilizer. However, Aadhaar Gold is a granular-based biofertilizer consortium designed to enhance soil fertility and crop productivity. K-Factor improves potassium availability to plants from early stages and promotes strong root development and stem formation. PROCEED helps in water stress tolerance, increases water uptake capacity, and nutrient availability.\n\n### References\n\n-   [1] Biofactor knowledge base 21112025.pdf",
+    "cache_type": "query",
+    "chunk_id": null,
+    "original_prompt": "which is the best one",
+    "queryparam": {
+      "mode": "mix",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "hl_keywords": "",
+      "ll_keywords": "which is the best one",
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1767690153,
+    "update_time": 1767690153,
+    "_id": "mix:query:33cf884a31d3bdb6d200aa8af707736c"
+  },
+  "mix:keywords:c964488afcfce88654256941bdff5626": {
+    "return": "{\"high_level_keywords\": [\"Fertilizers\", \"Product availability\"], \"low_level_keywords\": [\"Bio Factor\", \"fertilizers\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "Tell me that you can find the fertilizers available in Bio Factor.",
+    "queryparam": {
+      "mode": "mix",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1767690341,
+    "update_time": 1767690341,
+    "_id": "mix:keywords:c964488afcfce88654256941bdff5626"
+  },
+  "mix:query:8da37624a7ad112161126cb3b61b1a32": {
+    "return": "I can provide information on the fertilizers available from Biofactor. These include: BIOFACTOR Bio Fertilizer, N-Factor, P-Factor, K-Factor, ZN-FACTOR, Bio Fertilize, BIO TRIPLE ACTION PROGRAM, BIO DOUBLE ACTION PROGRAM, Biopotash, PROCEED, PRITHVI, PROMOTE, SUMCA, Poshak Level-1, and Biofactors Chemical Fertilizers. [1]",
+    "cache_type": "query",
+    "chunk_id": null,
+    "original_prompt": "Tell me that you can find the fertilizers available in Bio Factor.",
+    "queryparam": {
+      "mode": "mix",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "hl_keywords": "Fertilizers, Product availability",
+      "ll_keywords": "Bio Factor, fertilizers",
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1767690346,
+    "update_time": 1767690346,
+    "_id": "mix:query:8da37624a7ad112161126cb3b61b1a32"
+  },
+  "mix:query:cf8cfed3ac2fdd5c3f699a89c911c0ce": {
+    "return": "నేను మీకు బయోఫ్యాక్టర్ ఉత్పత్తుల గురించి సమాచారం అందించగలను.\n\nబయోఫ్యాక్టర్ బయో ఫెర్టిలైజర్‌ (Biofactor Bio Fertilizer) గురించిన సమాచారం:\n*   ఇది అన్ని పంటలకు ఉపయోగపడుతుంది.\n*   దీనిని నేరుగా నేలలో వేయాలి.\n*   తక్కువ కాలపరిమితి పంటలకు ఒకసారి వాడాలి.\n*   మధ్యకాలిక పంటలకు రెండుసార్లు వాడాలి.\n*   దీర్ఘకాలిక పంటలకు పంట చక్రంలో 2 నుండి 3 సార్లు వాడాలి.\n\nN-Factor గురించిన సమాచారం:\n*   ఇది నత్రజనిని (nitrogen) స్థిరీకరించే బ్యాక్టీరియా.\n*   ఒక ఎకరానికి 1 లీటరు వాడాలి.\n*   విత్తనశుద్ధి చేసి, తరువాత పిచికారీ చేయాలి.\n*   అల్పకాలిక పంటలకు ఒకసారి, మధ్యకాలిక పంటలకు రెండుసార్లు, దీర్ఘకాలిక పంటలకు 2-3 సార్లు వాడాలి.\n\nP-Factor గురించిన సమాచారం:\n*   ఇది భాస్వరాన్ని కరిగించే బ్యాక్టీరియా.\n*   ఒక ఎకరానికి 1 లీటరు మోతాదులో వాడాలి.\n*   డ్రిప్ ద్వారా మొదట వాడాలి, తరువాత పిచికారీ చేయాలి.\n*   అల్పకాలిక పంటలకు ఒకసారి, మధ్యకాలిక పంటలకు రెండుసార్లు, దీర్ఘకాలిక పంటలకు 2-3 సార్లు వాడాలి.\n\nK-FACTOR గురించిన సమాచారం:\n*   నేలలో పొటాషియంను పెంచుతుంది.\n*   ఒక లీటరు ఒక ఎకరం పొలానికి వాడాలి.\n*   విత్తన శుద్ధి చేసిన తరువాత పిచికారీ చేయాలి.\n*   అల్పకాలిక పంటలకు ఒకసారి, మధ్యకాలిక పంటలకు రెండుసార్లు వాడాలి.\n\nZN-FACTOR గురించిన సమాచారం:\n*   ఇది నేలలో జింక్‌ను కరిగిస్తుంది.\n*   ఒక ఎకరానికి 1 లీటరు వాడాలి.\n*   విత్తనశుద్ధి చేసిన తరువాత పిచికారీ చేయాలి.\n*   అల్పకాలిక పంటలకు ఒకసారి, మధ్యకాలిక పంటలకు రెండుసార్లు, దీర్ఘకాలిక పంటలకు 2-3 సార్లు వాడాలి.\n\nBIO TRIPLE ACTION PROGRAM గురించి:\n*   ఇది గుళికల రూపంలో ఉంటుంది.\n*   ఒక గ్రాము గుళికలో 3x10ˆ7 బ్యాక్టీరియా ఉంటాయి.\n*   ఇది గాలి నుండి నత్రజనిని సేకరిస్తుంది.\n*   భాస్వరం, పోటాష్ మరియు ఇతర సహజ పోషకాలను కరిగిస్తుంది.\n*   దిగుబడిని 25-30% వరకు పెంచుతుంది.\n*   ఖర్చును 20–25% వరకు తగ్గిస్తుంది.\n\nPROCEED గురించి:\n*   ఇది ద్రవరూపంలో ఉండే జీవన ఎరువు.\n*   ఒక మిల్లీలీటరులో 1.5×10ˆ7 బ్యాక్టీరియా ఉంటాయి.\n*   ఇది నీటి ఒత్తిడిని తట్టుకోవడానికి, పోషకాల లభ్యతను పెంచడానికి సహాయపడుతుంది.\n*   ఒక ఎకరానికి 500 ml వాడాలి.\n*   పంట మొదటి దశలో పిచికారీ చేయాలి, తరువాత అవసరాన్ని బట్టి వాడాలి.\n\nPROMOTE గురించి:\n*   ఇది ఫాస్పరస్ అధికంగా కలిగిన సేంద్రియ ఎరువు.\n*   ఒక ఎకరానికి 100 kg వాడాలి.\n*   నాటేటప్పుడు చివరి бороస్లో వేయాలి.\n*   అల్పకాలిక పంటలకు ఒకసారి, మధ్యకాలిక పంటలకు రెండుసార్లు, బహువార్షిక పంటలకు సంవత్సరానికి 2-3 సార్లు వాడాలి.\n\nSUMCA గురించి:\n*   ఇది సేంద్రియ ఎరువు, ఇది బ్యాక్టీరియాతో N, P, K, మరియు Zn అందిస్తుంది.\n*   ఒక గ్రాము граన్యూల్స్ లో 5x10ˆ7 బ్యాక్టీరియా ఉంటాయి.\n*   ఒక ఎకరానికి 100 kg వాడాలి.\n*   నాటేటప్పుడు చివరి бороస్లో వేయాలి.\n*   అల్పకాలిక పంటలకు ఒకసారి, మధ్యకాలిక పంటలకు రెండుసార్లు, బహువార్షిక పంటలకు సంవత్సరానికి 2-3 సార్లు వాడాలి.\n\nPoshak Level-1 గురించి:\n*   ఇది ద్రవరూపంలో ఉన్న సేంద్రియ ఎరువు.\n*   ఒక ఎకరానికి 1 L వాడాలి.\n*   నీటిపారుదల ద్వారా వాడవచ్చు లేదా పిచికారీ చేయవచ్చు.\n*   పంట పెరుగుదలని బట్టి, 15-20 రోజులకు ఒకసారి వాడాలి.\n*   ఇది ఆకులను ఆరోగ్యంగా ఉంచుతుంది, వేరు వ్యవస్థను మెరుగుపరుస్తుంది.\n\nఈ సమాచారం మీకు సహాయపడుతుందని నేను ఆశిస్తున్నాను.\n\n### References\n\n- [1] Biofactor knowledge base 21112025.pdf",
+    "cache_type": "query",
+    "chunk_id": null,
+    "original_prompt": "Tell me about them.",
+    "queryparam": {
+      "mode": "mix",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "hl_keywords": "",
+      "ll_keywords": "Tell me about them.",
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1767690383,
+    "update_time": 1767690383,
+    "_id": "mix:query:cf8cfed3ac2fdd5c3f699a89c911c0ce"
+  }
+}

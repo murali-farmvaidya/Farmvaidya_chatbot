@@ -1,0 +1,5123 @@
+{
+  "Zinc<SEP>Zinc Nutrient": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682176,
+    "update_time": 1767682176,
+    "_id": "Zinc<SEP>Zinc Nutrient"
+  },
+  "Boron<SEP>Chelated Boron as Boron Glycine (Liquid)": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682176,
+    "update_time": 1767682176,
+    "_id": "Boron<SEP>Chelated Boron as Boron Glycine (Liquid)"
+  },
+  "MAMSP Technology<SEP>Zinc Nutrient": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682177,
+    "update_time": 1767682177,
+    "_id": "MAMSP Technology<SEP>Zinc Nutrient"
+  },
+  "Zinc Deficiency<SEP>Zinc Nutrient": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682177,
+    "update_time": 1767682177,
+    "_id": "Zinc Deficiency<SEP>Zinc Nutrient"
+  },
+  "Ferron<SEP>Ferrous Sulphate": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682177,
+    "update_time": 1767682177,
+    "_id": "Ferron<SEP>Ferrous Sulphate"
+  },
+  "Auxins<SEP>Zinc Nutrient": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682178,
+    "update_time": 1767682178,
+    "_id": "Auxins<SEP>Zinc Nutrient"
+  },
+  "Horticultural Crops<SEP>Zinc Deficiency": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682178,
+    "update_time": 1767682178,
+    "_id": "Horticultural Crops<SEP>Zinc Deficiency"
+  },
+  "Boron Deficiency<SEP>Horticultural Crops": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682178,
+    "update_time": 1767682178,
+    "_id": "Boron Deficiency<SEP>Horticultural Crops"
+  },
+  "Chlorosis<SEP>Iron Deficiency": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682178,
+    "update_time": 1767682178,
+    "_id": "Chlorosis<SEP>Iron Deficiency"
+  },
+  "Cytokines<SEP>Zinc Nutrient": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682178,
+    "update_time": 1767682178,
+    "_id": "Cytokines<SEP>Zinc Nutrient"
+  },
+  "Magnesium<SEP>Magnesium Hydroxide and Zinc Phosphate": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682178,
+    "update_time": 1767682178,
+    "_id": "Magnesium<SEP>Magnesium Hydroxide and Zinc Phosphate"
+  },
+  "Magnesium Hydroxide and Zinc Phosphate<SEP>Zinc": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682178,
+    "update_time": 1767682178,
+    "_id": "Magnesium Hydroxide and Zinc Phosphate<SEP>Zinc"
+  },
+  "MAMS Technology<SEP>Zinc Nutrient": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682178,
+    "update_time": 1767682178,
+    "_id": "MAMS Technology<SEP>Zinc Nutrient"
+  },
+  "Manganese<SEP>Manganese Carbonate Suspension Concentrate": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682178,
+    "update_time": 1767682178,
+    "_id": "Manganese<SEP>Manganese Carbonate Suspension Concentrate"
+  },
+  "Magnesium Deficiency<SEP>Magnesium Hydroxide and Zinc Phosphate": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682179,
+    "update_time": 1767682179,
+    "_id": "Magnesium Deficiency<SEP>Magnesium Hydroxide and Zinc Phosphate"
+  },
+  "Manganese Carbonate Suspension Concentrate<SEP>Manganese Deficiency": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682179,
+    "update_time": 1767682179,
+    "_id": "Manganese Carbonate Suspension Concentrate<SEP>Manganese Deficiency"
+  },
+  "Chelated Boron as Boron Glycine (Liquid)<SEP>MAMS Technology": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682179,
+    "update_time": 1767682179,
+    "_id": "Chelated Boron as Boron Glycine (Liquid)<SEP>MAMS Technology"
+  },
+  "Photosynthesis<SEP>Zinc Nutrient": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682179,
+    "update_time": 1767682179,
+    "_id": "Photosynthesis<SEP>Zinc Nutrient"
+  },
+  "Enzymes<SEP>Zinc Nutrient": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682179,
+    "update_time": 1767682179,
+    "_id": "Enzymes<SEP>Zinc Nutrient"
+  },
+  "Ferron<SEP>MAMS Technology": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682179,
+    "update_time": 1767682179,
+    "_id": "Ferron<SEP>MAMS Technology"
+  },
+  "Boron Deficiency<SEP>Vine Crops": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682179,
+    "update_time": 1767682179,
+    "_id": "Boron Deficiency<SEP>Vine Crops"
+  },
+  "Pollen<SEP>Zinc Nutrient": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682179,
+    "update_time": 1767682179,
+    "_id": "Pollen<SEP>Zinc Nutrient"
+  },
+  "MAMS Technology<SEP>Magnesium Hydroxide and Zinc Phosphate": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682179,
+    "update_time": 1767682179,
+    "_id": "MAMS Technology<SEP>Magnesium Hydroxide and Zinc Phosphate"
+  },
+  "Ferron<SEP>Iron Deficiency": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682179,
+    "update_time": 1767682179,
+    "_id": "Ferron<SEP>Iron Deficiency"
+  },
+  "Boron Deficiency<SEP>Papaya": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682179,
+    "update_time": 1767682179,
+    "_id": "Boron Deficiency<SEP>Papaya"
+  },
+  "MAMS Technology<SEP>Manganese Carbonate Suspension Concentrate": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682180,
+    "update_time": 1767682180,
+    "_id": "MAMS Technology<SEP>Manganese Carbonate Suspension Concentrate"
+  },
+  "Magnesium Hydroxide and Zinc Phosphate<SEP>Photosynthesis": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682180,
+    "update_time": 1767682180,
+    "_id": "Magnesium Hydroxide and Zinc Phosphate<SEP>Photosynthesis"
+  },
+  "Boron Deficiency<SEP>Mango": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682180,
+    "update_time": 1767682180,
+    "_id": "Boron Deficiency<SEP>Mango"
+  },
+  "Ferron<SEP>Photosynthesis": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682180,
+    "update_time": 1767682180,
+    "_id": "Ferron<SEP>Photosynthesis"
+  },
+  "Iron Deficiency<SEP>Leafy Greens": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682180,
+    "update_time": 1767682180,
+    "_id": "Iron Deficiency<SEP>Leafy Greens"
+  },
+  "Boron Deficiency<SEP>Sapota": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682180,
+    "update_time": 1767682180,
+    "_id": "Boron Deficiency<SEP>Sapota"
+  },
+  "DNA<SEP>Iron Deficiency": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682180,
+    "update_time": 1767682180,
+    "_id": "DNA<SEP>Iron Deficiency"
+  },
+  "Manganese Carbonate Suspension Concentrate<SEP>Photosynthesis": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682180,
+    "update_time": 1767682180,
+    "_id": "Manganese Carbonate Suspension Concentrate<SEP>Photosynthesis"
+  },
+  "Enzymes<SEP>Ferron": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682180,
+    "update_time": 1767682180,
+    "_id": "Enzymes<SEP>Ferron"
+  },
+  "Magnesium Hydroxide and Zinc Phosphate<SEP>Phosphorus": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682180,
+    "update_time": 1767682180,
+    "_id": "Magnesium Hydroxide and Zinc Phosphate<SEP>Phosphorus"
+  },
+  "Antioxidants<SEP>Iron Deficiency": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682181,
+    "update_time": 1767682181,
+    "_id": "Antioxidants<SEP>Iron Deficiency"
+  },
+  "Enzymes<SEP>Magnesium Hydroxide and Zinc Phosphate": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682181,
+    "update_time": 1767682181,
+    "_id": "Enzymes<SEP>Magnesium Hydroxide and Zinc Phosphate"
+  },
+  "Budding Stage<SEP>Zinc Nutrient": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682181,
+    "update_time": 1767682181,
+    "_id": "Budding Stage<SEP>Zinc Nutrient"
+  },
+  "Manganese Carbonate Suspension Concentrate<SEP>Respiration": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682181,
+    "update_time": 1767682181,
+    "_id": "Manganese Carbonate Suspension Concentrate<SEP>Respiration"
+  },
+  "Flowering Stage<SEP>Zinc Nutrient": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682181,
+    "update_time": 1767682181,
+    "_id": "Flowering Stage<SEP>Zinc Nutrient"
+  },
+  "Budding Stage<SEP>Chelated Boron as Boron Glycine (Liquid)": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682181,
+    "update_time": 1767682181,
+    "_id": "Budding Stage<SEP>Chelated Boron as Boron Glycine (Liquid)"
+  },
+  "Chloroplasts<SEP>Manganese Carbonate Suspension Concentrate": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682181,
+    "update_time": 1767682181,
+    "_id": "Chloroplasts<SEP>Manganese Carbonate Suspension Concentrate"
+  },
+  "Budding Stage<SEP>Ferron": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682182,
+    "update_time": 1767682182,
+    "_id": "Budding Stage<SEP>Ferron"
+  },
+  "Manganese Carbonate Suspension Concentrate<SEP>Nitrogen Metabolism": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682182,
+    "update_time": 1767682182,
+    "_id": "Manganese Carbonate Suspension Concentrate<SEP>Nitrogen Metabolism"
+  },
+  "Fruiting Stage<SEP>Zinc Nutrient": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682182,
+    "update_time": 1767682182,
+    "_id": "Fruiting Stage<SEP>Zinc Nutrient"
+  },
+  "Chelated Boron as Boron Glycine (Liquid)<SEP>Flowering Stage": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682182,
+    "update_time": 1767682182,
+    "_id": "Chelated Boron as Boron Glycine (Liquid)<SEP>Flowering Stage"
+  },
+  "Budding Stage<SEP>Magnesium Hydroxide and Zinc Phosphate": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682182,
+    "update_time": 1767682182,
+    "_id": "Budding Stage<SEP>Magnesium Hydroxide and Zinc Phosphate"
+  },
+  "Manganese Carbonate Suspension Concentrate<SEP>Water Stress": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682182,
+    "update_time": 1767682182,
+    "_id": "Manganese Carbonate Suspension Concentrate<SEP>Water Stress"
+  },
+  "Ferron<SEP>Flowering Stage": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682182,
+    "update_time": 1767682182,
+    "_id": "Ferron<SEP>Flowering Stage"
+  },
+  "Fruiting Stage<SEP>Magnesium Hydroxide and Zinc Phosphate": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682182,
+    "update_time": 1767682182,
+    "_id": "Fruiting Stage<SEP>Magnesium Hydroxide and Zinc Phosphate"
+  },
+  "Budding Stage<SEP>Manganese Carbonate Suspension Concentrate": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682182,
+    "update_time": 1767682182,
+    "_id": "Budding Stage<SEP>Manganese Carbonate Suspension Concentrate"
+  },
+  "Horticultural Crops<SEP>Zinc Nutrient": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682182,
+    "update_time": 1767682182,
+    "_id": "Horticultural Crops<SEP>Zinc Nutrient"
+  },
+  "Flowering Stage<SEP>Magnesium Hydroxide and Zinc Phosphate": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682183,
+    "update_time": 1767682183,
+    "_id": "Flowering Stage<SEP>Magnesium Hydroxide and Zinc Phosphate"
+  },
+  "Chelated Boron as Boron Glycine (Liquid)<SEP>Fruiting Stage": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682183,
+    "update_time": 1767682183,
+    "_id": "Chelated Boron as Boron Glycine (Liquid)<SEP>Fruiting Stage"
+  },
+  "Invictus<SEP>Trichoderma Viride": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3",
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 2,
+    "create_time": 1767682183,
+    "update_time": 1767682183,
+    "_id": "Invictus<SEP>Trichoderma Viride"
+  },
+  "Flowering Stage<SEP>Manganese Carbonate Suspension Concentrate": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682183,
+    "update_time": 1767682183,
+    "_id": "Flowering Stage<SEP>Manganese Carbonate Suspension Concentrate"
+  },
+  "Chelated Boron as Boron Glycine (Liquid)<SEP>Vine Crops": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682183,
+    "update_time": 1767682183,
+    "_id": "Chelated Boron as Boron Glycine (Liquid)<SEP>Vine Crops"
+  },
+  "Invictus<SEP>Rhizoctonia Solani": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682183,
+    "update_time": 1767682183,
+    "_id": "Invictus<SEP>Rhizoctonia Solani"
+  },
+  "Fruiting Stage<SEP>Manganese Carbonate Suspension Concentrate": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682183,
+    "update_time": 1767682183,
+    "_id": "Fruiting Stage<SEP>Manganese Carbonate Suspension Concentrate"
+  },
+  "Fusarium<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3",
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 2,
+    "create_time": 1767682183,
+    "update_time": 1767682183,
+    "_id": "Fusarium<SEP>Invictus"
+  },
+  "Ferron<SEP>Fruiting Stage": {
+    "chunk_ids": [
+      "chunk-6016cccfa6edd7bb14766405519947d6"
+    ],
+    "count": 1,
+    "create_time": 1767682184,
+    "update_time": 1767682184,
+    "_id": "Ferron<SEP>Fruiting Stage"
+  },
+  "Invictus<SEP>Pythium": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3",
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 2,
+    "create_time": 1767682184,
+    "update_time": 1767682184,
+    "_id": "Invictus<SEP>Pythium"
+  },
+  "Trichoderma Viride<SEP>pathogens": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682184,
+    "update_time": 1767682184,
+    "_id": "Trichoderma Viride<SEP>pathogens"
+  },
+  "Invictus<SEP>Phytophthora": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3",
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 2,
+    "create_time": 1767682184,
+    "update_time": 1767682184,
+    "_id": "Invictus<SEP>Phytophthora"
+  },
+  "Invictus<SEP>Verticillium": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3",
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 2,
+    "create_time": 1767682184,
+    "update_time": 1767682184,
+    "_id": "Invictus<SEP>Verticillium"
+  },
+  "Alternaria<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3",
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 2,
+    "create_time": 1767682185,
+    "update_time": 1767682185,
+    "_id": "Alternaria<SEP>Invictus"
+  },
+  "Colletotrichum<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3",
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 2,
+    "create_time": 1767682185,
+    "update_time": 1767682185,
+    "_id": "Colletotrichum<SEP>Invictus"
+  },
+  "Cercospora<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3",
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 2,
+    "create_time": 1767682185,
+    "update_time": 1767682185,
+    "_id": "Cercospora<SEP>Invictus"
+  },
+  "Invictus<SEP>Tomato": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682186,
+    "update_time": 1767682186,
+    "_id": "Invictus<SEP>Tomato"
+  },
+  "Invictus<SEP>Okra": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682186,
+    "update_time": 1767682186,
+    "_id": "Invictus<SEP>Okra"
+  },
+  "Invictus<SEP>Potato": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682186,
+    "update_time": 1767682186,
+    "_id": "Invictus<SEP>Potato"
+  },
+  "Chilli<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682187,
+    "update_time": 1767682187,
+    "_id": "Chilli<SEP>Invictus"
+  },
+  "FYM<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682187,
+    "update_time": 1767682187,
+    "_id": "FYM<SEP>Invictus"
+  },
+  "IIHR-TV-5<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682187,
+    "update_time": 1767682187,
+    "_id": "IIHR-TV-5<SEP>Invictus"
+  },
+  "Invictus<SEP>Tricho-V": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682188,
+    "update_time": 1767682188,
+    "_id": "Invictus<SEP>Tricho-V"
+  },
+  "Bio-Tricho<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682188,
+    "update_time": 1767682188,
+    "_id": "Bio-Tricho<SEP>Invictus"
+  },
+  "Azadirachtin<SEP>Native Neem": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3",
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 2,
+    "create_time": 1767682188,
+    "update_time": 1767682188,
+    "_id": "Azadirachtin<SEP>Native Neem"
+  },
+  "Andhra Pradesh<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682188,
+    "update_time": 1767682188,
+    "_id": "Andhra Pradesh<SEP>Invictus"
+  },
+  "Native Neem<SEP>Whitefly": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3",
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 2,
+    "create_time": 1767682188,
+    "update_time": 1767682188,
+    "_id": "Native Neem<SEP>Whitefly"
+  },
+  "Invictus<SEP>Telangana": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682189,
+    "update_time": 1767682189,
+    "_id": "Invictus<SEP>Telangana"
+  },
+  "Greenfly<SEP>Native Neem": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3",
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 2,
+    "create_time": 1767682189,
+    "update_time": 1767682189,
+    "_id": "Greenfly<SEP>Native Neem"
+  },
+  "Cotton<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682189,
+    "update_time": 1767682189,
+    "_id": "Cotton<SEP>Invictus"
+  },
+  "Competitive Exclusion<SEP>Trichoderma Viride": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682189,
+    "update_time": 1767682189,
+    "_id": "Competitive Exclusion<SEP>Trichoderma Viride"
+  },
+  "Aphids<SEP>Native Neem": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3",
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 2,
+    "create_time": 1767682189,
+    "update_time": 1767682189,
+    "_id": "Aphids<SEP>Native Neem"
+  },
+  "Invictus<SEP>Turmeric": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682189,
+    "update_time": 1767682189,
+    "_id": "Invictus<SEP>Turmeric"
+  },
+  "Early-Stage Caterpillars<SEP>Native Neem": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682190,
+    "update_time": 1767682190,
+    "_id": "Early-Stage Caterpillars<SEP>Native Neem"
+  },
+  "Mycoparasitism<SEP>Trichoderma Viride": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682190,
+    "update_time": 1767682190,
+    "_id": "Mycoparasitism<SEP>Trichoderma Viride"
+  },
+  "Invictus<SEP>Karnataka": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682190,
+    "update_time": 1767682190,
+    "_id": "Invictus<SEP>Karnataka"
+  },
+  "Antifungal Metabolites<SEP>Trichoderma Viride": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682190,
+    "update_time": 1767682190,
+    "_id": "Antifungal Metabolites<SEP>Trichoderma Viride"
+  },
+  "Invictus<SEP>Maharashtra": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682190,
+    "update_time": 1767682190,
+    "_id": "Invictus<SEP>Maharashtra"
+  },
+  "Andhra Pradesh<SEP>Kharif": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682190,
+    "update_time": 1767682190,
+    "_id": "Andhra Pradesh<SEP>Kharif"
+  },
+  "Root Zone Colonization<SEP>Trichoderma Viride": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682190,
+    "update_time": 1767682190,
+    "_id": "Root Zone Colonization<SEP>Trichoderma Viride"
+  },
+  "Cereals<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682190,
+    "update_time": 1767682190,
+    "_id": "Cereals<SEP>Invictus"
+  },
+  "Kharif<SEP>Telangana": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682191,
+    "update_time": 1767682191,
+    "_id": "Kharif<SEP>Telangana"
+  },
+  "Andhra Pradesh<SEP>Rabi": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682191,
+    "update_time": 1767682191,
+    "_id": "Andhra Pradesh<SEP>Rabi"
+  },
+  "Mycorrhiza<SEP>Phosphorus": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682191,
+    "update_time": 1767682191,
+    "_id": "Mycorrhiza<SEP>Phosphorus"
+  },
+  "Invictus<SEP>Vegetables": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682191,
+    "update_time": 1767682191,
+    "_id": "Invictus<SEP>Vegetables"
+  },
+  "Bio-encapsulation Technology<SEP>Granules": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682191,
+    "update_time": 1767682191,
+    "_id": "Bio-encapsulation Technology<SEP>Granules"
+  },
+  "Rabi<SEP>Telangana": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682191,
+    "update_time": 1767682191,
+    "_id": "Rabi<SEP>Telangana"
+  },
+  "N-Factor<SEP>Nitrogen": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682191,
+    "update_time": 1767682191,
+    "_id": "N-Factor<SEP>Nitrogen"
+  },
+  "Fruits<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682191,
+    "update_time": 1767682191,
+    "_id": "Fruits<SEP>Invictus"
+  },
+  "Bio-encapsulation Technology<SEP>Liquid Formulations": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682191,
+    "update_time": 1767682191,
+    "_id": "Bio-encapsulation Technology<SEP>Liquid Formulations"
+  },
+  "Ammonia<SEP>N-Factor": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682191,
+    "update_time": 1767682191,
+    "_id": "Ammonia<SEP>N-Factor"
+  },
+  "Invictus<SEP>Spices": {
+    "chunk_ids": [
+      "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
+    ],
+    "count": 1,
+    "create_time": 1767682192,
+    "update_time": 1767682192,
+    "_id": "Invictus<SEP>Spices"
+  },
+  "P-Factor<SEP>Phosphorus": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682192,
+    "update_time": 1767682192,
+    "_id": "P-Factor<SEP>Phosphorus"
+  },
+  "K-FACTOR<SEP>Potassium": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682192,
+    "update_time": 1767682192,
+    "_id": "K-FACTOR<SEP>Potassium"
+  },
+  "N-Factor<SEP>Nitrate": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682192,
+    "update_time": 1767682192,
+    "_id": "N-Factor<SEP>Nitrate"
+  },
+  "Auxins<SEP>N-Factor": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682192,
+    "update_time": 1767682192,
+    "_id": "Auxins<SEP>N-Factor"
+  },
+  "Gibberellic Acid<SEP>N-Factor": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682192,
+    "update_time": 1767682192,
+    "_id": "Gibberellic Acid<SEP>N-Factor"
+  },
+  "K-FACTOR<SEP>Root Zone": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682192,
+    "update_time": 1767682192,
+    "_id": "K-FACTOR<SEP>Root Zone"
+  },
+  "Cytokinins<SEP>N-Factor": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682193,
+    "update_time": 1767682193,
+    "_id": "Cytokinins<SEP>N-Factor"
+  },
+  "Mycorrhiza<SEP>Plant Roots": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682193,
+    "update_time": 1767682193,
+    "_id": "Mycorrhiza<SEP>Plant Roots"
+  },
+  "Granules<SEP>Soil": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682193,
+    "update_time": 1767682193,
+    "_id": "Granules<SEP>Soil"
+  },
+  "Chemical Fertilizers<SEP>N-Factor": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682193,
+    "update_time": 1767682193,
+    "_id": "Chemical Fertilizers<SEP>N-Factor"
+  },
+  "Liquid Formulations<SEP>Plant": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682193,
+    "update_time": 1767682193,
+    "_id": "Liquid Formulations<SEP>Plant"
+  },
+  "Crop Yield<SEP>N-Factor": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682193,
+    "update_time": 1767682193,
+    "_id": "Crop Yield<SEP>N-Factor"
+  },
+  "Chemical Fertilizers<SEP>P-Factor": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682193,
+    "update_time": 1767682193,
+    "_id": "Chemical Fertilizers<SEP>P-Factor"
+  },
+  "K-FACTOR<SEP>Root Development": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682193,
+    "update_time": 1767682193,
+    "_id": "K-FACTOR<SEP>Root Development"
+  },
+  "K-FACTOR<SEP>Stem Formation": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682194,
+    "update_time": 1767682194,
+    "_id": "K-FACTOR<SEP>Stem Formation"
+  },
+  "N-Factor<SEP>Rain-fed Areas": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682194,
+    "update_time": 1767682194,
+    "_id": "N-Factor<SEP>Rain-fed Areas"
+  },
+  "Crop Yield<SEP>P-Factor": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682194,
+    "update_time": 1767682194,
+    "_id": "Crop Yield<SEP>P-Factor"
+  },
+  "K-FACTOR<SEP>Tuber Formation": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682194,
+    "update_time": 1767682194,
+    "_id": "K-FACTOR<SEP>Tuber Formation"
+  },
+  "N-Factor<SEP>Seed": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682194,
+    "update_time": 1767682194,
+    "_id": "N-Factor<SEP>Seed"
+  },
+  "N-Factor<SEP>Seed-dip method": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682194,
+    "update_time": 1767682194,
+    "_id": "N-Factor<SEP>Seed-dip method"
+  },
+  "Chemical Fertilizers<SEP>K-FACTOR": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682194,
+    "update_time": 1767682194,
+    "_id": "Chemical Fertilizers<SEP>K-FACTOR"
+  },
+  "Drip Irrigation<SEP>P-Factor": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682194,
+    "update_time": 1767682194,
+    "_id": "Drip Irrigation<SEP>P-Factor"
+  },
+  "Foliar Spray<SEP>N-Factor": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682195,
+    "update_time": 1767682195,
+    "_id": "Foliar Spray<SEP>N-Factor"
+  },
+  "Bio-Fertilizers<SEP>Crops": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce",
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 2,
+    "create_time": 1767682195,
+    "update_time": 1767682195,
+    "_id": "Bio-Fertilizers<SEP>Crops"
+  },
+  "Flowers<SEP>K-FACTOR": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682195,
+    "update_time": 1767682195,
+    "_id": "Flowers<SEP>K-FACTOR"
+  },
+  "Fruits<SEP>K-FACTOR": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682195,
+    "update_time": 1767682195,
+    "_id": "Fruits<SEP>K-FACTOR"
+  },
+  "Foliar Spray<SEP>P-Factor": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682195,
+    "update_time": 1767682195,
+    "_id": "Foliar Spray<SEP>P-Factor"
+  },
+  "Bio-Fertilizers<SEP>Nitrogen": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce",
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 2,
+    "create_time": 1767682196,
+    "update_time": 1767682196,
+    "_id": "Bio-Fertilizers<SEP>Nitrogen"
+  },
+  "K-FACTOR<SEP>Plant Pathogens": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682196,
+    "update_time": 1767682196,
+    "_id": "K-FACTOR<SEP>Plant Pathogens"
+  },
+  "Chemical Fertilizers<SEP>Crops": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682196,
+    "update_time": 1767682196,
+    "_id": "Chemical Fertilizers<SEP>Crops"
+  },
+  "Bio-Fertilizers<SEP>Phosphorus": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce",
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 2,
+    "create_time": 1767682196,
+    "update_time": 1767682196,
+    "_id": "Bio-Fertilizers<SEP>Phosphorus"
+  },
+  "K-FACTOR<SEP>Plant Vigor": {
+    "chunk_ids": [
+      "chunk-0826b0f7fffa34c58341e345deadf986"
+    ],
+    "count": 1,
+    "create_time": 1767682196,
+    "update_time": 1767682196,
+    "_id": "K-FACTOR<SEP>Plant Vigor"
+  },
+  "Chemical Fertilizers<SEP>Urea": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682196,
+    "update_time": 1767682196,
+    "_id": "Chemical Fertilizers<SEP>Urea"
+  },
+  "Bio-Fertilizers<SEP>Potash": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce",
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 2,
+    "create_time": 1767682196,
+    "update_time": 1767682196,
+    "_id": "Bio-Fertilizers<SEP>Potash"
+  },
+  "Chemical Fertilizers<SEP>Dap": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682196,
+    "update_time": 1767682196,
+    "_id": "Chemical Fertilizers<SEP>Dap"
+  },
+  "Bio-Fertilizers<SEP>Zinc": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce",
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 2,
+    "create_time": 1767682197,
+    "update_time": 1767682197,
+    "_id": "Bio-Fertilizers<SEP>Zinc"
+  },
+  "Micro-Organisms<SEP>Roots": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682197,
+    "update_time": 1767682197,
+    "_id": "Micro-Organisms<SEP>Roots"
+  },
+  "Chemical Fertilizers<SEP>Super Phosphate": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682197,
+    "update_time": 1767682197,
+    "_id": "Chemical Fertilizers<SEP>Super Phosphate"
+  },
+  "Bio-Fertilizers<SEP>Iron": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce",
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 2,
+    "create_time": 1767682197,
+    "update_time": 1767682197,
+    "_id": "Bio-Fertilizers<SEP>Iron"
+  },
+  "Aadhaar Gold<SEP>Biofac Inputs Private Limited": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682197,
+    "update_time": 1767682197,
+    "_id": "Aadhaar Gold<SEP>Biofac Inputs Private Limited"
+  },
+  "Chemical Fertilizers<SEP>Zinc Sulphate": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682197,
+    "update_time": 1767682197,
+    "_id": "Chemical Fertilizers<SEP>Zinc Sulphate"
+  },
+  "Air<SEP>Bio-Fertilizers": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682197,
+    "update_time": 1767682197,
+    "_id": "Air<SEP>Bio-Fertilizers"
+  },
+  "Aadhaar Gold<SEP>Carrier Consortium Biofertilizer": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682197,
+    "update_time": 1767682197,
+    "_id": "Aadhaar Gold<SEP>Carrier Consortium Biofertilizer"
+  },
+  "Bio-Fertilizers<SEP>Soil": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682198,
+    "update_time": 1767682198,
+    "_id": "Bio-Fertilizers<SEP>Soil"
+  },
+  "Aadhaar Gold<SEP>Bio-Encapsulation Technology": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682198,
+    "update_time": 1767682198,
+    "_id": "Aadhaar Gold<SEP>Bio-Encapsulation Technology"
+  },
+  "Bio-Fertilizers<SEP>Waterlogging": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682198,
+    "update_time": 1767682198,
+    "_id": "Bio-Fertilizers<SEP>Waterlogging"
+  },
+  "Aadhaar Gold<SEP>Nitrogen-Fixing Microorganisms": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682198,
+    "update_time": 1767682198,
+    "_id": "Aadhaar Gold<SEP>Nitrogen-Fixing Microorganisms"
+  },
+  "Bio-Fertilizers<SEP>Soil-Borne Diseases": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682198,
+    "update_time": 1767682198,
+    "_id": "Bio-Fertilizers<SEP>Soil-Borne Diseases"
+  },
+  "Bio-Encapsulation Technology<SEP>Microbes": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682198,
+    "update_time": 1767682198,
+    "_id": "Bio-Encapsulation Technology<SEP>Microbes"
+  },
+  "Aadhaar Gold<SEP>Phosphate-Solubilizing Microorganisms": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682198,
+    "update_time": 1767682198,
+    "_id": "Aadhaar Gold<SEP>Phosphate-Solubilizing Microorganisms"
+  },
+  "Aadhaar Gold<SEP>Potassium-Mobilizing Microorganisms": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682199,
+    "update_time": 1767682199,
+    "_id": "Aadhaar Gold<SEP>Potassium-Mobilizing Microorganisms"
+  },
+  "Aadhaar Gold<SEP>Azotobacter": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682199,
+    "update_time": 1767682199,
+    "_id": "Aadhaar Gold<SEP>Azotobacter"
+  },
+  "Aadhaar Gold<SEP>Phosphate Solubilizing Bacteria (Psb)": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682199,
+    "update_time": 1767682199,
+    "_id": "Aadhaar Gold<SEP>Phosphate Solubilizing Bacteria (Psb)"
+  },
+  "Aadhaar Gold<SEP>Potassium Mobilizing Bacteria (Kmb)": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682200,
+    "update_time": 1767682200,
+    "_id": "Aadhaar Gold<SEP>Potassium Mobilizing Bacteria (Kmb)"
+  },
+  "Aadhaar Gold<SEP>Atmospheric Nitrogen": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682200,
+    "update_time": 1767682200,
+    "_id": "Aadhaar Gold<SEP>Atmospheric Nitrogen"
+  },
+  "Aadhaar Gold<SEP>Phosphorus": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682200,
+    "update_time": 1767682200,
+    "_id": "Aadhaar Gold<SEP>Phosphorus"
+  },
+  "Aadhaar Gold<SEP>Potassium": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682201,
+    "update_time": 1767682201,
+    "_id": "Aadhaar Gold<SEP>Potassium"
+  },
+  "Aadhaar Gold<SEP>Rhizosphere": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682201,
+    "update_time": 1767682201,
+    "_id": "Aadhaar Gold<SEP>Rhizosphere"
+  },
+  "Aadhaar Gold<SEP>Abiotic Stresses": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682201,
+    "update_time": 1767682201,
+    "_id": "Aadhaar Gold<SEP>Abiotic Stresses"
+  },
+  "Aadhaar Gold<SEP>Drought": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682202,
+    "update_time": 1767682202,
+    "_id": "Aadhaar Gold<SEP>Drought"
+  },
+  "Aadhaar Gold<SEP>Salinity": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682202,
+    "update_time": 1767682202,
+    "_id": "Aadhaar Gold<SEP>Salinity"
+  },
+  "Aadhaar Gold<SEP>Temperature": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682202,
+    "update_time": 1767682202,
+    "_id": "Aadhaar Gold<SEP>Temperature"
+  },
+  "Aadhaar Gold<SEP>Paddy": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce",
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 2,
+    "create_time": 1767682203,
+    "update_time": 1767682203,
+    "_id": "Aadhaar Gold<SEP>Paddy"
+  },
+  "Aadhaar Gold<SEP>Cotton": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce",
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 2,
+    "create_time": 1767682203,
+    "update_time": 1767682203,
+    "_id": "Aadhaar Gold<SEP>Cotton"
+  },
+  "Aadhaar Gold<SEP>Chilli": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce",
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 2,
+    "create_time": 1767682203,
+    "update_time": 1767682203,
+    "_id": "Aadhaar Gold<SEP>Chilli"
+  },
+  "Aadhaar Gold<SEP>Tomato": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682204,
+    "update_time": 1767682204,
+    "_id": "Aadhaar Gold<SEP>Tomato"
+  },
+  "Chemical Fertilizers<SEP>Soil": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682204,
+    "update_time": 1767682204,
+    "_id": "Chemical Fertilizers<SEP>Soil"
+  },
+  "Aadhaar Gold<SEP>Sugarcane": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce",
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 2,
+    "create_time": 1767682204,
+    "update_time": 1767682204,
+    "_id": "Aadhaar Gold<SEP>Sugarcane"
+  },
+  "Bio-Fertilizers<SEP>Micro-Organisms": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682204,
+    "update_time": 1767682204,
+    "_id": "Bio-Fertilizers<SEP>Micro-Organisms"
+  },
+  "Aadhaar Gold<SEP>Groundnut": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682205,
+    "update_time": 1767682205,
+    "_id": "Aadhaar Gold<SEP>Groundnut"
+  },
+  "Aadhaar Gold<SEP>Pulses": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce",
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 2,
+    "create_time": 1767682205,
+    "update_time": 1767682205,
+    "_id": "Aadhaar Gold<SEP>Pulses"
+  },
+  "Aadhaar Gold<SEP>Oilseeds": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce",
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 2,
+    "create_time": 1767682205,
+    "update_time": 1767682205,
+    "_id": "Aadhaar Gold<SEP>Oilseeds"
+  },
+  "Aadhaar Gold<SEP>FyM": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682206,
+    "update_time": 1767682206,
+    "_id": "Aadhaar Gold<SEP>FyM"
+  },
+  "Aadhaar Gold<SEP>Compost": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce",
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 2,
+    "create_time": 1767682206,
+    "update_time": 1767682206,
+    "_id": "Aadhaar Gold<SEP>Compost"
+  },
+  "Aadhaar Gold<SEP>Product Code / Sku": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682206,
+    "update_time": 1767682206,
+    "_id": "Aadhaar Gold<SEP>Product Code / Sku"
+  },
+  "Aadhaar Gold<SEP>Pack Sizes": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682207,
+    "update_time": 1767682207,
+    "_id": "Aadhaar Gold<SEP>Pack Sizes"
+  },
+  "Aadhaar Gold<SEP>Product Type": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682207,
+    "update_time": 1767682207,
+    "_id": "Aadhaar Gold<SEP>Product Type"
+  },
+  "Aadhaar Gold<SEP>Overview": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682207,
+    "update_time": 1767682207,
+    "_id": "Aadhaar Gold<SEP>Overview"
+  },
+  "Liquid Bio-Fertilizers<SEP>Seed Dip": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682207,
+    "update_time": 1767682207,
+    "_id": "Liquid Bio-Fertilizers<SEP>Seed Dip"
+  },
+  "Aadhaar Gold<SEP>Key Composition (Label Specs)": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682208,
+    "update_time": 1767682208,
+    "_id": "Aadhaar Gold<SEP>Key Composition (Label Specs)"
+  },
+  "Aadhaar Gold<SEP>Mechanism Of Action": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682208,
+    "update_time": 1767682208,
+    "_id": "Aadhaar Gold<SEP>Mechanism Of Action"
+  },
+  "Furrow<SEP>Solid Bio-Fertilizers": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682208,
+    "update_time": 1767682208,
+    "_id": "Furrow<SEP>Solid Bio-Fertilizers"
+  },
+  "Drip Irrigation<SEP>Liquid Bio-Fertilizers": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682208,
+    "update_time": 1767682208,
+    "_id": "Drip Irrigation<SEP>Liquid Bio-Fertilizers"
+  },
+  "Aadhaar Gold<SEP>Scientific Principle": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682208,
+    "update_time": 1767682208,
+    "_id": "Aadhaar Gold<SEP>Scientific Principle"
+  },
+  "Application<SEP>Bio-Fertilizers": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682209,
+    "update_time": 1767682209,
+    "_id": "Application<SEP>Bio-Fertilizers"
+  },
+  "Seedbed<SEP>Solid Bio-Fertilizers": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682209,
+    "update_time": 1767682209,
+    "_id": "Seedbed<SEP>Solid Bio-Fertilizers"
+  },
+  "Aadhaar Gold<SEP>Unique Selling Proposition (Usp)": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682209,
+    "update_time": 1767682209,
+    "_id": "Aadhaar Gold<SEP>Unique Selling Proposition (Usp)"
+  },
+  "Folliar Application<SEP>Liquid Bio-Fertilizers": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682209,
+    "update_time": 1767682209,
+    "_id": "Folliar Application<SEP>Liquid Bio-Fertilizers"
+  },
+  "Bio-Fertilizers<SEP>Broadcasting": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682209,
+    "update_time": 1767682209,
+    "_id": "Bio-Fertilizers<SEP>Broadcasting"
+  },
+  "Seedling Area<SEP>Solid Bio-Fertilizers": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682209,
+    "update_time": 1767682209,
+    "_id": "Seedling Area<SEP>Solid Bio-Fertilizers"
+  },
+  "Biofactor<SEP>Soil": {
+    "chunk_ids": [
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 1,
+    "create_time": 1767682209,
+    "update_time": 1767682209,
+    "_id": "Biofactor<SEP>Soil"
+  },
+  "Aadhaar Gold<SEP>Crop Mapping & Doses": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682209,
+    "update_time": 1767682209,
+    "_id": "Aadhaar Gold<SEP>Crop Mapping & Doses"
+  },
+  "Biofactor<SEP>Department of Scientific and Industrial Research": {
+    "chunk_ids": [
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 1,
+    "create_time": 1767682209,
+    "update_time": 1767682209,
+    "_id": "Biofactor<SEP>Department of Scientific and Industrial Research"
+  },
+  "Aadhaar Gold<SEP>Usage Guidelines": {
+    "chunk_ids": [
+      "chunk-7958d62ef2178d45fdd314d716b945ce"
+    ],
+    "count": 1,
+    "create_time": 1767682210,
+    "update_time": 1767682210,
+    "_id": "Aadhaar Gold<SEP>Usage Guidelines"
+  },
+  "Biofactor<SEP>Government of India": {
+    "chunk_ids": [
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 1,
+    "create_time": 1767682210,
+    "update_time": 1767682210,
+    "_id": "Biofactor<SEP>Government of India"
+  },
+  "Macronutrients<SEP>Nutrient Series": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682210,
+    "update_time": 1767682210,
+    "_id": "Macronutrients<SEP>Nutrient Series"
+  },
+  "Bio-Fertilizers<SEP>Biofactor": {
+    "chunk_ids": [
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 1,
+    "create_time": 1767682210,
+    "update_time": 1767682210,
+    "_id": "Bio-Fertilizers<SEP>Biofactor"
+  },
+  "Micronutrients<SEP>Nutrient Series": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682210,
+    "update_time": 1767682210,
+    "_id": "Micronutrients<SEP>Nutrient Series"
+  },
+  "Macronutrients<SEP>Nitrogen": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682210,
+    "update_time": 1767682210,
+    "_id": "Macronutrients<SEP>Nitrogen"
+  },
+  "Biofactor<SEP>Fertilizer Association of India": {
+    "chunk_ids": [
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 1,
+    "create_time": 1767682210,
+    "update_time": 1767682210,
+    "_id": "Biofactor<SEP>Fertilizer Association of India"
+  },
+  "Macronutrients<SEP>Phosphorus": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682211,
+    "update_time": 1767682211,
+    "_id": "Macronutrients<SEP>Phosphorus"
+  },
+  "Biofactor<SEP>Indian Council of Agricultural Research - Central Institute for Research on Cotton Textiles": {
+    "chunk_ids": [
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 1,
+    "create_time": 1767682211,
+    "update_time": 1767682211,
+    "_id": "Biofactor<SEP>Indian Council of Agricultural Research - Central Institute for Research on Cotton Textiles"
+  },
+  "Deficiency Symptoms<SEP>Nitrogen": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682211,
+    "update_time": 1767682211,
+    "_id": "Deficiency Symptoms<SEP>Nitrogen"
+  },
+  "Macronutrients<SEP>Potash": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682211,
+    "update_time": 1767682211,
+    "_id": "Macronutrients<SEP>Potash"
+  },
+  "Deficiency Symptoms<SEP>Phosphorus": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682211,
+    "update_time": 1767682211,
+    "_id": "Deficiency Symptoms<SEP>Phosphorus"
+  },
+  "Biofactor<SEP>MAMSP technology": {
+    "chunk_ids": [
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 1,
+    "create_time": 1767682211,
+    "update_time": 1767682211,
+    "_id": "Biofactor<SEP>MAMSP technology"
+  },
+  "Bioavailability<SEP>Nutrient Use Efficiency": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682211,
+    "update_time": 1767682211,
+    "_id": "Bioavailability<SEP>Nutrient Use Efficiency"
+  },
+  "Macronutrients<SEP>Vegetative Stage": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682211,
+    "update_time": 1767682211,
+    "_id": "Macronutrients<SEP>Vegetative Stage"
+  },
+  "Flowering Stage<SEP>Nutrient Level-2": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682211,
+    "update_time": 1767682211,
+    "_id": "Flowering Stage<SEP>Nutrient Level-2"
+  },
+  "Deficiency Symptoms<SEP>Potash": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682211,
+    "update_time": 1767682211,
+    "_id": "Deficiency Symptoms<SEP>Potash"
+  },
+  "Biofactor<SEP>Crops": {
+    "chunk_ids": [
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 1,
+    "create_time": 1767682211,
+    "update_time": 1767682211,
+    "_id": "Biofactor<SEP>Crops"
+  },
+  "Nutrient Level-1<SEP>Vegetative Stage": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682212,
+    "update_time": 1767682212,
+    "_id": "Nutrient Level-1<SEP>Vegetative Stage"
+  },
+  "Calcium<SEP>Nutrient Level-2": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682212,
+    "update_time": 1767682212,
+    "_id": "Calcium<SEP>Nutrient Level-2"
+  },
+  "Fruit Growth Stage<SEP>Nutrient Level-3": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682212,
+    "update_time": 1767682212,
+    "_id": "Fruit Growth Stage<SEP>Nutrient Level-3"
+  },
+  "Fruiting & Multiple Harvests Stage<SEP>Nutrient Level-4": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682212,
+    "update_time": 1767682212,
+    "_id": "Fruiting & Multiple Harvests Stage<SEP>Nutrient Level-4"
+  },
+  "Biofactor<SEP>Farmers": {
+    "chunk_ids": [
+      "chunk-bd824ceb871cfc87a7868c868181eaaf"
+    ],
+    "count": 1,
+    "create_time": 1767682212,
+    "update_time": 1767682212,
+    "_id": "Biofactor<SEP>Farmers"
+  },
+  "Organic Fertilizer<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682212,
+    "update_time": 1767682212,
+    "_id": "Organic Fertilizer<SEP>Poshak Level-1"
+  },
+  "Magnesium<SEP>Nutrient Level-2": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682212,
+    "update_time": 1767682212,
+    "_id": "Magnesium<SEP>Nutrient Level-2"
+  },
+  "Poshak Level-1<SEP>Vegetative Stage": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682212,
+    "update_time": 1767682212,
+    "_id": "Poshak Level-1<SEP>Vegetative Stage"
+  },
+  "Nutrient Level-2<SEP>Sulphur": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682213,
+    "update_time": 1767682213,
+    "_id": "Nutrient Level-2<SEP>Sulphur"
+  },
+  "Moisture<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682213,
+    "update_time": 1767682213,
+    "_id": "Moisture<SEP>Poshak Level-1"
+  },
+  "Poshak Level-1<SEP>Total Organic Carbon": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682213,
+    "update_time": 1767682213,
+    "_id": "Poshak Level-1<SEP>Total Organic Carbon"
+  },
+  "C:N Ratio<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682213,
+    "update_time": 1767682213,
+    "_id": "C:N Ratio<SEP>Poshak Level-1"
+  },
+  "Poshak Level-1<SEP>pH": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682214,
+    "update_time": 1767682214,
+    "_id": "Poshak Level-1<SEP>pH"
+  },
+  "Conductivity<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682214,
+    "update_time": 1767682214,
+    "_id": "Conductivity<SEP>Poshak Level-1"
+  },
+  "As<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682214,
+    "update_time": 1767682214,
+    "_id": "As<SEP>Poshak Level-1"
+  },
+  "Cd<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682215,
+    "update_time": 1767682215,
+    "_id": "Cd<SEP>Poshak Level-1"
+  },
+  "Cr<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682215,
+    "update_time": 1767682215,
+    "_id": "Cr<SEP>Poshak Level-1"
+  },
+  "Cu<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682215,
+    "update_time": 1767682215,
+    "_id": "Cu<SEP>Poshak Level-1"
+  },
+  "Hg<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682216,
+    "update_time": 1767682216,
+    "_id": "Hg<SEP>Poshak Level-1"
+  },
+  "Fermentation<SEP>Organic Matter": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682216,
+    "update_time": 1767682216,
+    "_id": "Fermentation<SEP>Organic Matter"
+  },
+  "Ni<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682216,
+    "update_time": 1767682216,
+    "_id": "Ni<SEP>Poshak Level-1"
+  },
+  "Pb<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682216,
+    "update_time": 1767682216,
+    "_id": "Pb<SEP>Poshak Level-1"
+  },
+  "Poshak Level-1<SEP>Zn": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682217,
+    "update_time": 1767682217,
+    "_id": "Poshak Level-1<SEP>Zn"
+  },
+  "Drip Irrigation<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682217,
+    "update_time": 1767682217,
+    "_id": "Drip Irrigation<SEP>Poshak Level-1"
+  },
+  "Drenching<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682217,
+    "update_time": 1767682217,
+    "_id": "Drenching<SEP>Poshak Level-1"
+  },
+  "Anrich Industrial Estate<SEP>Biofac Inputs Pvt. Ltd.": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682217,
+    "update_time": 1767682217,
+    "_id": "Anrich Industrial Estate<SEP>Biofac Inputs Pvt. Ltd."
+  },
+  "Foliar Spray<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682218,
+    "update_time": 1767682218,
+    "_id": "Foliar Spray<SEP>Poshak Level-1"
+  },
+  "Biofac Inputs Pvt. Ltd.<SEP>IDA Bollaram": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682218,
+    "update_time": 1767682218,
+    "_id": "Biofac Inputs Pvt. Ltd.<SEP>IDA Bollaram"
+  },
+  "Biofac Inputs Pvt. Ltd.<SEP>Sangareddy 502325": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682218,
+    "update_time": 1767682218,
+    "_id": "Biofac Inputs Pvt. Ltd.<SEP>Sangareddy 502325"
+  },
+  "C:N Balance<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682218,
+    "update_time": 1767682218,
+    "_id": "C:N Balance<SEP>Poshak Level-1"
+  },
+  "Beneficial Microbes<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682218,
+    "update_time": 1767682218,
+    "_id": "Beneficial Microbes<SEP>Poshak Level-1"
+  },
+  "Paddy<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682219,
+    "update_time": 1767682219,
+    "_id": "Paddy<SEP>Poshak Level-1"
+  },
+  "Nutrient Level-1<SEP>Nutrient Series": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682219,
+    "update_time": 1767682219,
+    "_id": "Nutrient Level-1<SEP>Nutrient Series"
+  },
+  "Cotton<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682219,
+    "update_time": 1767682219,
+    "_id": "Cotton<SEP>Poshak Level-1"
+  },
+  "Poshak Level-1<SEP>Vegetables": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682220,
+    "update_time": 1767682220,
+    "_id": "Poshak Level-1<SEP>Vegetables"
+  },
+  "Enzymes<SEP>Photosynthesis": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682220,
+    "update_time": 1767682220,
+    "_id": "Enzymes<SEP>Photosynthesis"
+  },
+  "Andhra Pradesh<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682220,
+    "update_time": 1767682220,
+    "_id": "Andhra Pradesh<SEP>Poshak Level-1"
+  },
+  "Enzymes<SEP>Respiration": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682220,
+    "update_time": 1767682220,
+    "_id": "Enzymes<SEP>Respiration"
+  },
+  "Poshak Level-1<SEP>Telangana": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682220,
+    "update_time": 1767682220,
+    "_id": "Poshak Level-1<SEP>Telangana"
+  },
+  "Chloroplasts<SEP>Photosynthesis": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682220,
+    "update_time": 1767682220,
+    "_id": "Chloroplasts<SEP>Photosynthesis"
+  },
+  "Maharashtra<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682221,
+    "update_time": 1767682221,
+    "_id": "Maharashtra<SEP>Poshak Level-1"
+  },
+  "Enzymes<SEP>Nitrogen Metabolism": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682221,
+    "update_time": 1767682221,
+    "_id": "Enzymes<SEP>Nitrogen Metabolism"
+  },
+  "5.0.6 COPSE – 24% Copper Sulphate<SEP>Copper": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682221,
+    "update_time": 1767682221,
+    "_id": "5.0.6 COPSE – 24% Copper Sulphate<SEP>Copper"
+  },
+  "Karnataka<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682221,
+    "update_time": 1767682221,
+    "_id": "Karnataka<SEP>Poshak Level-1"
+  },
+  "5.0.7 BSL4Agri – A Novel Product for Viral Diseases<SEP>Silver": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682221,
+    "update_time": 1767682221,
+    "_id": "5.0.7 BSL4Agri – A Novel Product for Viral Diseases<SEP>Silver"
+  },
+  "Copper<SEP>Enzymes": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682221,
+    "update_time": 1767682221,
+    "_id": "Copper<SEP>Enzymes"
+  },
+  "5.0.6 COPSE – 24% Copper Sulphate<SEP>MAMS Technology": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682221,
+    "update_time": 1767682221,
+    "_id": "5.0.6 COPSE – 24% Copper Sulphate<SEP>MAMS Technology"
+  },
+  "Poshak Level-1<SEP>Total N, P 2O5, K2O": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682221,
+    "update_time": 1767682221,
+    "_id": "Poshak Level-1<SEP>Total N, P 2O5, K2O"
+  },
+  "5.0.7 BSL4Agri – A Novel Product for Viral Diseases<SEP>Copper": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682221,
+    "update_time": 1767682221,
+    "_id": "5.0.7 BSL4Agri – A Novel Product for Viral Diseases<SEP>Copper"
+  },
+  "Drop Method<SEP>Nutrient Solutions": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682221,
+    "update_time": 1767682221,
+    "_id": "Drop Method<SEP>Nutrient Solutions"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Zn": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682221,
+    "update_time": 1767682221,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Zn"
+  },
+  "Poshak Level-1<SEP>SKU": {
+    "chunk_ids": [
+      "chunk-bea6cf75e866c72330ed337d9f357dd9"
+    ],
+    "count": 1,
+    "create_time": 1767682222,
+    "update_time": 1767682222,
+    "_id": "Poshak Level-1<SEP>SKU"
+  },
+  "5.0.7 BSL4Agri – A Novel Product for Viral Diseases<SEP>Viruses": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682222,
+    "update_time": 1767682222,
+    "_id": "5.0.7 BSL4Agri – A Novel Product for Viral Diseases<SEP>Viruses"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Fe": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682222,
+    "update_time": 1767682222,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Fe"
+  },
+  "5.0.7 BSL4Agri – A Novel Product for Viral Diseases<SEP>Bacteria": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682222,
+    "update_time": 1767682222,
+    "_id": "5.0.7 BSL4Agri – A Novel Product for Viral Diseases<SEP>Bacteria"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Mn": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682222,
+    "update_time": 1767682222,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Mn"
+  },
+  "5.0.7 BSL4Agri – A Novel Product for Viral Diseases<SEP>Plant Metabolism": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682222,
+    "update_time": 1767682222,
+    "_id": "5.0.7 BSL4Agri – A Novel Product for Viral Diseases<SEP>Plant Metabolism"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>B": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682223,
+    "update_time": 1767682223,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>B"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Cu": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682223,
+    "update_time": 1767682223,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Cu"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Mo": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682223,
+    "update_time": 1767682223,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Mo"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>MAMS Technology": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682224,
+    "update_time": 1767682224,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>MAMS Technology"
+  },
+  "Nutrito6|Formula 6<SEP>Zn": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682224,
+    "update_time": 1767682224,
+    "_id": "Nutrito6|Formula 6<SEP>Zn"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Complex Fertilizers": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682224,
+    "update_time": 1767682224,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Complex Fertilizers"
+  },
+  "Fe<SEP>Nutrito6|Formula 6": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682224,
+    "update_time": 1767682224,
+    "_id": "Fe<SEP>Nutrito6|Formula 6"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>DAP": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682224,
+    "update_time": 1767682224,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>DAP"
+  },
+  "Mn<SEP>Nutrito6|Formula 6": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682224,
+    "update_time": 1767682224,
+    "_id": "Mn<SEP>Nutrito6|Formula 6"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Micronutrient Deficiency": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682225,
+    "update_time": 1767682225,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Micronutrient Deficiency"
+  },
+  "B<SEP>Nutrito6|Formula 6": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682225,
+    "update_time": 1767682225,
+    "_id": "B<SEP>Nutrito6|Formula 6"
+  },
+  "5.4 FLOWMIN – Specially Designed for Drip Irrigation<SEP>Drip Irrigation": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682225,
+    "update_time": 1767682225,
+    "_id": "5.4 FLOWMIN – Specially Designed for Drip Irrigation<SEP>Drip Irrigation"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Foliar Growth": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682225,
+    "update_time": 1767682225,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Foliar Growth"
+  },
+  "MAMS Technology<SEP>Nutrito6|Formula 6": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682225,
+    "update_time": 1767682225,
+    "_id": "MAMS Technology<SEP>Nutrito6|Formula 6"
+  },
+  "5.4 FLOWMIN – Specially Designed for Drip Irrigation<SEP>Chemical Fertilizers": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682225,
+    "update_time": 1767682225,
+    "_id": "5.4 FLOWMIN – Specially Designed for Drip Irrigation<SEP>Chemical Fertilizers"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Fruit Set": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682225,
+    "update_time": 1767682225,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Fruit Set"
+  },
+  "5.4 FLOWMIN – Specially Designed for Drip Irrigation<SEP>N": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682225,
+    "update_time": 1767682225,
+    "_id": "5.4 FLOWMIN – Specially Designed for Drip Irrigation<SEP>N"
+  },
+  "FLOWMIN<SEP>Root System": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682225,
+    "update_time": 1767682225,
+    "_id": "FLOWMIN<SEP>Root System"
+  },
+  "Nutrito6|Formula 6<SEP>Virus Infection": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682225,
+    "update_time": 1767682225,
+    "_id": "Nutrito6|Formula 6<SEP>Virus Infection"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Yields": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682226,
+    "update_time": 1767682226,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Yields"
+  },
+  "5.4 FLOWMIN – Specially Designed for Drip Irrigation<SEP>P": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682226,
+    "update_time": 1767682226,
+    "_id": "5.4 FLOWMIN – Specially Designed for Drip Irrigation<SEP>P"
+  },
+  "08-08-08<SEP>N": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682226,
+    "update_time": 1767682226,
+    "_id": "08-08-08<SEP>N"
+  },
+  "11-11-08<SEP>N": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682226,
+    "update_time": 1767682226,
+    "_id": "11-11-08<SEP>N"
+  },
+  "08-08-08<SEP>P": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682226,
+    "update_time": 1767682226,
+    "_id": "08-08-08<SEP>P"
+  },
+  "5.4 FLOWMIN – Specially Designed for Drip Irrigation<SEP>K": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682226,
+    "update_time": 1767682226,
+    "_id": "5.4 FLOWMIN – Specially Designed for Drip Irrigation<SEP>K"
+  },
+  "Branching<SEP>FLOWMIN": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682226,
+    "update_time": 1767682226,
+    "_id": "Branching<SEP>FLOWMIN"
+  },
+  "08-08-08<SEP>K": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682226,
+    "update_time": 1767682226,
+    "_id": "08-08-08<SEP>K"
+  },
+  "11-11-08<SEP>P": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682226,
+    "update_time": 1767682226,
+    "_id": "11-11-08<SEP>P"
+  },
+  "06-00-18<SEP>N": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682226,
+    "update_time": 1767682226,
+    "_id": "06-00-18<SEP>N"
+  },
+  "FLOWMIN<SEP>Green Growth": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682227,
+    "update_time": 1767682227,
+    "_id": "FLOWMIN<SEP>Green Growth"
+  },
+  "11-11-08<SEP>K": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682227,
+    "update_time": 1767682227,
+    "_id": "11-11-08<SEP>K"
+  },
+  "CANMAG<SEP>N": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682227,
+    "update_time": 1767682227,
+    "_id": "CANMAG<SEP>N"
+  },
+  "06-00-18<SEP>K": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682227,
+    "update_time": 1767682227,
+    "_id": "06-00-18<SEP>K"
+  },
+  "11-11-08<SEP>Zn": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682227,
+    "update_time": 1767682227,
+    "_id": "11-11-08<SEP>Zn"
+  },
+  "CANMAG<SEP>Nitrate N": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682227,
+    "update_time": 1767682227,
+    "_id": "CANMAG<SEP>Nitrate N"
+  },
+  "11-11-08<SEP>B": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682227,
+    "update_time": 1767682227,
+    "_id": "11-11-08<SEP>B"
+  },
+  "06-00-18<SEP>Ca": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682227,
+    "update_time": 1767682227,
+    "_id": "06-00-18<SEP>Ca"
+  },
+  "ATP Production<SEP>Enzymes": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682227,
+    "update_time": 1767682227,
+    "_id": "ATP Production<SEP>Enzymes"
+  },
+  "5.0.6 COPSE – 24% Copper Sulphate<SEP>Leaves": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682228,
+    "update_time": 1767682228,
+    "_id": "5.0.6 COPSE – 24% Copper Sulphate<SEP>Leaves"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Budding Stage": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682228,
+    "update_time": 1767682228,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Budding Stage"
+  },
+  "CANMAG<SEP>Ca": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06",
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 2,
+    "create_time": 1767682228,
+    "update_time": 1767682228,
+    "_id": "CANMAG<SEP>Ca"
+  },
+  "06-00-18<SEP>Mg": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682228,
+    "update_time": 1767682228,
+    "_id": "06-00-18<SEP>Mg"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Flowering & Fruiting Stage": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682228,
+    "update_time": 1767682228,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Flowering & Fruiting Stage"
+  },
+  "Budding<SEP>Nutrito6|Formula 6": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682228,
+    "update_time": 1767682228,
+    "_id": "Budding<SEP>Nutrito6|Formula 6"
+  },
+  "CANMAG<SEP>Mg": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06",
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 2,
+    "create_time": 1767682228,
+    "update_time": 1767682228,
+    "_id": "CANMAG<SEP>Mg"
+  },
+  "06-00-18<SEP>B": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682228,
+    "update_time": 1767682228,
+    "_id": "06-00-18<SEP>B"
+  },
+  "11-11-08<SEP>Vegetative Stage": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682228,
+    "update_time": 1767682228,
+    "_id": "11-11-08<SEP>Vegetative Stage"
+  },
+  "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Vegetables": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682228,
+    "update_time": 1767682228,
+    "_id": "5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends<SEP>Vegetables"
+  },
+  "CANMAG<SEP>Pod & Cutting Stages": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682228,
+    "update_time": 1767682228,
+    "_id": "CANMAG<SEP>Pod & Cutting Stages"
+  },
+  "Arrangement<SEP>Flowers": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682228,
+    "update_time": 1767682228,
+    "_id": "Arrangement<SEP>Flowers"
+  },
+  "06-00-18<SEP>Flowering & Fruiting": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682229,
+    "update_time": 1767682229,
+    "_id": "06-00-18<SEP>Flowering & Fruiting"
+  },
+  "Flowering & Fruiting Stage<SEP>Nutrito6|Formula 6": {
+    "chunk_ids": [
+      "chunk-3bae529b595718be07dc653d7b2c7f06"
+    ],
+    "count": 1,
+    "create_time": 1767682229,
+    "update_time": 1767682229,
+    "_id": "Flowering & Fruiting Stage<SEP>Nutrito6|Formula 6"
+  },
+  "Bacteria<SEP>ZN-FACTOR": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682229,
+    "update_time": 1767682229,
+    "_id": "Bacteria<SEP>ZN-FACTOR"
+  },
+  "Arrangement<SEP>Fruits": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682229,
+    "update_time": 1767682229,
+    "_id": "Arrangement<SEP>Fruits"
+  },
+  "Root Development<SEP>ZN-FACTOR": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682229,
+    "update_time": 1767682229,
+    "_id": "Root Development<SEP>ZN-FACTOR"
+  },
+  "Bacteria<SEP>Rhizosphere": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682229,
+    "update_time": 1767682229,
+    "_id": "Bacteria<SEP>Rhizosphere"
+  },
+  "Bacteria<SEP>Zinc": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682230,
+    "update_time": 1767682230,
+    "_id": "Bacteria<SEP>Zinc"
+  },
+  "Stem<SEP>ZN-FACTOR": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682230,
+    "update_time": 1767682230,
+    "_id": "Stem<SEP>ZN-FACTOR"
+  },
+  "Consortium<SEP>Green Bag (NUTRI4)": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682230,
+    "update_time": 1767682230,
+    "_id": "Consortium<SEP>Green Bag (NUTRI4)"
+  },
+  "Bacteria<SEP>Organic Acids": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682230,
+    "update_time": 1767682230,
+    "_id": "Bacteria<SEP>Organic Acids"
+  },
+  "Tuber<SEP>ZN-FACTOR": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682230,
+    "update_time": 1767682230,
+    "_id": "Tuber<SEP>ZN-FACTOR"
+  },
+  "Potassium Solubilizing Bacteria<SEP>Red Bag (Potash)": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682230,
+    "update_time": 1767682230,
+    "_id": "Potassium Solubilizing Bacteria<SEP>Red Bag (Potash)"
+  },
+  "Blue Bag (NPK)<SEP>Consortium": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682230,
+    "update_time": 1767682230,
+    "_id": "Blue Bag (NPK)<SEP>Consortium"
+  },
+  "Bio Triple Action Program<SEP>Granules": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682230,
+    "update_time": 1767682230,
+    "_id": "Bio Triple Action Program<SEP>Granules"
+  },
+  "Bacteria<SEP>Enzymes": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682230,
+    "update_time": 1767682230,
+    "_id": "Bacteria<SEP>Enzymes"
+  },
+  "Flower<SEP>ZN-FACTOR": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682230,
+    "update_time": 1767682230,
+    "_id": "Flower<SEP>ZN-FACTOR"
+  },
+  "Bio Double Action Program<SEP>Nitrogen": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682231,
+    "update_time": 1767682231,
+    "_id": "Bio Double Action Program<SEP>Nitrogen"
+  },
+  "Fruit<SEP>ZN-FACTOR": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682231,
+    "update_time": 1767682231,
+    "_id": "Fruit<SEP>ZN-FACTOR"
+  },
+  "Bio Triple Action Program<SEP>Pellets": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682231,
+    "update_time": 1767682231,
+    "_id": "Bio Triple Action Program<SEP>Pellets"
+  },
+  "Biopotash<SEP>Potash": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682231,
+    "update_time": 1767682231,
+    "_id": "Biopotash<SEP>Potash"
+  },
+  "Bio Double Action Program<SEP>Phosphorus": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682231,
+    "update_time": 1767682231,
+    "_id": "Bio Double Action Program<SEP>Phosphorus"
+  },
+  "Abiotic Stress<SEP>BIOFACTOR Bio Fertilizer": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682231,
+    "update_time": 1767682231,
+    "_id": "Abiotic Stress<SEP>BIOFACTOR Bio Fertilizer"
+  },
+  "Bio Triple Action Program<SEP>Nitrogen": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682231,
+    "update_time": 1767682231,
+    "_id": "Bio Triple Action Program<SEP>Nitrogen"
+  },
+  "PROCEED – Biotic & Abiotic Stress Relieve<SEP>Water Stress Tolerance": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682231,
+    "update_time": 1767682231,
+    "_id": "PROCEED – Biotic & Abiotic Stress Relieve<SEP>Water Stress Tolerance"
+  },
+  "BIOFACTOR Bio Fertilizer<SEP>Biotic Stress": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682231,
+    "update_time": 1767682231,
+    "_id": "BIOFACTOR Bio Fertilizer<SEP>Biotic Stress"
+  },
+  "PROCEED – Biotic & Abiotic Stress Relieve<SEP>Water Uptake Capacity": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682232,
+    "update_time": 1767682232,
+    "_id": "PROCEED – Biotic & Abiotic Stress Relieve<SEP>Water Uptake Capacity"
+  },
+  "Bio Triple Action Program<SEP>Phosphorus": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682232,
+    "update_time": 1767682232,
+    "_id": "Bio Triple Action Program<SEP>Phosphorus"
+  },
+  "Nutrient Availability<SEP>PROCEED – Biotic & Abiotic Stress Relieve": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682232,
+    "update_time": 1767682232,
+    "_id": "Nutrient Availability<SEP>PROCEED – Biotic & Abiotic Stress Relieve"
+  },
+  "Bio Triple Action Program<SEP>Potash": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682232,
+    "update_time": 1767682232,
+    "_id": "Bio Triple Action Program<SEP>Potash"
+  },
+  "Chemical Fertilizers<SEP>Plant Health": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682232,
+    "update_time": 1767682232,
+    "_id": "Chemical Fertilizers<SEP>Plant Health"
+  },
+  "PROCEED – Biotic & Abiotic Stress Relieve<SEP>Saline Soils": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682232,
+    "update_time": 1767682232,
+    "_id": "PROCEED – Biotic & Abiotic Stress Relieve<SEP>Saline Soils"
+  },
+  "Disease Resistance<SEP>Plant Pathogens": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682232,
+    "update_time": 1767682232,
+    "_id": "Disease Resistance<SEP>Plant Pathogens"
+  },
+  "PROCEED – Biotic & Abiotic Stress Relieve<SEP>Salinity Stress": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682233,
+    "update_time": 1767682233,
+    "_id": "PROCEED – Biotic & Abiotic Stress Relieve<SEP>Salinity Stress"
+  },
+  "Bacteria<SEP>Plant Vigor": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682233,
+    "update_time": 1767682233,
+    "_id": "Bacteria<SEP>Plant Vigor"
+  },
+  "Seed<SEP>Seedling Dipping Method": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682233,
+    "update_time": 1767682233,
+    "_id": "Seed<SEP>Seedling Dipping Method"
+  },
+  "Heavy Metal Toxicity<SEP>PROCEED – Biotic & Abiotic Stress Relieve": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682233,
+    "update_time": 1767682233,
+    "_id": "Heavy Metal Toxicity<SEP>PROCEED – Biotic & Abiotic Stress Relieve"
+  },
+  "Foliar Spray<SEP>Growth Stages": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682233,
+    "update_time": 1767682233,
+    "_id": "Foliar Spray<SEP>Growth Stages"
+  },
+  "Bacteria<SEP>Yield": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682233,
+    "update_time": 1767682233,
+    "_id": "Bacteria<SEP>Yield"
+  },
+  "Crop Cycle<SEP>Short-Duration Crops": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682233,
+    "update_time": 1767682233,
+    "_id": "Crop Cycle<SEP>Short-Duration Crops"
+  },
+  "Crop Cycle<SEP>Mid-Season Crops": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682233,
+    "update_time": 1767682233,
+    "_id": "Crop Cycle<SEP>Mid-Season Crops"
+  },
+  "New Bacterial Strains<SEP>PROCEED – Biotic & Abiotic Stress Relieve": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682233,
+    "update_time": 1767682233,
+    "_id": "New Bacterial Strains<SEP>PROCEED – Biotic & Abiotic Stress Relieve"
+  },
+  "Chemical Zinc Fertilizers<SEP>ZN-FACTOR": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682233,
+    "update_time": 1767682233,
+    "_id": "Chemical Zinc Fertilizers<SEP>ZN-FACTOR"
+  },
+  "All Crops<SEP>Bio Fertilize": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682233,
+    "update_time": 1767682233,
+    "_id": "All Crops<SEP>Bio Fertilize"
+  },
+  "Crop Cycle<SEP>Long-Duration Crops": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682234,
+    "update_time": 1767682234,
+    "_id": "Crop Cycle<SEP>Long-Duration Crops"
+  },
+  "First Stage<SEP>PROCEED – Biotic & Abiotic Stress Relieve": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682234,
+    "update_time": 1767682234,
+    "_id": "First Stage<SEP>PROCEED – Biotic & Abiotic Stress Relieve"
+  },
+  "Dosage<SEP>Green Bag (NUTRI4)": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682234,
+    "update_time": 1767682234,
+    "_id": "Dosage<SEP>Green Bag (NUTRI4)"
+  },
+  "PROCEED – Biotic & Abiotic Stress Relieve<SEP>Waterlogging": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682234,
+    "update_time": 1767682234,
+    "_id": "PROCEED – Biotic & Abiotic Stress Relieve<SEP>Waterlogging"
+  },
+  "Bio Triple Action Program<SEP>Yields": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682234,
+    "update_time": 1767682234,
+    "_id": "Bio Triple Action Program<SEP>Yields"
+  },
+  "All Crops<SEP>Green Bag (NUTRI4)": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682234,
+    "update_time": 1767682234,
+    "_id": "All Crops<SEP>Green Bag (NUTRI4)"
+  },
+  "Blue Bag (NPK)<SEP>Dosage": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682234,
+    "update_time": 1767682234,
+    "_id": "Blue Bag (NPK)<SEP>Dosage"
+  },
+  "Dosage<SEP>Red Bag (Potash)": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682235,
+    "update_time": 1767682235,
+    "_id": "Dosage<SEP>Red Bag (Potash)"
+  },
+  "All Crops<SEP>Blue Bag (NPK)": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682235,
+    "update_time": 1767682235,
+    "_id": "All Crops<SEP>Blue Bag (NPK)"
+  },
+  "Bio Double Action Program<SEP>Yields": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682235,
+    "update_time": 1767682235,
+    "_id": "Bio Double Action Program<SEP>Yields"
+  },
+  "Bio Triple Action Program<SEP>Quality": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682235,
+    "update_time": 1767682235,
+    "_id": "Bio Triple Action Program<SEP>Quality"
+  },
+  "All Crops<SEP>Red Bag (Potash)": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682235,
+    "update_time": 1767682235,
+    "_id": "All Crops<SEP>Red Bag (Potash)"
+  },
+  "Biopotash<SEP>Yields": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682235,
+    "update_time": 1767682235,
+    "_id": "Biopotash<SEP>Yields"
+  },
+  "Bio Double Action Program<SEP>Plant Health": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682235,
+    "update_time": 1767682235,
+    "_id": "Bio Double Action Program<SEP>Plant Health"
+  },
+  "IIHR-TV-5 Strain (Itcc 6889)<SEP>Reliability": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682235,
+    "update_time": 1767682235,
+    "_id": "IIHR-TV-5 Strain (Itcc 6889)<SEP>Reliability"
+  },
+  "Bio Triple Action Program<SEP>Investment": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682235,
+    "update_time": 1767682235,
+    "_id": "Bio Triple Action Program<SEP>Investment"
+  },
+  "Root Vigor<SEP>Telangana": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682235,
+    "update_time": 1767682235,
+    "_id": "Root Vigor<SEP>Telangana"
+  },
+  "Biopotash<SEP>Quality": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682235,
+    "update_time": 1767682235,
+    "_id": "Biopotash<SEP>Quality"
+  },
+  "Native Neem<SEP>Sap-sucking Insects": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682235,
+    "update_time": 1767682235,
+    "_id": "Native Neem<SEP>Sap-sucking Insects"
+  },
+  "AP<SEP>Root Vigor": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682236,
+    "update_time": 1767682236,
+    "_id": "AP<SEP>Root Vigor"
+  },
+  "TRAICORE<SEP>Tricontanol": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682236,
+    "update_time": 1767682236,
+    "_id": "TRAICORE<SEP>Tricontanol"
+  },
+  "Biopotash<SEP>Plant Health": {
+    "chunk_ids": [
+      "chunk-1a7e6570ebf3412d42a00682e0582b15"
+    ],
+    "count": 1,
+    "create_time": 1767682236,
+    "update_time": 1767682236,
+    "_id": "Biopotash<SEP>Plant Health"
+  },
+  "Caterpillars<SEP>Native Neem": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682236,
+    "update_time": 1767682236,
+    "_id": "Caterpillars<SEP>Native Neem"
+  },
+  "Photosynthesis<SEP>TRAICORE": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682236,
+    "update_time": 1767682236,
+    "_id": "Photosynthesis<SEP>TRAICORE"
+  },
+  "Nutrient Uptake<SEP>TRAICORE": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682237,
+    "update_time": 1767682237,
+    "_id": "Nutrient Uptake<SEP>TRAICORE"
+  },
+  "Stress Tolerance<SEP>TRAICORE": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682237,
+    "update_time": 1767682237,
+    "_id": "Stress Tolerance<SEP>TRAICORE"
+  },
+  "Cell Division<SEP>TRAICORE": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682237,
+    "update_time": 1767682237,
+    "_id": "Cell Division<SEP>TRAICORE"
+  },
+  "Fungal Diseases<SEP>Pentazia": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682237,
+    "update_time": 1767682237,
+    "_id": "Fungal Diseases<SEP>Pentazia"
+  },
+  "Pentazia<SEP>Powdery Mildew": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682238,
+    "update_time": 1767682238,
+    "_id": "Pentazia<SEP>Powdery Mildew"
+  },
+  "Root Development<SEP>TRAICORE": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682238,
+    "update_time": 1767682238,
+    "_id": "Root Development<SEP>TRAICORE"
+  },
+  "Pentazia<SEP>Rust": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682238,
+    "update_time": 1767682238,
+    "_id": "Pentazia<SEP>Rust"
+  },
+  "Flowering<SEP>TRAICORE": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682238,
+    "update_time": 1767682238,
+    "_id": "Flowering<SEP>TRAICORE"
+  },
+  "Neolife<SEP>Soil Health": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682238,
+    "update_time": 1767682238,
+    "_id": "Neolife<SEP>Soil Health"
+  },
+  "Blight<SEP>Pentazia": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682238,
+    "update_time": 1767682238,
+    "_id": "Blight<SEP>Pentazia"
+  },
+  "Neolife<SEP>Root Rot": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682238,
+    "update_time": 1767682238,
+    "_id": "Neolife<SEP>Root Rot"
+  },
+  "Fruit Set<SEP>TRAICORE": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682238,
+    "update_time": 1767682238,
+    "_id": "Fruit Set<SEP>TRAICORE"
+  },
+  "Damping-off<SEP>Neolife": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682239,
+    "update_time": 1767682239,
+    "_id": "Damping-off<SEP>Neolife"
+  },
+  "TRAICORE<SEP>Yield": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682239,
+    "update_time": 1767682239,
+    "_id": "TRAICORE<SEP>Yield"
+  },
+  "DFUSE<SEP>Larval Pests": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682239,
+    "update_time": 1767682239,
+    "_id": "DFUSE<SEP>Larval Pests"
+  },
+  "Neolife<SEP>Soil Fertility": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682239,
+    "update_time": 1767682239,
+    "_id": "Neolife<SEP>Soil Fertility"
+  },
+  "DFNDR<SEP>Sucking Pests": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682239,
+    "update_time": 1767682239,
+    "_id": "DFNDR<SEP>Sucking Pests"
+  },
+  "Quality<SEP>TRAICORE": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682239,
+    "update_time": 1767682239,
+    "_id": "Quality<SEP>TRAICORE"
+  },
+  "DFNDR<SEP>Plant Growth": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682239,
+    "update_time": 1767682239,
+    "_id": "DFNDR<SEP>Plant Growth"
+  },
+  "Native Neem<SEP>Worms": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682239,
+    "update_time": 1767682239,
+    "_id": "Native Neem<SEP>Worms"
+  },
+  "Protein Synthesis<SEP>TRAICORE": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682239,
+    "update_time": 1767682239,
+    "_id": "Protein Synthesis<SEP>TRAICORE"
+  },
+  "Application<SEP>TRIACORE EC 0.05%": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682239,
+    "update_time": 1767682239,
+    "_id": "Application<SEP>TRIACORE EC 0.05%"
+  },
+  "Neolife<SEP>Plant Growth": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682240,
+    "update_time": 1767682240,
+    "_id": "Neolife<SEP>Plant Growth"
+  },
+  "Beneficial Insects<SEP>DFNDR": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682240,
+    "update_time": 1767682240,
+    "_id": "Beneficial Insects<SEP>DFNDR"
+  },
+  "Aadhaar Gold<SEP>Bio-Fertilizer": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682240,
+    "update_time": 1767682240,
+    "_id": "Aadhaar Gold<SEP>Bio-Fertilizer"
+  },
+  "Neolife<SEP>Productivity": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682240,
+    "update_time": 1767682240,
+    "_id": "Neolife<SEP>Productivity"
+  },
+  "DFNDR<SEP>Pollinators": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682240,
+    "update_time": 1767682240,
+    "_id": "DFNDR<SEP>Pollinators"
+  },
+  "Bio-Fertilizer<SEP>Inm Chakra": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682240,
+    "update_time": 1767682240,
+    "_id": "Bio-Fertilizer<SEP>Inm Chakra"
+  },
+  "Application<SEP>TRIACORE EW 0.1%": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682240,
+    "update_time": 1767682240,
+    "_id": "Application<SEP>TRIACORE EW 0.1%"
+  },
+  "Bio-Fertilizer<SEP>Gvamspf": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682240,
+    "update_time": 1767682240,
+    "_id": "Bio-Fertilizer<SEP>Gvamspf"
+  },
+  "Application<SEP>TRIACORE GR 0.05%": {
+    "chunk_ids": [
+      "chunk-28470b0be8e993e924e0177e59076cc3"
+    ],
+    "count": 1,
+    "create_time": 1767682240,
+    "update_time": 1767682240,
+    "_id": "Application<SEP>TRIACORE GR 0.05%"
+  },
+  "Bio-Fertilizer<SEP>N-Factor": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682241,
+    "update_time": 1767682241,
+    "_id": "Bio-Fertilizer<SEP>N-Factor"
+  },
+  "Bio-Fertilizer<SEP>P-Factor": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682241,
+    "update_time": 1767682241,
+    "_id": "Bio-Fertilizer<SEP>P-Factor"
+  },
+  "Bio-Fertilizer<SEP>K-Factor": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682242,
+    "update_time": 1767682242,
+    "_id": "Bio-Fertilizer<SEP>K-Factor"
+  },
+  "Biofactor Bio Fertilizer<SEP>Proceed": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682242,
+    "update_time": 1767682242,
+    "_id": "Biofactor Bio Fertilizer<SEP>Proceed"
+  },
+  "Bio-Fertilizer<SEP>Zn-Factor": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682242,
+    "update_time": 1767682242,
+    "_id": "Bio-Fertilizer<SEP>Zn-Factor"
+  },
+  "Biofactor Bio Fertilizer<SEP>Prithvi": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682242,
+    "update_time": 1767682242,
+    "_id": "Biofactor Bio Fertilizer<SEP>Prithvi"
+  },
+  "Biofactor Bio Fertilizer<SEP>Promote": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682242,
+    "update_time": 1767682242,
+    "_id": "Biofactor Bio Fertilizer<SEP>Promote"
+  },
+  "Bio Fertilize<SEP>Bio-Fertilizer": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682242,
+    "update_time": 1767682242,
+    "_id": "Bio Fertilize<SEP>Bio-Fertilizer"
+  },
+  "Biofactor Bio Fertilizer<SEP>Sumca": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682243,
+    "update_time": 1767682243,
+    "_id": "Biofactor Bio Fertilizer<SEP>Sumca"
+  },
+  "Biofactor<SEP>Chelated Zinc As Zinc Glycine": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682243,
+    "update_time": 1767682243,
+    "_id": "Biofactor<SEP>Chelated Zinc As Zinc Glycine"
+  },
+  "Bio Triple Action Program<SEP>Bio-Fertilizer": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682243,
+    "update_time": 1767682243,
+    "_id": "Bio Triple Action Program<SEP>Bio-Fertilizer"
+  },
+  "Biofactor<SEP>Chelated Boron As Boron Glycine": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682243,
+    "update_time": 1767682243,
+    "_id": "Biofactor<SEP>Chelated Boron As Boron Glycine"
+  },
+  "Bio Double Action Program<SEP>Bio-Fertilizer": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682243,
+    "update_time": 1767682243,
+    "_id": "Bio Double Action Program<SEP>Bio-Fertilizer"
+  },
+  "Biofactor<SEP>Ferron": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682243,
+    "update_time": 1767682243,
+    "_id": "Biofactor<SEP>Ferron"
+  },
+  "Bio-Fertilizer<SEP>Biopotash": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682243,
+    "update_time": 1767682243,
+    "_id": "Bio-Fertilizer<SEP>Biopotash"
+  },
+  "Biofactor<SEP>Magnesium Hydroxide And Zinc Phosphate": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682244,
+    "update_time": 1767682244,
+    "_id": "Biofactor<SEP>Magnesium Hydroxide And Zinc Phosphate"
+  },
+  "Bio-Fertilizer<SEP>Biofactor Bio Fertilizer": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682244,
+    "update_time": 1767682244,
+    "_id": "Bio-Fertilizer<SEP>Biofactor Bio Fertilizer"
+  },
+  "Biofactor<SEP>Trumin": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682244,
+    "update_time": 1767682244,
+    "_id": "Biofactor<SEP>Trumin"
+  },
+  "Bio-Fertilizer<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682244,
+    "update_time": 1767682244,
+    "_id": "Bio-Fertilizer<SEP>Poshak Level-1"
+  },
+  "Biofactor<SEP>Copse": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682244,
+    "update_time": 1767682244,
+    "_id": "Biofactor<SEP>Copse"
+  },
+  "Bio-Fertilizer<SEP>Introduction": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682244,
+    "update_time": 1767682244,
+    "_id": "Bio-Fertilizer<SEP>Introduction"
+  },
+  "Biofactor<SEP>Bsl4agri": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682245,
+    "update_time": 1767682245,
+    "_id": "Biofactor<SEP>Bsl4agri"
+  },
+  "Liquid Fermented Organic Fertilizer<SEP>Poshak Level-1": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682245,
+    "update_time": 1767682245,
+    "_id": "Liquid Fermented Organic Fertilizer<SEP>Poshak Level-1"
+  },
+  "Bio-Fertilizer<SEP>FAQ & Answers On Bio-Fertilizers": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682245,
+    "update_time": 1767682245,
+    "_id": "Bio-Fertilizer<SEP>FAQ & Answers On Bio-Fertilizers"
+  },
+  "AP<SEP>Aadhaar Gold": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682245,
+    "update_time": 1767682245,
+    "_id": "AP<SEP>Aadhaar Gold"
+  },
+  "Biofactor<SEP>Nutri6": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682245,
+    "update_time": 1767682245,
+    "_id": "Biofactor<SEP>Nutri6"
+  },
+  "Bio-Fertilizer<SEP>Product Information": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682245,
+    "update_time": 1767682245,
+    "_id": "Bio-Fertilizer<SEP>Product Information"
+  },
+  "Aadhaar Gold<SEP>Telangana": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682245,
+    "update_time": 1767682245,
+    "_id": "Aadhaar Gold<SEP>Telangana"
+  },
+  "Bio-Fertilizer<SEP>Organic Fertilizers": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682245,
+    "update_time": 1767682245,
+    "_id": "Bio-Fertilizer<SEP>Organic Fertilizers"
+  },
+  "Aadhaar Gold<SEP>Maharashtra": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682245,
+    "update_time": 1767682245,
+    "_id": "Aadhaar Gold<SEP>Maharashtra"
+  },
+  "Aadhaar Gold<SEP>Karnataka": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682246,
+    "update_time": 1767682246,
+    "_id": "Aadhaar Gold<SEP>Karnataka"
+  },
+  "Bio-Fertilizer<SEP>Biofactors Chemical Fertilizers": {
+    "chunk_ids": [
+      "chunk-2867489bfc50306cf700e8e575dff76e"
+    ],
+    "count": 1,
+    "create_time": 1767682246,
+    "update_time": 1767682246,
+    "_id": "Bio-Fertilizer<SEP>Biofactors Chemical Fertilizers"
+  },
+  "Aadhaar Gold<SEP>Gujarat": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682246,
+    "update_time": 1767682246,
+    "_id": "Aadhaar Gold<SEP>Gujarat"
+  },
+  "Aadhaar Gold<SEP>Tamil Nadu": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682246,
+    "update_time": 1767682246,
+    "_id": "Aadhaar Gold<SEP>Tamil Nadu"
+  },
+  "Aadhaar Gold<SEP>Soybean": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682247,
+    "update_time": 1767682247,
+    "_id": "Aadhaar Gold<SEP>Soybean"
+  },
+  "Aadhaar Gold<SEP>Vegetables": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682247,
+    "update_time": 1767682247,
+    "_id": "Aadhaar Gold<SEP>Vegetables"
+  },
+  "INM Chakra<SEP>Nitrogen": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682247,
+    "update_time": 1767682247,
+    "_id": "INM Chakra<SEP>Nitrogen"
+  },
+  "Aadhaar Gold<SEP>FYM": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682247,
+    "update_time": 1767682247,
+    "_id": "Aadhaar Gold<SEP>FYM"
+  },
+  "INM Chakra<SEP>Phosphorus": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682248,
+    "update_time": 1767682248,
+    "_id": "INM Chakra<SEP>Phosphorus"
+  },
+  "Aadhaar Gold<SEP>Chemical Fungicides": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682248,
+    "update_time": 1767682248,
+    "_id": "Aadhaar Gold<SEP>Chemical Fungicides"
+  },
+  "GVAMSPF<SEP>Mycorrhiza": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682248,
+    "update_time": 1767682248,
+    "_id": "GVAMSPF<SEP>Mycorrhiza"
+  },
+  "Aadhaar Gold<SEP>Concentrated Fertilizers": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682248,
+    "update_time": 1767682248,
+    "_id": "Aadhaar Gold<SEP>Concentrated Fertilizers"
+  },
+  "Aadhaar Gold<SEP>Biofac": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682249,
+    "update_time": 1767682249,
+    "_id": "Aadhaar Gold<SEP>Biofac"
+  },
+  "INM Chakra<SEP>Potassium": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682249,
+    "update_time": 1767682249,
+    "_id": "INM Chakra<SEP>Potassium"
+  },
+  "Aadhaar Gold<SEP>Warangal": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682249,
+    "update_time": 1767682249,
+    "_id": "Aadhaar Gold<SEP>Warangal"
+  },
+  "GVAMSPF<SEP>Paddy": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682249,
+    "update_time": 1767682249,
+    "_id": "GVAMSPF<SEP>Paddy"
+  },
+  "Aadhaar Gold<SEP>Guntur": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682249,
+    "update_time": 1767682249,
+    "_id": "Aadhaar Gold<SEP>Guntur"
+  },
+  "GVAMSPF<SEP>Sugarcane": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682249,
+    "update_time": 1767682249,
+    "_id": "GVAMSPF<SEP>Sugarcane"
+  },
+  "INM Chakra<SEP>Paddy": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682249,
+    "update_time": 1767682249,
+    "_id": "INM Chakra<SEP>Paddy"
+  },
+  "Aadhaar Gold<SEP>Soil": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682250,
+    "update_time": 1767682250,
+    "_id": "Aadhaar Gold<SEP>Soil"
+  },
+  "Cotton<SEP>INM Chakra": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682250,
+    "update_time": 1767682250,
+    "_id": "Cotton<SEP>INM Chakra"
+  },
+  "INM Chakra<SEP>Sugarcane": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682250,
+    "update_time": 1767682250,
+    "_id": "INM Chakra<SEP>Sugarcane"
+  },
+  "Cotton<SEP>GVAMSPF": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682250,
+    "update_time": 1767682250,
+    "_id": "Cotton<SEP>GVAMSPF"
+  },
+  "Andhra Pradesh<SEP>Poshak-L1 Advantage": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682250,
+    "update_time": 1767682250,
+    "_id": "Andhra Pradesh<SEP>Poshak-L1 Advantage"
+  },
+  "Chilli<SEP>INM Chakra": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682250,
+    "update_time": 1767682250,
+    "_id": "Chilli<SEP>INM Chakra"
+  },
+  "Poshak-L1 Advantage<SEP>Telangana": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682250,
+    "update_time": 1767682250,
+    "_id": "Poshak-L1 Advantage<SEP>Telangana"
+  },
+  "INM Chakra<SEP>Soybean": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682251,
+    "update_time": 1767682251,
+    "_id": "INM Chakra<SEP>Soybean"
+  },
+  "Chilli<SEP>GVAMSPF": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682251,
+    "update_time": 1767682251,
+    "_id": "Chilli<SEP>GVAMSPF"
+  },
+  "Maharashtra<SEP>Poshak-L1 Advantage": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682251,
+    "update_time": 1767682251,
+    "_id": "Maharashtra<SEP>Poshak-L1 Advantage"
+  },
+  "Groundnut<SEP>INM Chakra": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682251,
+    "update_time": 1767682251,
+    "_id": "Groundnut<SEP>INM Chakra"
+  },
+  "Karnataka<SEP>Poshak-L1 Advantage": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682251,
+    "update_time": 1767682251,
+    "_id": "Karnataka<SEP>Poshak-L1 Advantage"
+  },
+  "Paddy<SEP>Poshak-L1 Advantage": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682251,
+    "update_time": 1767682251,
+    "_id": "Paddy<SEP>Poshak-L1 Advantage"
+  },
+  "Biofactor<SEP>Microbe Metabolite Assisted Micron Sized Particles (MAMSP) Technology": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682251,
+    "update_time": 1767682251,
+    "_id": "Biofactor<SEP>Microbe Metabolite Assisted Micron Sized Particles (MAMSP) Technology"
+  },
+  "Cotton<SEP>Poshak-L1 Advantage": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682252,
+    "update_time": 1767682252,
+    "_id": "Cotton<SEP>Poshak-L1 Advantage"
+  },
+  "High-K<SEP>Potassium Thiosulphate": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682252,
+    "update_time": 1767682252,
+    "_id": "High-K<SEP>Potassium Thiosulphate"
+  },
+  "INM Chakra<SEP>Vegetables": {
+    "chunk_ids": [
+      "chunk-8592b2b6b35387d1d12080be6223ce15"
+    ],
+    "count": 1,
+    "create_time": 1767682252,
+    "update_time": 1767682252,
+    "_id": "INM Chakra<SEP>Vegetables"
+  },
+  "Zinc<SEP>Zinc Glycine": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682252,
+    "update_time": 1767682252,
+    "_id": "Zinc<SEP>Zinc Glycine"
+  },
+  "AP<SEP>Paddy": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682252,
+    "update_time": 1767682252,
+    "_id": "AP<SEP>Paddy"
+  },
+  "Poshak-L1 Advantage<SEP>Vegetables": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682252,
+    "update_time": 1767682252,
+    "_id": "Poshak-L1 Advantage<SEP>Vegetables"
+  },
+  "Paddy<SEP>Telangana": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682252,
+    "update_time": 1767682252,
+    "_id": "Paddy<SEP>Telangana"
+  },
+  "AP<SEP>Cotton": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682252,
+    "update_time": 1767682252,
+    "_id": "AP<SEP>Cotton"
+  },
+  "Poshak-L1 Advantage<SEP>Vegetative Stage": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682253,
+    "update_time": 1767682253,
+    "_id": "Poshak-L1 Advantage<SEP>Vegetative Stage"
+  },
+  "Telangana<SEP>Vegetables": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682253,
+    "update_time": 1767682253,
+    "_id": "Telangana<SEP>Vegetables"
+  },
+  "Chemical Fertilizers<SEP>Poshak-L1 Advantage": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682253,
+    "update_time": 1767682253,
+    "_id": "Chemical Fertilizers<SEP>Poshak-L1 Advantage"
+  },
+  "Karnataka<SEP>Paddy": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682253,
+    "update_time": 1767682253,
+    "_id": "Karnataka<SEP>Paddy"
+  },
+  "AP<SEP>Vegetables": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682253,
+    "update_time": 1767682253,
+    "_id": "AP<SEP>Vegetables"
+  },
+  "Cotton<SEP>Telangana": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682253,
+    "update_time": 1767682253,
+    "_id": "Cotton<SEP>Telangana"
+  },
+  "1 L/acre<SEP>Poshak-L1 Advantage": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682253,
+    "update_time": 1767682253,
+    "_id": "1 L/acre<SEP>Poshak-L1 Advantage"
+  },
+  "CANMAG<SEP>Crops": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682253,
+    "update_time": 1767682253,
+    "_id": "CANMAG<SEP>Crops"
+  },
+  "Horticulture<SEP>Karnataka": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682253,
+    "update_time": 1767682253,
+    "_id": "Horticulture<SEP>Karnataka"
+  },
+  "Maharashtra<SEP>Vegetables": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682253,
+    "update_time": 1767682253,
+    "_id": "Maharashtra<SEP>Vegetables"
+  },
+  "Cotton<SEP>Maharashtra": {
+    "chunk_ids": [
+      "chunk-963cd7a91acc091b0215a79f85ffea4d"
+    ],
+    "count": 1,
+    "create_time": 1767682254,
+    "update_time": 1767682254,
+    "_id": "Cotton<SEP>Maharashtra"
+  },
+  "Nitrogen<SEP>Sampoorna": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682254,
+    "update_time": 1767682254,
+    "_id": "Nitrogen<SEP>Sampoorna"
+  },
+  "Crops<SEP>Sampoorna": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682254,
+    "update_time": 1767682254,
+    "_id": "Crops<SEP>Sampoorna"
+  },
+  "CANMAG<SEP>Nitrogen": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682254,
+    "update_time": 1767682254,
+    "_id": "CANMAG<SEP>Nitrogen"
+  },
+  "Phosphorus<SEP>Sampoorna": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682255,
+    "update_time": 1767682255,
+    "_id": "Phosphorus<SEP>Sampoorna"
+  },
+  "Agriseal<SEP>Crops": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682255,
+    "update_time": 1767682255,
+    "_id": "Agriseal<SEP>Crops"
+  },
+  "Potassium<SEP>Sampoorna": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682255,
+    "update_time": 1767682255,
+    "_id": "Potassium<SEP>Sampoorna"
+  },
+  "BOC<SEP>Crops": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682255,
+    "update_time": 1767682255,
+    "_id": "BOC<SEP>Crops"
+  },
+  "Agriseal<SEP>Vitamin C": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682255,
+    "update_time": 1767682255,
+    "_id": "Agriseal<SEP>Vitamin C"
+  },
+  "Sampoorna<SEP>Zinc": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682255,
+    "update_time": 1767682255,
+    "_id": "Sampoorna<SEP>Zinc"
+  },
+  "Agriseal<SEP>Amino Acids": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682255,
+    "update_time": 1767682255,
+    "_id": "Agriseal<SEP>Amino Acids"
+  },
+  "Crops<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682255,
+    "update_time": 1767682255,
+    "_id": "Crops<SEP>Invictus"
+  },
+  "Agriseal<SEP>Selenium": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682256,
+    "update_time": 1767682256,
+    "_id": "Agriseal<SEP>Selenium"
+  },
+  "BOC<SEP>Nitrogen": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682256,
+    "update_time": 1767682256,
+    "_id": "BOC<SEP>Nitrogen"
+  },
+  "Boron<SEP>Sampoorna": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682256,
+    "update_time": 1767682256,
+    "_id": "Boron<SEP>Sampoorna"
+  },
+  "BOC<SEP>Phosphorus": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682256,
+    "update_time": 1767682256,
+    "_id": "BOC<SEP>Phosphorus"
+  },
+  "Invictus<SEP>Trichoderma viridae": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682256,
+    "update_time": 1767682256,
+    "_id": "Invictus<SEP>Trichoderma viridae"
+  },
+  "Agriseal<SEP>Silica": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682256,
+    "update_time": 1767682256,
+    "_id": "Agriseal<SEP>Silica"
+  },
+  "Agriseal<SEP>Seaweed": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682256,
+    "update_time": 1767682256,
+    "_id": "Agriseal<SEP>Seaweed"
+  },
+  "Invictus<SEP>Trichoderma harzianum": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682256,
+    "update_time": 1767682256,
+    "_id": "Invictus<SEP>Trichoderma harzianum"
+  },
+  "BOC<SEP>Potassium": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682256,
+    "update_time": 1767682256,
+    "_id": "BOC<SEP>Potassium"
+  },
+  "Agriseal<SEP>Carbohydrate Synthesis": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682257,
+    "update_time": 1767682257,
+    "_id": "Agriseal<SEP>Carbohydrate Synthesis"
+  },
+  "Rhizosphere<SEP>Trichoderma viride": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682257,
+    "update_time": 1767682257,
+    "_id": "Rhizosphere<SEP>Trichoderma viride"
+  },
+  "Invictus<SEP>Pseudomonas fluorescens": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682257,
+    "update_time": 1767682257,
+    "_id": "Invictus<SEP>Pseudomonas fluorescens"
+  },
+  "Agriseal<SEP>Waterlogging": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682257,
+    "update_time": 1767682257,
+    "_id": "Agriseal<SEP>Waterlogging"
+  },
+  "Invictus<SEP>Rhizoctonia solani": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682257,
+    "update_time": 1767682257,
+    "_id": "Invictus<SEP>Rhizoctonia solani"
+  },
+  "BOC<SEP>Soil Structure": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682257,
+    "update_time": 1767682257,
+    "_id": "BOC<SEP>Soil Structure"
+  },
+  "Agriseal<SEP>Heavy Harvests": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682257,
+    "update_time": 1767682257,
+    "_id": "Agriseal<SEP>Heavy Harvests"
+  },
+  "Biofac Inputs Private Limited<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682257,
+    "update_time": 1767682257,
+    "_id": "Biofac Inputs Private Limited<SEP>Invictus"
+  },
+  "BOC<SEP>Nutrient Availability": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682257,
+    "update_time": 1767682257,
+    "_id": "BOC<SEP>Nutrient Availability"
+  },
+  "Carboxy Methyl Cellulose<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682258,
+    "update_time": 1767682258,
+    "_id": "Carboxy Methyl Cellulose<SEP>Invictus"
+  },
+  "BOC<SEP>Microbial Nutrient Processing": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682258,
+    "update_time": 1767682258,
+    "_id": "BOC<SEP>Microbial Nutrient Processing"
+  },
+  "Invictus<SEP>Talc": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682258,
+    "update_time": 1767682258,
+    "_id": "Invictus<SEP>Talc"
+  },
+  "BOC<SEP>Holistic Crop Wellness": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682258,
+    "update_time": 1767682258,
+    "_id": "BOC<SEP>Holistic Crop Wellness"
+  },
+  "Invictus<SEP>Seed Treatment": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682258,
+    "update_time": 1767682258,
+    "_id": "Invictus<SEP>Seed Treatment"
+  },
+  "Cattle Manure<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682259,
+    "update_time": 1767682259,
+    "_id": "Cattle Manure<SEP>Invictus"
+  },
+  "Antifungal Metabolites<SEP>Trichoderma viride": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682259,
+    "update_time": 1767682259,
+    "_id": "Antifungal Metabolites<SEP>Trichoderma viride"
+  },
+  "Root Vigor<SEP>Trichoderma viride": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682259,
+    "update_time": 1767682259,
+    "_id": "Root Vigor<SEP>Trichoderma viride"
+  },
+  "Invictus<SEP>Neem Flour": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682259,
+    "update_time": 1767682259,
+    "_id": "Invictus<SEP>Neem Flour"
+  },
+  "PRITHVI<SEP>Sap-Sucking Insects": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682259,
+    "update_time": 1767682259,
+    "_id": "PRITHVI<SEP>Sap-Sucking Insects"
+  },
+  "Invictus<SEP>Main Field": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682260,
+    "update_time": 1767682260,
+    "_id": "Invictus<SEP>Main Field"
+  },
+  "Nutrients<SEP>PRITHVI": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682260,
+    "update_time": 1767682260,
+    "_id": "Nutrients<SEP>PRITHVI"
+  },
+  "PROMOTE<SEP>Phosphorus": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682260,
+    "update_time": 1767682260,
+    "_id": "PROMOTE<SEP>Phosphorus"
+  },
+  "N<SEP>SUMCA": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682260,
+    "update_time": 1767682260,
+    "_id": "N<SEP>SUMCA"
+  },
+  "Invictus<SEP>Seedling Plants": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682260,
+    "update_time": 1767682260,
+    "_id": "Invictus<SEP>Seedling Plants"
+  },
+  "P<SEP>SUMCA": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682260,
+    "update_time": 1767682260,
+    "_id": "P<SEP>SUMCA"
+  },
+  "Belom Series<SEP>Nitrogen": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682260,
+    "update_time": 1767682260,
+    "_id": "Belom Series<SEP>Nitrogen"
+  },
+  "Invictus<SEP>WP": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682260,
+    "update_time": 1767682260,
+    "_id": "Invictus<SEP>WP"
+  },
+  "Belom Series<SEP>Phosphorus": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682260,
+    "update_time": 1767682260,
+    "_id": "Belom Series<SEP>Phosphorus"
+  },
+  "K<SEP>SUMCA": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682260,
+    "update_time": 1767682260,
+    "_id": "K<SEP>SUMCA"
+  },
+  "CFU<SEP>Invictus": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682261,
+    "update_time": 1767682261,
+    "_id": "CFU<SEP>Invictus"
+  },
+  "SUMCA<SEP>Zn": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682261,
+    "update_time": 1767682261,
+    "_id": "SUMCA<SEP>Zn"
+  },
+  "Belom Series<SEP>Potash": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682261,
+    "update_time": 1767682261,
+    "_id": "Belom Series<SEP>Potash"
+  },
+  "Belom S-1<SEP>Nitrogen": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682261,
+    "update_time": 1767682261,
+    "_id": "Belom S-1<SEP>Nitrogen"
+  },
+  "Invictus<SEP>Mycoparasitism": {
+    "chunk_ids": [
+      "chunk-ef566fa604fb11fa0fb712546748fe1f"
+    ],
+    "count": 1,
+    "create_time": 1767682261,
+    "update_time": 1767682261,
+    "_id": "Invictus<SEP>Mycoparasitism"
+  },
+  "Belom S-2<SEP>Phosphorus": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682261,
+    "update_time": 1767682261,
+    "_id": "Belom S-2<SEP>Phosphorus"
+  },
+  "Belom S-3<SEP>Potash": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682261,
+    "update_time": 1767682261,
+    "_id": "Belom S-3<SEP>Potash"
+  },
+  "Belom Series<SEP>Calcium": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682261,
+    "update_time": 1767682261,
+    "_id": "Belom Series<SEP>Calcium"
+  },
+  "Bacterial Count<SEP>PRITHVI": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682261,
+    "update_time": 1767682261,
+    "_id": "Bacterial Count<SEP>PRITHVI"
+  },
+  "C<SEP>PROMOTE": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682261,
+    "update_time": 1767682261,
+    "_id": "C<SEP>PROMOTE"
+  },
+  "Belom Series<SEP>Magnesium": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682261,
+    "update_time": 1767682261,
+    "_id": "Belom Series<SEP>Magnesium"
+  },
+  "P<SEP>PROMOTE": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682261,
+    "update_time": 1767682261,
+    "_id": "P<SEP>PROMOTE"
+  },
+  "Belom Series<SEP>Sulphur": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682262,
+    "update_time": 1767682262,
+    "_id": "Belom Series<SEP>Sulphur"
+  },
+  "N<SEP>PROMOTE": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682262,
+    "update_time": 1767682262,
+    "_id": "N<SEP>PROMOTE"
+  },
+  "CN Ratio<SEP>PROMOTE": {
+    "chunk_ids": [
+      "chunk-76c8f38bb46808c3bda35a27be20dc5d"
+    ],
+    "count": 1,
+    "create_time": 1767682262,
+    "update_time": 1767682262,
+    "_id": "CN Ratio<SEP>PROMOTE"
+  }
+}

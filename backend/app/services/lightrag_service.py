@@ -1,5 +1,6 @@
 import requests
 from app.core.config import LIGHTRAG_URL
+from deep_translator import GoogleTranslator
 
 def query_lightrag(query, history, mode="mix", language="english", factual=False):
     """
@@ -12,45 +13,54 @@ def query_lightrag(query, history, mode="mix", language="english", factual=False
         language: Language to respond in (english, telugu, hindi, etc.)
         factual: If True, use softer language instruction to avoid forcing wrong answers
     """
-    # Add language instruction to the query
-    # For factual questions, use softer instructions to avoid forcing answers when no info exists
-    if factual and language != "english":
-        language_instructions = {
-            "telugu": "\n\nNote: Please respond in Telugu (తెలుగు) if you have information. If you don't have information, you can say so in Telugu.",
-            "tamil": "\n\nNote: Please respond in Tamil (தமிழ்) if you have information. If you don't have information, you can say so in Tamil.",
-            "kannada": "\n\nNote: Please respond in Kannada (ಕನ್ನಡ) if you have information. If you don't have information, you can say so in Kannada.",
-            "malayalam": "\n\nNote: Please respond in Malayalam (മലയാളം) if you have information. If you don't have information, you can say so in Malayalam.",
-            "hindi": "\n\nNote: Please respond in Hindi (हिंदी) if you have information. If you don't have information, you can say so in Hindi.",
-            "marathi": "\n\nNote: Please respond in Marathi (मराठी) if you have information. If you don't have information, you can say so in Marathi.",
-            "bengali": "\n\nNote: Please respond in Bengali (বাংলা) if you have information. If you don't have information, you can say so in Bengali.",
-            "gujarati": "\n\nNote: Please respond in Gujarati (ગુજરાતી) if you have information. If you don't have information, you can say so in Gujarati.",
-            "punjabi": "\n\nNote: Please respond in Punjabi (ਪੰਜਾਬੀ) if you have information. If you don't have information, you can say so in Punjabi.",
-            "odia": "\n\nNote: Please respond in Odia (ଓଡ଼ିଆ) if you have information. If you don't have information, you can say so in Odia.",
-        }
-    else:
-        language_instructions = {
-            "telugu": "\n\nIMPORTANT: You MUST respond ONLY in Telugu (తెలుగు) language. Do not use English or any other language in your response.",
-            "tamil": "\n\nIMPORTANT: You MUST respond ONLY in Tamil (தமிழ்) language. Do not use English or any other language in your response.",
-            "kannada": "\n\nIMPORTANT: You MUST respond ONLY in Kannada (ಕನ್ನಡ) language. Do not use English or any other language in your response.",
-            "malayalam": "\n\nIMPORTANT: You MUST respond ONLY in Malayalam (മലയാളം) language. Do not use English or any other language in your response.",
-            "hindi": "\n\nIMPORTANT: You MUST respond ONLY in Hindi (हिंदी) language. Do not use English or any other language in your response.",
-            "marathi": "\n\nIMPORTANT: You MUST respond ONLY in Marathi (मराठी) language. Do not use English or any other language in your response.",
-            "bengali": "\n\nIMPORTANT: You MUST respond ONLY in Bengali (বাংলা) language. Do not use English or any other language in your response.",
-            "gujarati": "\n\nIMPORTANT: You MUST respond ONLY in Gujarati (ગુજરાતી) language. Do not use English or any other language in your response.",
-            "punjabi": "\n\nIMPORTANT: You MUST respond ONLY in Punjabi (ਪੰਜਾਬੀ) language. Do not use English or any other language in your response.",
-            "odia": "\n\nIMPORTANT: You MUST respond ONLY in Odia (ଓଡ଼ିଆ) language. Do not use English or any other language in your response.",
-            "english": ""  # No need for instruction in English
-        }
     
-    language_instruction = language_instructions.get(language, "")
-    enhanced_query = query + language_instruction
+    # Translate non-English queries to English for LightRAG search
+    english_query = query
+    if language != "english":
+        try:
+            translator = GoogleTranslator(source='auto', target='en')
+            english_query = translator.translate(query)
+            print(f"🔄 Translated query: {query} → {english_query}")
+        except Exception as e:
+            print(f"⚠️ Translation failed: {e}, using original query")
+            english_query = query
     
+    # Query LightRAG with English query (no language instruction appended)
     payload = {
-        "query": enhanced_query,
+        "query": english_query,
         "mode": mode,
         "conversation_history": history,
         "response_type": "Multiple Paragraphs"
     }
+    
     res = requests.post(LIGHTRAG_URL, json=payload, timeout=60)
-    return res.json().get("response", "")
+    english_response = res.json().get("response", "")
+    
+    # If language is not English, translate the response
+    if language != "english" and english_response and "[no-context]" not in english_response.lower():
+        try:
+            # Map language codes to translator codes
+            lang_code_map = {
+                "telugu": "te",
+                "tamil": "ta", 
+                "kannada": "kn",
+                "malayalam": "ml",
+                "hindi": "hi",
+                "marathi": "mr",
+                "bengali": "bn",
+                "gujarati": "gu",
+                "punjabi": "pa",
+                "odia": "or"
+            }
+            
+            target_lang = lang_code_map.get(language, "en")
+            translator = GoogleTranslator(source='en', target=target_lang)
+            translated_response = translator.translate(english_response)
+            print(f"🌐 Response translated from English to {language}")
+            return translated_response
+        except Exception as e:
+            print(f"⚠️ Translation of response failed: {e}, returning English response")
+            return english_response
+    
+    return english_response
 
