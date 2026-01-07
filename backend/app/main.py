@@ -48,24 +48,38 @@ def health_check():
 def root():
     return {"message": "Farm Vaidya Backend API", "status": "running"}
 
-# Proxy to LightRAG docs (for accessing Swagger UI on Render)
-@app.get("/lightrag/docs", response_class=HTMLResponse)
-def lightrag_docs():
-    """Proxy to LightRAG Swagger documentation"""
-    try:
-        response = requests.get("http://localhost:9621/docs", timeout=5)
-        return response.text
-    except Exception as e:
-        return f"<html><body><h1>LightRAG Not Available</h1><p>Error: {str(e)}</p></body></html>"
+# Proxy all LightRAG requests (docs, static files, API endpoints)
+from fastapi import Request, Response
+from starlette.background import BackgroundTask
 
-@app.get("/lightrag/openapi.json")
-def lightrag_openapi():
-    """Proxy to LightRAG OpenAPI spec"""
+@app.api_route("/lightrag/{path:path}", methods=["GET", "POST", "PUT", "DELETE", "PATCH"])
+async def proxy_lightrag(path: str, request: Request):
+    """Proxy all requests to LightRAG server"""
+    lightrag_base = "http://localhost:9621"
+    url = f"{lightrag_base}/{path}"
+    
+    # Forward query parameters
+    if request.url.query:
+        url = f"{url}?{request.url.query}"
+    
     try:
-        response = requests.get("http://localhost:9621/openapi.json", timeout=5)
-        return response.json()
+        # Forward the request
+        if request.method == "GET":
+            response = requests.get(url, timeout=10)
+        elif request.method == "POST":
+            body = await request.body()
+            response = requests.post(url, data=body, headers={"Content-Type": request.headers.get("content-type", "application/json")}, timeout=10)
+        else:
+            return {"error": f"Method {request.method} not supported in proxy"}
+        
+        # Return the response
+        return Response(
+            content=response.content,
+            status_code=response.status_code,
+            headers=dict(response.headers),
+        )
     except Exception as e:
-        return {"error": str(e)}
+        return {"error": f"LightRAG proxy error: {str(e)}"}
 
 app.include_router(auth.router)
 app.include_router(sessions.router)
