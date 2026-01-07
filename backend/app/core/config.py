@@ -6,6 +6,7 @@ load_dotenv()
 MONGO_URI = os.getenv("MONGO_URI")
 JWT_SECRET = os.getenv("JWT_SECRET")
 GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 DB_NAME = "farmvaidya_chat"
 
