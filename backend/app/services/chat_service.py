@@ -16,7 +16,8 @@ from app.services.chat_rules import (
 from app.services.followup_service import (
     needs_follow_up,
     generate_followup,
-    can_finalize
+    can_finalize,
+    MAX_FOLLOWUPS
 )
 
 def generate_title(text: str) -> str:
@@ -180,12 +181,52 @@ def handle_chat(session_id, user_message):
         # If this is a NEW problem diagnosis question and we're not already in follow-up mode,
         # reset the follow-up state (user asking a new question after previous conversation)
         if is_problem_diagnosis_question(user_message) and not session.get("awaiting_followup"):
-            sessions.update_one(
-                {"_id": ObjectId(session_id)},
-                {"$set": {"followup_count": 0, "awaiting_followup": False}}
-            )
-            session["followup_count"] = 0
-            session["awaiting_followup"] = False
+            # Check if user already provided comprehensive information in their question
+            # OR if we can use info from recent conversation history
+            from app.services.followup_service import extract_provided_info
+            
+            # Check both current message AND recent history (last 10 messages to capture recent context)
+            recent_history = get_history(session_id)[-10:]  # Last 10 messages
+            provided = extract_provided_info(recent_history)
+            
+            # If user provided crop+stage AND soil info, skip follow-ups
+            has_crop_info = provided["crop_provided"] and provided["stage_provided"]
+            has_soil_info = provided["soil_provided"]
+            
+            # For better UX: if crop is mentioned but from OLD conversation (more than 5 messages ago),
+            # we should still ask follow-ups for the NEW question
+            # Check if crop/stage is in the CURRENT message specifically
+            current_msg_history = [{"role": "user", "content": user_message}]
+            current_provided = extract_provided_info(current_msg_history)
+            
+            if has_crop_info and has_soil_info:
+                # User gave enough info, skip follow-ups entirely
+                print("✅ USER PROVIDED COMPREHENSIVE INFO, SKIPPING FOLLOW-UPS")
+                sessions.update_one(
+                    {"_id": ObjectId(session_id)},
+                    {"$set": {"followup_count": MAX_FOLLOWUPS, "awaiting_followup": False}}
+                )
+                session["followup_count"] = MAX_FOLLOWUPS
+                session["awaiting_followup"] = False
+            elif current_provided["crop_provided"] and current_provided["stage_provided"]:
+                # User mentioned crop+stage in current question, use lighter follow-up flow
+                # Only need to ask for missing info (soil/irrigation/fertilizers)
+                print("✅ USER PROVIDED CROP+STAGE IN QUESTION, REDUCED FOLLOW-UPS")
+                # Start at count 1 (skip crop/stage question)
+                sessions.update_one(
+                    {"_id": ObjectId(session_id)},
+                    {"$set": {"followup_count": 1, "awaiting_followup": False}}
+                )
+                session["followup_count"] = 1
+                session["awaiting_followup"] = False
+            else:
+                # Reset for new question
+                sessions.update_one(
+                    {"_id": ObjectId(session_id)},
+                    {"$set": {"followup_count": 0, "awaiting_followup": False}}
+                )
+                session["followup_count"] = 0
+                session["awaiting_followup"] = False
         
         # Default followup counter to 0 if missing
         if session.get("followup_count") is None:
@@ -193,9 +234,19 @@ def handle_chat(session_id, user_message):
 
         if not can_finalize(session):
             print("✅ GENERATING FOLLOW-UP QUESTION")
-            followup_q = generate_followup(session_id, detected_language)
-            messages.insert_one(message_doc(session_id, "assistant", followup_q))
-            return followup_q
+            followup_q = generate_followup(session_id, detected_language, user_message)
+            
+            # If generate_followup returns None, it means all info is collected
+            if followup_q is None:
+                print("✅ ALL INFO COLLECTED, PROCEEDING TO FINAL ANSWER")
+                sessions.update_one(
+                    {"_id": ObjectId(session_id)},
+                    {"$set": {"awaiting_followup": False}}
+                )
+                # Don't return, continue to final answer generation
+            else:
+                messages.insert_one(message_doc(session_id, "assistant", followup_q))
+                return followup_q
 
         # Enough followups → finalize and continue to final answer
         print("✅ FINALIZING AFTER FOLLOW-UPS")
@@ -209,26 +260,57 @@ def handle_chat(session_id, user_message):
     history = get_history(session_id)[:-1]
     
     # For diagnosis questions, build comprehensive query from follow-up context
-    if is_problem_diagnosis_question(user_message):
-        # Get all messages - pattern is: problem → Q1 → A1 → Q2 → A2 → Q3 → A3 → final_answer
+    if is_problem_diagnosis_question(user_message) and session.get("followup_count", 0) > 0:
+        # Only use messages from AFTER the last reset (the current question's follow-ups)
+        # Find the index of the current user question (the one that started this follow-up flow)
         messages_list = list(history)
         
-        # Extract the 3 follow-up answers in sequence (skip initial problem)
-        user_messages = [msg for msg in messages_list if msg["role"] == "user"]
+        # Find the last occurrence of a problem diagnosis question before this one
+        # Work backwards to find where the current follow-up sequence started
+        current_question_idx = -1
+        for i in range(len(messages_list) - 1, -1, -1):
+            if messages_list[i]["role"] == "user":
+                current_question_idx = i
+                break
         
-        # user_messages[0] = initial problem
-        # user_messages[1] = answer to Q1 (crop/stage)
-        # user_messages[2] = answer to Q2 (soil/irrigation)  
-        # user_messages[3] = answer to Q3 (fertilizers/sprays)
+        # Now look backwards from current question to find where this follow-up sequence started
+        # It starts with the first user message that triggered follow-ups
+        followup_start_idx = current_question_idx
+        for i in range(current_question_idx - 1, -1, -1):
+            if messages_list[i]["role"] == "assistant":
+                # Check if this is a follow-up question
+                msg_content = messages_list[i]["content"]
+                is_followup_q = any(q in msg_content for q in [
+                    "What is your crop name and growth stage",
+                    "What is your soil type",
+                    "What fertilizers",
+                    "మీ పంట పేరు",
+                    "మీ నేల రకం",
+                    "ఏ ఎరువులు",
+                    "आपकी फसल का नाम",
+                    "आपकी मिट्टी का प्रकार",
+                    "कौन-कौन से उर्वरक"
+                ])
+                if not is_followup_q:
+                    # This is not a follow-up question, so the sequence starts after this
+                    followup_start_idx = i + 1
+                    break
+            elif messages_list[i]["role"] == "user":
+                followup_start_idx = i
         
-        ans1 = user_messages[1]["content"] if len(user_messages) > 1 else "Not provided"
-        ans2 = user_messages[2]["content"] if len(user_messages) > 2 else "Not provided"
-        ans3 = user_messages[3]["content"] if len(user_messages) > 3 else "Not provided"
+        # Extract only the user messages from the current follow-up sequence
+        recent_user_messages = [msg["content"] for msg in messages_list[followup_start_idx:] if msg["role"] == "user"]
+        
+        # Pattern: [original_question, ans1, ans2, ans3, ...]
+        original_question = recent_user_messages[0] if len(recent_user_messages) > 0 else user_message
+        ans1 = recent_user_messages[1] if len(recent_user_messages) > 1 else "Not provided"
+        ans2 = recent_user_messages[2] if len(recent_user_messages) > 2 else "Not provided"
+        ans3 = recent_user_messages[3] if len(recent_user_messages) > 3 else "Not provided"
         
         # Build comprehensive query with ALL context
         comprehensive_query = f"""CROP PROBLEM DIAGNOSIS
 
-Farmer's problem: {user_message}
+Farmer's problem: {original_question}
 
 Farmer provided the following information:
 - Crop name and growth stage: {ans1}
@@ -244,6 +326,7 @@ Provide comprehensive recommendations including:
 
 Be specific with product names, doses (kg/liters), timing (months), and application methods."""
         
+        print(f"📝 Original Question: {original_question}")
         print(f"📝 Q1 Answer: {ans1}")
         print(f"📝 Q2 Answer: {ans2}")
         print(f"📝 Q3 Answer: {ans3}")
@@ -269,6 +352,7 @@ Be specific with product names, doses (kg/liters), timing (months), and applicat
                 print(f"❌ Error in local knowledge base: {e}")
                 answer = f"Based on your {growth_stage}-stage crop in {soil_type} soil with {irrigation} irrigation: Please consult our detailed guides or contact local agricultural experts for comprehensive fertilizer and irrigation recommendations."
     else:
+        # Not a diagnosis question or no follow-ups collected, just use direct query with history
         answer = clean_response(query_lightrag(user_message, history, language=detected_language))
     
     messages.insert_one(message_doc(session_id, "assistant", answer))
