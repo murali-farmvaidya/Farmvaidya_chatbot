@@ -1,7 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import HTMLResponse
 from app.routers import auth, chat, sessions
 from app.routers import messages
+import requests
 
 app = FastAPI()
 
@@ -45,6 +47,25 @@ def health_check():
 @app.get("/")
 def root():
     return {"message": "Farm Vaidya Backend API", "status": "running"}
+
+# Proxy to LightRAG docs (for accessing Swagger UI on Render)
+@app.get("/lightrag/docs", response_class=HTMLResponse)
+def lightrag_docs():
+    """Proxy to LightRAG Swagger documentation"""
+    try:
+        response = requests.get("http://localhost:9621/docs", timeout=5)
+        return response.text
+    except Exception as e:
+        return f"<html><body><h1>LightRAG Not Available</h1><p>Error: {str(e)}</p></body></html>"
+
+@app.get("/lightrag/openapi.json")
+def lightrag_openapi():
+    """Proxy to LightRAG OpenAPI spec"""
+    try:
+        response = requests.get("http://localhost:9621/openapi.json", timeout=5)
+        return response.json()
+    except Exception as e:
+        return {"error": str(e)}
 
 app.include_router(auth.router)
 app.include_router(sessions.router)
