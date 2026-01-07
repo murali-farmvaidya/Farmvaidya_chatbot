@@ -81,6 +81,28 @@ async def proxy_lightrag(path: str, request: Request):
     except Exception as e:
         return {"error": f"LightRAG proxy error: {str(e)}"}
 
+# Proxy static files from LightRAG (for Swagger UI CSS, JS, etc.)
+@app.get("/static/{path:path}")
+async def proxy_static(path: str):
+    """Proxy static files from LightRAG server"""
+    try:
+        response = requests.get(f"http://localhost:9621/static/{path}", timeout=10)
+        return Response(
+            content=response.content,
+            status_code=response.status_code,
+            headers=dict(response.headers),
+        )
+    except Exception as e:
+        return {"error": f"Static file error: {str(e)}"}
+
+        return Response(
+            content=response.content,
+            status_code=response.status_code,
+            headers=dict(response.headers),
+        )
+    except Exception as e:
+        return {"error": f"LightRAG proxy error: {str(e)}"}
+
 app.include_router(auth.router)
 app.include_router(sessions.router)
 app.include_router(chat.router)
