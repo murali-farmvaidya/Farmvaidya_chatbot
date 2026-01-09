@@ -7,6 +7,8 @@ from app.services.lightrag_service import query_lightrag
 from app.services.local_knowledge_base import synthesize_answer
 from app.utils.cleaner import clean_response
 from app.utils.language_detector import detect_language
+from deep_translator import GoogleTranslator
+from app.utils.domain_translator import translate_to_telugu
 from app.services.chat_rules import (
     is_dosage_question,
     is_factual_company_question,
@@ -28,6 +30,29 @@ def generate_title(text: str) -> str:
 def get_history(session_id):
     cursor = messages.find({"session_id": session_id}).sort("created_at", 1)
     return [{"role": m["role"], "content": m["content"]} for m in cursor]
+
+def ensure_language_match(response: str, target_language: str) -> str:
+    """Ensure the response matches the target language by force-translating if needed."""
+    print(f"🔄 Final translation: Ensuring response is in {target_language}...")
+    try:
+        # Apply domain translation only for non-English targets to keep product names localized
+        response_with_terms = response if target_language == "english" else translate_to_telugu(response, target_language)
+
+        # Then translate the full response (even for English, to normalize mixed-language output)
+        lang_code_map = {
+            "telugu": "te", "tamil": "ta", "kannada": "kn", "malayalam": "ml",
+            "hindi": "hi", "marathi": "mr", "bengali": "bn", "gujarati": "gu",
+            "punjabi": "pa", "odia": "or",
+            "english": "en"
+        }
+        target_code = lang_code_map.get(target_language, "en")
+        translator = GoogleTranslator(source='auto', target=target_code)
+        final_response = translator.translate(response_with_terms)
+        print(f"✅ Response translated to {target_language}")
+        return final_response
+    except Exception as e:
+        print(f"⚠️ Final translation failed: {e}")
+        return response
 
 def handle_greeting(user_message, language):
     """Handle greetings and acknowledgments in appropriate language with contextual responses"""
@@ -113,6 +138,12 @@ def handle_chat(session_id, user_message):
     t1 = time.time()
     detected_language = detect_language(user_message)
     print(f"🌍 Detected language: {detected_language} (took {time.time()-t1:.2f}s)")
+    print(f"📝 User message: {user_message}")
+    print(f"🔤 Message length: {len(user_message)} characters")
+    
+    # Count non-English characters for debugging
+    non_english_chars = sum(1 for c in user_message if ord(c) > 127)
+    print(f"🔤 Non-English characters: {non_english_chars}")
     
     # Save user message
     t2 = time.time()
@@ -163,6 +194,7 @@ def handle_chat(session_id, user_message):
         print("✅ FACTUAL/COMPANY QUESTION - DIRECT ANSWER (NO HISTORY)")
         t3 = time.time()
         answer = clean_response(query_lightrag(user_message, [], language=detected_language, factual=True))
+        answer = ensure_language_match(answer, detected_language)
         print(f"🤖 LightRAG query (took {time.time()-t3:.2f}s)")
         messages.insert_one(message_doc(session_id, "assistant", answer))
         print(f"⏱️ Total time: {time.time()-start_time:.2f}s")
@@ -186,18 +218,23 @@ def handle_chat(session_id, user_message):
         if is_followup:
             # Use recent context for follow-ups like "what about it?"
             print("🔗 Follow-up reference detected, using recent context")
-            recent_history = get_history(session_id)[-4:]
-            print(f"📚 History (last 4 messages): {[msg['role'] + ': ' + msg['content'][:50] for msg in recent_history]}")
+            recent_history = get_history(session_id)[-6:]  # Get more context
+            print(f"📚 History (last 6 messages): {[msg['role'] + ': ' + msg['content'][:50] for msg in recent_history]}")
             
-            # Extract only user messages to avoid language contamination
-            user_context = [msg for msg in recent_history if msg["role"] == "user"]
-            print(f"👤 User context messages: {len(user_context)}")
+            # Build comprehensive query from user messages to provide context
+            user_messages = [msg["content"] for msg in recent_history if msg["role"] == "user"]
+            context_text = " ".join(user_messages[-3:])  # Last 3 user messages
+            comprehensive_query = f"{context_text}. Now answer: {user_message}"
+            print(f"📝 Comprehensive query: {comprehensive_query[:150]}...")
             
-            answer = clean_response(query_lightrag(user_message, user_context, language=detected_language))
+            # Use 'local' mode for follow-ups - pass empty history since we built comprehensive query
+            answer = clean_response(query_lightrag(comprehensive_query, [], mode="local", language=detected_language))
         else:
             # Direct question, no history needed
             print("📝 Direct question, no history")
-            answer = clean_response(query_lightrag(user_message, [], language=detected_language))
+            # Use 'naive' mode for direct questions - reflects LightRAG response directly
+            answer = clean_response(query_lightrag(user_message, [], mode="naive", language=detected_language))
+            answer = ensure_language_match(answer, detected_language)
         
         print(f"🤖 LightRAG query (took {time.time()-t3:.2f}s)")
         messages.insert_one(message_doc(session_id, "assistant", answer))
@@ -225,13 +262,12 @@ def handle_chat(session_id, user_message):
             recent_history = get_history(session_id)[-6:]  # Last 6 messages for more context
             
             # Build comprehensive query using ONLY user messages (not assistant responses)
-            # This prevents Telugu assistant responses from contaminating the query language
             user_messages = [msg["content"] for msg in recent_history if msg["role"] == "user"]
-            context_text = " ".join(user_messages)
+            context_text = " ".join(user_messages[-3:])  # Last 3 user messages
             comprehensive_query = f"{context_text}. Now answer: {user_message}"
             
-            print(f"📝 Comprehensive query (user messages only): {comprehensive_query[:100]}...")
-            answer = clean_response(query_lightrag(comprehensive_query, [], mode="naive", language=detected_language))
+            print(f"📝 Comprehensive query (user messages only): {comprehensive_query[:150]}...")
+            answer = clean_response(query_lightrag(comprehensive_query, [], mode="local", language=detected_language))
         else:
             # For direct dosage questions, no history needed
             print("📝 Direct dosage question, no context needed")
