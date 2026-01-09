@@ -97,10 +97,15 @@ def is_followup_reference(text: str) -> bool:
         " it ", " it's ",
         "that product", "that one", "the same",
         "about it", "of that", "of it",
+        # English yes/no/confirmation responses
+        " yes", "yes ", " yes ", " no", "no ", " no ",
+        "yeah", "nope", " okay", "ok ", " ok ", " sure", "sure ",
         # Telugu pronouns
         "ఆది", "దాని", "అది", "ఇది", "అదే", "ఇదే",
+        "అవును", "లేదు", "సరే",  # yes/no/ok in Telugu
         # Hindi pronouns  
-        "उसका", "इसका", "वह", "यह", "उसी", "इसी"
+        "उसका", "इसका", "वह", "यह", "उसी", "इसी",
+        "हाँ", "नहीं", "ठीक है"  # yes/no/ok in Hindi
     ]
     
     # Add spaces for better matching

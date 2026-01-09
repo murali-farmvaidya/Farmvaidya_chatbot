@@ -216,25 +216,38 @@ def handle_chat(session_id, user_message):
         is_followup = is_followup_reference(user_message)
         print(f"🔗 Is follow-up? {is_followup}")
         
+        # Always get recent context for product/knowledge questions - needed for crop context
+        recent_history = get_history(session_id)[-10:]  # Get more context (last 10 messages)
+        print(f"📚 History available: {len(recent_history)} messages")
+        
+        # Build context from user messages in history (crop mentions, conditions, etc.)
+        user_messages = [msg["content"] for msg in recent_history if msg["role"] == "user"]
+        context_text = " ".join(user_messages[-4:])  # Last 4 user messages for context
+        
         if is_followup:
-            # Use recent context for follow-ups like "what about it?"
-            print("🔗 Follow-up reference detected, using recent context")
-            recent_history = get_history(session_id)[-6:]  # Get more context
-            print(f"📚 History (last 6 messages): {[msg['role'] + ': ' + msg['content'][:50] for msg in recent_history]}")
-            
-            # Build comprehensive query from user messages to provide context
-            user_messages = [msg["content"] for msg in recent_history if msg["role"] == "user"]
-            context_text = " ".join(user_messages[-3:])  # Last 3 user messages
+            # Use recent context for follow-ups and yes/no answers
+            print("🔗 Follow-up/context-dependent response detected, using recent context")
             comprehensive_query = f"{context_text}. Now answer: {user_message}"
             print(f"📝 Comprehensive query: {comprehensive_query[:150]}...")
             
             # Use 'local' mode for follow-ups - pass empty history since we built comprehensive query
             answer = clean_response(query_lightrag(comprehensive_query, [], mode="local", language=detected_language))
         else:
-            # Direct question, no history needed
-            print("📝 Direct question, no history")
-            # Use 'naive' mode for direct questions - reflects LightRAG response directly
-            answer = clean_response(query_lightrag(user_message, [], mode="naive", language=detected_language))
+            # Product/knowledge question - use context about crops/conditions discussed
+            print("📝 Knowledge/Product question, using context about crop/conditions")
+            # Check if question mentions product or crop-related keywords
+            question_has_product = any(k in user_message.lower() for k in ["product", "fertilizer", "crop", "paddy", "rice", "cotton", "सुझाव", "ఉత్పత్తి", "పంట"])
+            
+            if question_has_product and context_text.strip():
+                # For product recommendations, include context about crops mentioned earlier
+                comprehensive_query = f"Context from conversation: {context_text}. User question: {user_message}"
+                print(f"📝 Product question with context: {comprehensive_query[:150]}...")
+                answer = clean_response(query_lightrag(comprehensive_query, [], mode="mix", language=detected_language))
+            else:
+                # Direct definition/knowledge question
+                print("📝 Direct definition question, no context needed")
+                answer = clean_response(query_lightrag(user_message, [], mode="naive", language=detected_language))
+            
             answer = ensure_language_match(answer, detected_language)
         
         print(f"🤖 LightRAG query (took {time.time()-t3:.2f}s)")

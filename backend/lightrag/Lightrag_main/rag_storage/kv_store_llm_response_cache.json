@@ -1034,5 +1034,47 @@
     "create_time": 1767942116,
     "update_time": 1767942116,
     "_id": "mix:query:4f8410917344cebd8d3d34e1eabe451c"
+  },
+  "mix:keywords:298cbe405e42f9736ca8763a4ed44c4a": {
+    "return": "{\"high_level_keywords\": [\"Agronomy assistant\", \"Agricultural practices\", \"Crop improvement\", \"Grain size enhancement\"], \"low_level_keywords\": [\"Paddy\", \"Grain size\", \"Product usage\"]}",
+    "cache_type": "keywords",
+    "chunk_id": null,
+    "original_prompt": "You are an agronomy assistant. Use the provided user context and question. If the context already has enough details, give a direct, concise answer. If a critical detail is missing, ask ONLY one concise follow-up question to collect that specific detail. Never repeat follow-ups already asked.\n\nContext:\ntell me which products must be used \ni mentioned paddy earlier right \nwhat to do to improve the grain size\n\nQuestion:\nwhat to do to improve the grain size\n\nAnswer:",
+    "queryparam": {
+      "mode": "mix",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1767942455,
+    "update_time": 1767942455,
+    "_id": "mix:keywords:298cbe405e42f9736ca8763a4ed44c4a"
+  },
+  "mix:query:c07bed5eaa736e3c735785228ab1a166": {
+    "return": "To improve grain size in paddy, you can use products like Belom S-3. Belom S-3 provides nutrients necessary for fruit development up to the ripening stage, which contributes to heavier kernels in pods.\n\n### References\n\n- [1] Biofactor – Comprehensive Bio-Fertilizer Information",
+    "cache_type": "query",
+    "chunk_id": null,
+    "original_prompt": "You are an agronomy assistant. Use the provided user context and question. If the context already has enough details, give a direct, concise answer. If a critical detail is missing, ask ONLY one concise follow-up question to collect that specific detail. Never repeat follow-ups already asked.\n\nContext:\ntell me which products must be used \ni mentioned paddy earlier right \nwhat to do to improve the grain size\n\nQuestion:\nwhat to do to improve the grain size\n\nAnswer:",
+    "queryparam": {
+      "mode": "mix",
+      "response_type": "Multiple Paragraphs",
+      "top_k": 40,
+      "chunk_top_k": 20,
+      "max_entity_tokens": 6000,
+      "max_relation_tokens": 8000,
+      "max_total_tokens": 30000,
+      "hl_keywords": "Agronomy assistant, Agricultural practices, Crop improvement, Grain size enhancement",
+      "ll_keywords": "Paddy, Grain size, Product usage",
+      "user_prompt": "",
+      "enable_rerank": true
+    },
+    "create_time": 1767942461,
+    "update_time": 1767942461,
+    "_id": "mix:query:c07bed5eaa736e3c735785228ab1a166"
   }
 }
