@@ -227,26 +227,101 @@ def handle_chat(session_id, user_message):
         if is_followup:
             # Use recent context for follow-ups and yes/no answers
             print("🔗 Follow-up/context-dependent response detected, using recent context")
-            comprehensive_query = f"{context_text}. Now answer: {user_message}"
+            
+            # Build contextual query with conversation history
+            context_messages = "\n".join([
+                f"{'User' if msg['role'] == 'user' else 'Assistant'}: {msg['content']}"
+                for msg in recent_history[-5:]
+            ])
+            
+            comprehensive_query = f"""You are FarmVaidya, an agricultural advisory assistant in an ongoing conversation.
+
+Recent Conversation:
+{context_messages}
+
+Current User Question: {user_message}
+
+Task: Answer the current question using the context from recent conversation. The user is referring to something discussed earlier. Be specific and helpful.
+
+Guidelines:
+- If user says "yes", "no", "okay" - understand what they're responding to from context
+- If user asks about "it", "that product", "its dosage" - refer to the product mentioned earlier
+- Provide specific information (exact dosages, timings, methods)
+- Respond in the same language as the user's question
+- Be conversational and acknowledge the ongoing discussion"""
+            
             print(f"📝 Comprehensive query: {comprehensive_query[:150]}...")
             
             # Use 'local' mode for follow-ups - pass empty history since we built comprehensive query
             answer = clean_response(query_lightrag(comprehensive_query, [], mode="local", language=detected_language))
         else:
-            # Product/knowledge question - use context about crops/conditions discussed
-            print("📝 Knowledge/Product question, using context about crop/conditions")
-            # Check if question mentions product or crop-related keywords
-            question_has_product = any(k in user_message.lower() for k in ["product", "fertilizer", "crop", "paddy", "rice", "cotton", "सुझाव", "ఉత్పత్తి", "పంట"])
+            # General knowledge/advice question - use crop context if available, but don't demand it
+            print("📝 General knowledge/advice question")
             
-            if question_has_product and context_text.strip():
-                # For product recommendations, include context about crops mentioned earlier
-                comprehensive_query = f"Context from conversation: {context_text}. User question: {user_message}"
-                print(f"📝 Product question with context: {comprehensive_query[:150]}...")
-                answer = clean_response(query_lightrag(comprehensive_query, [], mode="mix", language=detected_language))
-            else:
-                # Direct definition/knowledge question
-                print("📝 Direct definition question, no context needed")
-                answer = clean_response(query_lightrag(user_message, [], mode="naive", language=detected_language))
+            # Check if crop/context is mentioned in current message or recent history
+            from app.services.followup_service import extract_provided_info
+            history_with_current = recent_history + [{"role": "user", "content": user_message}]
+            provided_info = extract_provided_info(history_with_current)
+            
+            # Build optional context if crop info available
+            crop_context = ""
+            if provided_info["crop_provided"] or context_text.strip():
+                context_messages = "\n".join([
+                    f"{'User' if msg['role'] == 'user' else 'Assistant'}: {msg['content']}"
+                    for msg in recent_history[-4:]
+                ])
+                if context_messages.strip():
+                    crop_context = f"""
+
+Conversation Context (farmer mentioned some details):
+{context_messages}
+
+Use the context if relevant to the question, otherwise provide general advice."""
+            
+            # General advice/knowledge query with optional context
+            comprehensive_query = f"""You are FarmVaidya, an expert agricultural advisor helping farmers.
+
+User Question: {user_message}
+{crop_context}
+
+Task: Provide practical, actionable agricultural advice.
+
+Guidelines:
+- If crop/conditions mentioned in context, tailor advice accordingly
+- If no specific context, provide general best practices
+- Include specific recommendations (fertilizers, timing, doses when applicable)
+- Be comprehensive but organized - step-by-step advice
+- Explain WHY each recommendation works
+- Consider growth stages, soil health, water management
+- Mention specific products from knowledge base if available and relevant
+- Respond in the same language as the question
+- Be farmer-friendly and practical"""
+            
+            print(f"📝 General advice with optional context: {comprehensive_query[:150]}...")
+            
+            # Use 'mix' mode for comprehensive retrieval with context awareness
+            answer = clean_response(query_lightrag(comprehensive_query, [], mode="mix", language=detected_language))
+            
+            # If no crop context was provided, add interactive follow-up question
+            if not provided_info["crop_provided"]:
+                print("💬 No crop mentioned, adding interactive follow-up")
+                
+                # Language-specific follow-up questions
+                followup_questions = {
+                    "english": "\n\nIs there any specific crop you'd like to know about?",
+                    "telugu": "\n\nమీరు ఏదైనా నిర్దిష్ట పంట గురించి తెలుసుకోవాలనుకుంటున్నారా?",
+                    "hindi": "\n\nक्या आप किसी विशेष फसल के बारे में जानना चाहेंगे?",
+                    "tamil": "\n\nநீங்கள் ஏதேனும் குறிப்பிட்ட பயிரைப் பற்றி அறிய விரும்புகிறீர்களா?",
+                    "kannada": "\n\nನೀವು ಯಾವುದೇ ನಿರ್ದಿಷ್ಟ ಬೆಳೆಯ ಬಗ್ಗೆ ತಿಳಿದುಕೊಳ್ಳಲು ಬಯಸುತ್ತೀರಾ?",
+                    "malayalam": "\n\nനിങ്ങൾക്ക് ഏതെങ്കിലും പ്രത്യേക വിളയെക്കുറിച്ച് അറിയണോ?",
+                    "marathi": "\n\nतुम्हाला कोणत्याही विशिष्ट पिकाबद्दल जाणून घ्यायचे आहे का?",
+                    "bengali": "\n\nআপনি কি কোনো নির্দিষ্ট ফসল সম্পর্কে জানতে চান?",
+                    "gujarati": "\n\nશું તમે કોઈ વિશિષ્ટ પાક વિશે જાણવા માંગો છો?",
+                    "punjabi": "\n\nਕੀ ਤੁਸੀਂ ਕਿਸੇ ਖਾਸ ਫਸਲ ਬਾਰੇ ਜਾਣਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+                }
+                
+                interactive_followup = followup_questions.get(detected_language, followup_questions["english"])
+                answer = answer + interactive_followup
             
             answer = ensure_language_match(answer, detected_language)
         
@@ -476,7 +551,8 @@ def handle_chat(session_id, user_message):
         if not can_finalize(session):
             print("✅ GENERATING FOLLOW-UP QUESTION")
             t_gen = time.time()
-            followup_q = generate_followup(session_id, detected_language, user_message)
+            # For diagnosis questions, pass is_diagnosis=True to skip soil/irrigation/fertilizer questions
+            followup_q = generate_followup(session_id, detected_language, user_message, is_diagnosis=is_problem_diagnosis_question(user_message))
             print(f"❓ Generated follow-up (took {time.time()-t_gen:.2f}s)")
             
             # If generate_followup returns None, it means all info is collected
@@ -551,23 +627,34 @@ def handle_chat(session_id, user_message):
         ans3 = recent_user_messages[3] if len(recent_user_messages) > 3 else "Not provided"
         
         # Build comprehensive query with ALL context
-        comprehensive_query = f"""CROP PROBLEM DIAGNOSIS
+        comprehensive_query = f"""You are FarmVaidya, an expert agricultural diagnostic advisor. Provide a DETAILED, ACTIONABLE solution.
 
-Farmer's problem: {original_question}
+FARMER'S SITUATION:
+Problem: {original_question}
+Crop & Stage: {ans1}
+Soil & Irrigation: {ans2}
+Fertilizers/Sprays Used: {ans3}
 
-Farmer provided the following information:
-- Crop name and growth stage: {ans1}
-- Soil type and irrigation method: {ans2}
-- Fertilizers and sprays already used: {ans3}
+RESPONSE REQUIREMENTS (MUST INCLUDE ALL):
+1. DIAGNOSIS: Identify the specific problem based on symptoms and conditions provided
+2. ROOT CAUSE: Explain WHY this problem occurred (soil deficiency, improper watering, etc.)
+3. IMMEDIATE ACTIONS: What to do RIGHT NOW to stop the problem
+   - Specific product names
+   - Exact doses (kg, ml, liters per acre)
+   - Application method (soil, foliar spray, drip)
+4. TIMELINE: When to apply (days, growth stage)
+5. PREVENTION: How to prevent this in future crops
+6. MONITORING: What to watch for to confirm treatment is working
 
-Provide comprehensive recommendations including:
-1. Specific fertilizer doses based on soil type and growth stage
-2. Irrigation schedule and water management
-3. Pest/disease management if applicable
-4. Nutrient deficiency corrections if needed
-5. Any other management practices
+BE SPECIFIC:
+- Do NOT say "use appropriate dose" - say "use 50 kg per acre"
+- Do NOT say "spray when needed" - say "spray at 7am or 5pm, avoid noon"
+- Mention exact product names if relevant (P-Factor, K-Factor, Invictus, etc.)
+- Include expected results and timeframe to see improvement
 
-Be specific with product names, doses (kg/liters), timing (months), and application methods."""
+LANGUAGE: Respond in the farmer's language (not English unless original was English).
+TONE: Practical, encouraging, solution-focused.
+"""
         
         print(f"📝 Original Question: {original_question}")
         print(f"📝 Q1 Answer: {ans1}")

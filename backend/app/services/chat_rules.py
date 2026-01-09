@@ -235,19 +235,39 @@ def is_direct_knowledge_question(text: str) -> bool:
 # ---------------- PROBLEM DIAGNOSIS ----------------
 def is_problem_diagnosis_question(text: str) -> bool:
     """
-    Questions about plant problems, pests, diseases, yield issues that need diagnosis
+    Questions about SPECIFIC plant problems, pests, diseases that need detailed diagnosis.
+    General "how to improve yield" questions should NOT trigger this.
+    Only trigger for VISIBLE PROBLEMS or specific symptoms.
     """
-    problem_keywords = [
-        "problem", "issue", "pest", "disease", "infection",
-        "insect", "bug", "damaged", "dying", "yellow",
-        "wilting", "spots", "not growing", "poor growth", "low yield",
-        "not giving", "yield", "production", "harvest",
-        "కీటకం", "సమస్య", "వ్యాధి", "దిగుబడి", "పంట రావడం లేదు",
-        "कीट", "समस्या", "रोग", "बीमारी", "उपज", "पैदावार"
+    # Specific problem indicators (actual issues)
+    specific_problem_keywords = [
+        "yellow", "yellowing", "wilting", "spots", "damaged", "dying",
+        "not growing", "stunted", "brown", "curling", "falling",
+        "pest", "insect", "bug", "worm", "caterpillar",
+        "disease", "infection", "fungus", "rot", "blight",
+        "పసుపు", "ఎండిపోతున్నది", "కీటకం", "వ్యాధి", "నాశనం",
+        "पीला", "मुरझाना", "कीट", "रोग", "बीमारी", "कीड़ा"
+    ]
+    
+    # General advice keywords (should NOT trigger detailed diagnosis)
+    general_advice_keywords = [
+        "how to get", "how to improve", "how to increase", "tips for",
+        "suggest", "recommend", "best practices", "management",
+        "ఎలా పెంచాలి", "సూచనలు", "सुझाव", "कैसे बढ़ाएं"
     ]
     
     t = text.lower()
-    return any(k in t for k in problem_keywords)
+    
+    # Check if it's a general advice question (not specific problem)
+    has_general_advice = any(k in t for k in general_advice_keywords)
+    has_specific_problem = any(k in t for k in specific_problem_keywords)
+    
+    # Only trigger diagnosis if there's a SPECIFIC problem mentioned
+    # General yield/production questions without symptoms → regular knowledge question
+    if has_general_advice and not has_specific_problem:
+        return False  # General advice, not a problem diagnosis
+    
+    return has_specific_problem
 
 
 # ---------------- SUMMARY & LIST QUESTIONS ----------------

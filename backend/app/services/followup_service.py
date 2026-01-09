@@ -83,94 +83,108 @@ def extract_provided_info(conversation_history: list) -> dict:
     return info
 
 
-def generate_followup(session_id: str, language: str = "english", user_message: str = "") -> str:
+def generate_followup(session_id: str, language: str = "english", user_message: str = "", is_diagnosis: bool = False) -> str:
     """
-    Generate an intelligent follow-up question based on what's already provided
+    Generate ONLY ONE follow-up question. Never repeat information already asked.
+    For DIAGNOSIS questions: Only need crop name (or symptom description which user already provided)
+    For PRODUCT questions: May need crop, stage, soil, irrigation, fertilizers
     
     Args:
         session_id: The session ID
         language: The detected language of the user's question
-        user_message: The user's original message (not used anymore, kept for compatibility)
+        user_message: The user's original message
+        is_diagnosis: Whether this is a problem diagnosis question (vs product recommendation)
     """
-    # Get what's already been asked/provided
-    session_doc = sessions.find_one({"_id": ObjectId(session_id)}) or {}
-    current_count = session_doc.get("followup_count", 0)
-    
-    # Get conversation history to see what's been provided
+    # Get conversation history
     history = list(messages.find({"session_id": session_id}).sort("created_at", 1))
-    
-    # Convert to dict format for extract_provided_info
     history_dicts = [{"role": msg["role"], "content": msg["content"]} for msg in history]
     
-    # Extract info from ALL user messages in the conversation
+    # Extract what user has already provided
     provided_info = extract_provided_info(history_dicts)
+    print(f"📊 Already provided: {provided_info}")
+    print(f"💊 Question type: {'DIAGNOSIS' if is_diagnosis else 'PRODUCT/GENERAL'}")
     
-    print(f"📊 Provided info analysis: {provided_info}")
+    # Check what questions have ALREADY BEEN ASKED (critical to avoid repeats)
+    asked_assistant_messages = [msg["content"] for msg in history_dicts if msg["role"] == "assistant"]
     
-    # Define questions in each language
-    questions = {
-        "telugu": {
-            "crop_stage": "మీ పంట పేరు మరియు పెరుగుదల దశ (ప్రారంభం/మధ్య/పండిన తర్వాత) ఏమిటి?",
-            "soil_irrigation": "మీ నేల రకం (ఎర్ర/నల్ల/లోమీ) మరియు నీటిపారుదల విధానం (డ్రిప్/స్ప్రింక్లర్/వరద) ఏమిటి?",
-            "fertilizers": "ఇప్పటివరకు ఏ ఎరువులు లేదా మందులు వాడారా? ఉంటే పేర్లు/మోతాదులు చెప్పండి."
-        },
-        "hindi": {
-            "crop_stage": "आपकी फसल का नाम और विकास चरण (शुरुआत/मध्य/कटाई के पास) क्या है?",
-            "soil_irrigation": "आपकी मिट्टी का प्रकार (लाल/काली/दोमट) और सिंचाई विधि (ड्रिप/स्प्रिंकलर/बाढ़) क्या है?",
-            "fertilizers": "अब तक कौन-कौन से उर्वरक या दवाइयाँ इस्तेमाल की हैं? नाम/मात्रा बताएं।"
-        },
-        "english": {
-            "crop_stage": "What is your crop name and growth stage (early/mid/near harvest)?",
-            "soil_irrigation": "What is your soil type (red/black/loam) and irrigation method (drip/sprinkler/flood)?",
-            "fertilizers": "What fertilizers or sprays have you already used? Please mention names and doses."
-        }
+    # Define all possible questions
+    crop_q = {
+        "english": "Could you tell me your crop name?",
+        "telugu": "మీ పంట పేరు ఏమిటో చెప్పగలరా?",
+        "hindi": "आपकी फसल का नाम क्या है?"
     }
     
-    lang_questions = questions.get(language, questions["english"])
+    stage_q = {
+        "english": "What growth stage is it in (early/mid/near harvest)?",
+        "telugu": "ఇది ఏ పెరుగుదల దశలో ఉంది (ప్రారంభం/మధ్య/పండిన)?",
+        "hindi": "यह किस विकास चरण में है (शुरुआत/मध्य/कटाई के पास)?"
+    }
     
-    # Determine what to ask based on what's missing AND what's already been asked
-    # Check assistant messages to see what questions were already asked
-    asked_questions = {msg["content"] for msg in history if msg["role"] == "assistant"}
+    soil_irrigation_q = {
+        "english": "What's your soil type (red/black/loamy) and irrigation method (drip/sprinkler/flood)?",
+        "telugu": "మీ నేల రకం (ఎర్ర/నల్ల/లోమీ) మరియు నీటిపారుదల విధానం (డ్రిప్/స్ప్రింక్లర్/వరద) ఏమిటి?",
+        "hindi": "आपकी मिट्टी का प्रकार (लाल/काली/दोमट) और सिंचाई विधि (ड्रिप/स्प्रिंकलर/बाढ़) क्या है?"
+    }
     
-    # Build priority list of questions to ask (only ask if not already asked)
-    questions_to_ask = []
+    fertilizer_q = {
+        "english": "Have you used any fertilizers or sprays? If yes, please share names and doses.",
+        "telugu": "ఏవైనా ఎరువులు లేదా మందులు వాడారా? పేర్లు మరియు మోతాదులు చెప్పండి.",
+        "hindi": "क्या आपने कोई उर्वरक या दवाइयाँ इस्तेमाल की हैं? नाम और मात्रा बताएं।"
+    }
     
-    if not provided_info["crop_provided"] or not provided_info["stage_provided"]:
-        if lang_questions["crop_stage"] not in asked_questions:
-            questions_to_ask.append(lang_questions["crop_stage"])
+    # Track what's been asked
+    asked_crop = any("crop name" in msg.lower() or "पंट" in msg or "పంట" in msg for msg in asked_assistant_messages)
+    asked_stage = any("growth stage" in msg.lower() or "પેરુગુదల" in msg or "વિકાસ" in msg for msg in asked_assistant_messages)
+    asked_soil_irr = any("soil type" in msg.lower() or "irrigation" in msg.lower() or "నేల" in msg or "मिट्टी" in msg for msg in asked_assistant_messages)
+    asked_fert = any("fertilizer" in msg.lower() or "ఎరువు" in msg or "उर्वरक" in msg for msg in asked_assistant_messages)
     
-    if not provided_info["soil_provided"] or not provided_info["irrigation_provided"]:
-        if lang_questions["soil_irrigation"] not in asked_questions:
-            questions_to_ask.append(lang_questions["soil_irrigation"])
+    print(f"🔍 Already asked: crop={asked_crop}, stage={asked_stage}, soil_irr={asked_soil_irr}, fert={asked_fert}")
     
-    if not provided_info["fertilizer_provided"]:
-        if lang_questions["fertilizers"] not in asked_questions:
-            questions_to_ask.append(lang_questions["fertilizers"])
+    lang = language
     
-    # If no valid questions remain or all info is provided, return None to signal completion
-    if not questions_to_ask or all(provided_info.values()):
-        print("✅ All required information collected, skipping further follow-ups")
-        # Force completion
+    # ======== DIAGNOSIS QUESTIONS ========
+    # For problem diagnosis: ONLY need crop name (or symptom description which user already provided)
+    # DO NOT ask for soil/irrigation/fertilizers - those are for product recommendations
+    if is_diagnosis:
+        # Only ask for crop if not provided
+        if not provided_info["crop_provided"] and not asked_crop:
+            return crop_q.get(lang, crop_q["english"])
+        
+        # For diagnosis, we have enough with just crop+symptom (or symptom alone)
+        # Don't ask for stage, soil, irrigation, fertilizers
+        print("✅ DIAGNOSIS MODE: All necessary information collected (crop + symptom description)")
         sessions.update_one(
             {"_id": ObjectId(session_id)},
             {"$set": {"followup_count": MAX_FOLLOWUPS, "awaiting_followup": False}}
         )
         return None
     
-    # Ask the first remaining question
-    question = questions_to_ask[0]
-    print(f"❓ Asking follow-up: {question}")
+    # ======== PRODUCT/GENERAL KNOWLEDGE QUESTIONS ========
+    # Priority: Ask ONLY missing information, NEVER repeat
+    if not provided_info["crop_provided"] and not asked_crop:
+        return crop_q.get(lang, crop_q["english"])
     
-    # Update counters/state
+    if not provided_info["stage_provided"] and not asked_stage:
+        # If crop already provided, ask for stage
+        if provided_info["crop_provided"]:
+            return stage_q.get(lang, stage_q["english"])
+    
+    if (not provided_info["soil_provided"] or not provided_info["irrigation_provided"]) and not asked_soil_irr:
+        return soil_irrigation_q.get(lang, soil_irrigation_q["english"])
+    
+    # Only ask fertilizer if crop+stage+soil are complete
+    if (provided_info["crop_provided"] and provided_info["stage_provided"] and 
+        provided_info["soil_provided"] and provided_info["irrigation_provided"] and 
+        not provided_info["fertilizer_provided"] and not asked_fert):
+        return fertilizer_q.get(lang, fertilizer_q["english"])
+    
+    # All information collected
+    print("✅ PRODUCT MODE: All essential information collected, ready for answer")
     sessions.update_one(
         {"_id": ObjectId(session_id)},
-        {
-            "$inc": {"followup_count": 1},
-            "$set": {"awaiting_followup": True}
-        }
+        {"$set": {"followup_count": MAX_FOLLOWUPS, "awaiting_followup": False}}
     )
-    
-    return question
+    return None
 
 
 def can_finalize(session):
