@@ -186,7 +186,7 @@ def _extract_response_text(
 
 
 @retry(
-    stop=stop_after_attempt(3),
+    stop=stop_after_attempt(5),  # Increased from 3 to 5 for better resilience against transient API errors
     wait=wait_exponential(multiplier=1, min=4, max=60),
     retry=(
         retry_if_exception_type(google_api_exceptions.InternalServerError)
@@ -455,7 +455,7 @@ async def gemini_model_complete(
 
 @wrap_embedding_func_with_attrs(embedding_dim=1536, max_token_size=2048)
 @retry(
-    stop=stop_after_attempt(3),
+    stop=stop_after_attempt(5),  # Increased from 3 to 5 for better resilience
     wait=wait_exponential(multiplier=1, min=4, max=60),
     retry=(
         retry_if_exception_type(google_api_exceptions.InternalServerError)

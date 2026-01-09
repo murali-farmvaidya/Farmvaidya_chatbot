@@ -76,6 +76,38 @@ def is_greeting_or_acknowledgment(text: str) -> bool:
     return False
 
 
+# ---------------- HELPER: FOLLOW-UP DETECTION ----------------
+def is_followup_reference(text: str) -> bool:
+    """
+    Detect if question is a follow-up using pronouns/references
+    Examples: "its dosage", "what about it", "how much of that", "ఆది", "దాని"
+    Must be SHORT and contain explicit pronouns to avoid false positives
+    """
+    t = text.lower().strip()
+    
+    # Require question to be relatively short (< 8 words) to be a follow-up
+    # This prevents "Benefits of Bio NPK" from being treated as follow-up
+    word_count = len(t.split())
+    if word_count > 7:
+        return False
+    
+    followup_keywords = [
+        # English pronouns (more specific)
+        " its ", "its ", " its",  # "its dosage", "what is its"
+        " it ", " it's ",
+        "that product", "that one", "the same",
+        "about it", "of that", "of it",
+        # Telugu pronouns
+        "ఆది", "దాని", "అది", "ఇది", "అదే", "ఇదే",
+        # Hindi pronouns  
+        "उसका", "इसका", "वह", "यह", "उसी", "इसी"
+    ]
+    
+    # Add spaces for better matching
+    text_with_spaces = f" {t} "
+    return any(kw in text_with_spaces for kw in followup_keywords)
+
+
 # ---------------- DOSAGE ----------------
 def is_dosage_question(text: str) -> bool:
     keywords = [
@@ -92,15 +124,25 @@ def is_dosage_question(text: str) -> bool:
         "zn-factor", "znfactor", "zn factor",
         "aadhaar", "aadhar",
         "poshak", "పోషక్",
-        "invictus", "ఇన్విక్టస్",
+        "invictus",
         "bio npk", "bionpk",
         "bio double action"
     ]
     
     t = text.lower()
+    original = text  # Keep original text for Unicode matching
     
-    # Check for dosage keywords
-    if any(k in t for k in keywords):
+    # Exclude knowledge questions UNLESS it's a follow-up reference (like "what is its dosage")
+    knowledge_excludes = ["what is", "tell me", "explain", "about", "గురించి", "ఏమిటి", "चेप్पंది", "क्या है", "के बारे में"]
+    has_knowledge_exclude = any(exc in t for exc in knowledge_excludes) or any(exc in original for exc in knowledge_excludes)
+    if has_knowledge_exclude and not is_followup_reference(text):
+        return False
+    
+    # Telugu product names that need Unicode matching
+    telugu_products = ["ఇన్విక్టస్", "పోషక్"]
+    
+    # Check for dosage keywords in both lowercased and original text
+    if any(k in t for k in keywords) or any(k in original for k in keywords):
         return True
     
     # Check if asking about product (likely wants dosage info)
@@ -111,6 +153,11 @@ def is_dosage_question(text: str) -> bool:
             word_count = len(t.split())
             if word_count <= 4:
                 return True
+    
+    # Check Telugu product names in original text
+    for product in telugu_products:
+        if product in original:
+            return True
     
     return False
 

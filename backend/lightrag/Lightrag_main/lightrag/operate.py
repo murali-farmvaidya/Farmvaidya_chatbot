@@ -2968,45 +2968,46 @@ async def extract_entities(
         task = asyncio.create_task(_process_with_semaphore(c))
         tasks.append(task)
 
-    # Wait for tasks to complete or for the first exception to occur
-    # This allows us to cancel remaining tasks if any task fails
-    done, pending = await asyncio.wait(tasks, return_when=asyncio.FIRST_EXCEPTION)
+    # Wait for ALL tasks to complete instead of stopping at first exception
+    # This makes document processing more resilient to temporary API failures
+    done, pending = await asyncio.wait(tasks, return_when=asyncio.ALL_COMPLETED)
 
-    # Check if any task raised an exception and ensure all exceptions are retrieved
-    first_exception = None
+    # Collect results and track any exceptions
     chunk_results = []
+    failed_chunks = []
 
     for task in done:
         try:
             exception = task.exception()
             if exception is not None:
-                if first_exception is None:
-                    first_exception = exception
+                # Log the error but continue processing other chunks
+                logger.error(f"Failed to process chunk: {exception}")
+                failed_chunks.append(str(exception))
             else:
                 chunk_results.append(task.result())
         except Exception as e:
-            if first_exception is None:
-                first_exception = e
+            # Log the error but continue processing other chunks
+            logger.error(f"Error retrieving chunk result: {e}")
+            failed_chunks.append(str(e))
 
-    # If any task failed, cancel all pending tasks and raise the first exception
-    if first_exception is not None:
-        # Cancel all pending tasks
-        for pending_task in pending:
-            pending_task.cancel()
+    # If some chunks failed but others succeeded, log a warning and continue
+    if failed_chunks:
+        failed_count = len(failed_chunks)
+        success_count = len(chunk_results)
+        logger.warning(
+            f"Document processing completed with {success_count}/{total_chunks} chunks successful. "
+            f"{failed_count} chunks failed (likely due to API timeouts or rate limits). "
+            f"Continuing with successfully processed chunks."
+        )
+        
+        # If ALL chunks failed, then raise an exception
+        if not chunk_results:
+            # All chunks failed - this is a critical error
+            error_msg = f"All {total_chunks} chunks failed to process. First error: {failed_chunks[0]}"
+            raise RuntimeError(error_msg)
 
-        # Wait for cancellation to complete
-        if pending:
-            await asyncio.wait(pending)
-
-        # Add progress prefix to the exception message
-        progress_prefix = f"C[{processed_chunks + 1}/{total_chunks}]"
-
-        # Re-raise the original exception with a prefix
-        prefixed_exception = create_prefixed_exception(first_exception, progress_prefix)
-        raise prefixed_exception from first_exception
-
-    # If all tasks completed successfully, chunk_results already contains the results
-    # Return the chunk_results for later processing in merge_nodes_and_edges
+    # Return the successfully processed chunk results
+    # merge_nodes_and_edges will work with whatever chunks succeeded
     return chunk_results
 
 

@@ -7,10 +7,10 @@
     "file_path": "Biofactor knowledge base 21112025.pdf",
     "llm_cache_list": [
       "default:extract:9266a05e56a80837e47463e5881589b7",
-      "default:extract:8ab38f79eb947eb8ea9a2f6573e59cbc"
+      "default:extract:f4b0950c5fcf139d00eba28c30b283df"
     ],
-    "create_time": 1767682083,
-    "update_time": 1767682102,
+    "create_time": 1767932952,
+    "update_time": 1767932956,
     "_id": "chunk-2867489bfc50306cf700e8e575dff76e"
   },
   "chunk-bd824ceb871cfc87a7868c868181eaaf": {
@@ -21,10 +21,10 @@
     "file_path": "Biofactor knowledge base 21112025.pdf",
     "llm_cache_list": [
       "default:extract:72590a027e023d3cef79b29bb815cf36",
-      "default:extract:ab0df041ac4899e18e6ce0f918af7de6"
+      "default:extract:3b7cabf327a91f62ef9a77194e3b4faf"
     ],
-    "create_time": 1767682083,
-    "update_time": 1767682098,
+    "create_time": 1767932952,
+    "update_time": 1767932958,
     "_id": "chunk-bd824ceb871cfc87a7868c868181eaaf"
   },
   "chunk-7958d62ef2178d45fdd314d716b945ce": {
@@ -35,10 +35,10 @@
     "file_path": "Biofactor knowledge base 21112025.pdf",
     "llm_cache_list": [
       "default:extract:d0745836b0b20374c201659828b249e9",
-      "default:extract:76c1cce8e6d6d7a0689e5ac1c283feb6"
+      "default:extract:0d27455265a2d31498fb39c2f093ead0"
     ],
-    "create_time": 1767682083,
-    "update_time": 1767682117,
+    "create_time": 1767932952,
+    "update_time": 1767932976,
     "_id": "chunk-7958d62ef2178d45fdd314d716b945ce"
   },
   "chunk-8592b2b6b35387d1d12080be6223ce15": {
@@ -49,10 +49,10 @@
     "file_path": "Biofactor knowledge base 21112025.pdf",
     "llm_cache_list": [
       "default:extract:6eaae59506eeb851170f98ceb8e86be1",
-      "default:extract:d9e849fb7297423478b067c43c8540ec"
+      "default:extract:6b3307c07d35497852dc61c7ff3a40f9"
     ],
-    "create_time": 1767682083,
-    "update_time": 1767682103,
+    "create_time": 1767932952,
+    "update_time": 1767932958,
     "_id": "chunk-8592b2b6b35387d1d12080be6223ce15"
   },
   "chunk-0826b0f7fffa34c58341e345deadf986": {
@@ -63,10 +63,10 @@
     "file_path": "Biofactor knowledge base 21112025.pdf",
     "llm_cache_list": [
       "default:extract:80cb04874c0e015fb93906684747d4bd",
-      "default:extract:5b8f3a956e0d8675a0c22e5bac354581"
+      "default:extract:17c276ed4e29dd144f3948d56cdecae4"
     ],
-    "create_time": 1767682083,
-    "update_time": 1767682114,
+    "create_time": 1767932952,
+    "update_time": 1767932958,
     "_id": "chunk-0826b0f7fffa34c58341e345deadf986"
   },
   "chunk-1a7e6570ebf3412d42a00682e0582b15": {
@@ -77,10 +77,10 @@
     "file_path": "Biofactor knowledge base 21112025.pdf",
     "llm_cache_list": [
       "default:extract:d4e0c8af159147360bfe1aef6f1b6d3d",
-      "default:extract:2557bad16bfa63cc3b458ac09104f87a"
+      "default:extract:27189649c38f0275d3c78c41a2b9cd82"
     ],
-    "create_time": 1767682083,
-    "update_time": 1767682126,
+    "create_time": 1767932952,
+    "update_time": 1767932958,
     "_id": "chunk-1a7e6570ebf3412d42a00682e0582b15"
   },
   "chunk-76c8f38bb46808c3bda35a27be20dc5d": {
@@ -91,10 +91,10 @@
     "file_path": "Biofactor knowledge base 21112025.pdf",
     "llm_cache_list": [
       "default:extract:41cdaad50bc983121dd0b60e1476af89",
-      "default:extract:d851fded400e83ba0c67be75a454086d"
+      "default:extract:0a12bd21df105d0fb46ad02cba72dd13"
     ],
-    "create_time": 1767682083,
-    "update_time": 1767682113,
+    "create_time": 1767932952,
+    "update_time": 1767932958,
     "_id": "chunk-76c8f38bb46808c3bda35a27be20dc5d"
   },
   "chunk-bea6cf75e866c72330ed337d9f357dd9": {
@@ -105,10 +105,10 @@
     "file_path": "Biofactor knowledge base 21112025.pdf",
     "llm_cache_list": [
       "default:extract:928337cedd5e2d90972d6f1d5c92a70b",
-      "default:extract:af85090438159acfa3cd4a70a7f6c2ee"
+      "default:extract:05c8211f0ccaea25399c973f2a5f1a25"
     ],
-    "create_time": 1767682083,
-    "update_time": 1767682136,
+    "create_time": 1767932952,
+    "update_time": 1767932958,
     "_id": "chunk-bea6cf75e866c72330ed337d9f357dd9"
   },
   "chunk-963cd7a91acc091b0215a79f85ffea4d": {
@@ -119,10 +119,10 @@
     "file_path": "Biofactor knowledge base 21112025.pdf",
     "llm_cache_list": [
       "default:extract:6d79776a9652b11a30c0691bd17ae283",
-      "default:extract:4e88e13c1d99e5fc9e326bdb50d6bb91"
+      "default:extract:6a44ebed56267aa442d4284c31ec688a"
     ],
-    "create_time": 1767682083,
-    "update_time": 1767682126,
+    "create_time": 1767932952,
+    "update_time": 1767932958,
     "_id": "chunk-963cd7a91acc091b0215a79f85ffea4d"
   },
   "chunk-6016cccfa6edd7bb14766405519947d6": {
@@ -133,10 +133,10 @@
     "file_path": "Biofactor knowledge base 21112025.pdf",
     "llm_cache_list": [
       "default:extract:c052a9b0a10bf8b2271e699b59501d79",
-      "default:extract:2b7c4c1c5da1ef151036a2a28de4edd8"
+      "default:extract:9c696cd60ca4fbb61af8930949cc3116"
     ],
-    "create_time": 1767682083,
-    "update_time": 1767682137,
+    "create_time": 1767932952,
+    "update_time": 1767932958,
     "_id": "chunk-6016cccfa6edd7bb14766405519947d6"
   },
   "chunk-3bae529b595718be07dc653d7b2c7f06": {
@@ -147,10 +147,10 @@
     "file_path": "Biofactor knowledge base 21112025.pdf",
     "llm_cache_list": [
       "default:extract:aeacfd4095acc24faedd9bef81c52496",
-      "default:extract:d289f8547307fc27da1d8db32e3fef72"
+      "default:extract:f7c579efc979ef2ce7261515e7e90705"
     ],
-    "create_time": 1767682083,
-    "update_time": 1767682155,
+    "create_time": 1767932952,
+    "update_time": 1767932958,
     "_id": "chunk-3bae529b595718be07dc653d7b2c7f06"
   },
   "chunk-ef566fa604fb11fa0fb712546748fe1f": {
@@ -161,10 +161,10 @@
     "file_path": "Biofactor knowledge base 21112025.pdf",
     "llm_cache_list": [
       "default:extract:4f7343162d7e44f804437899bdef4ebf",
-      "default:extract:7b03e942edb3c18faa7bc899cc537cae"
+      "default:extract:efb6c32078684a57bd12285577da8250"
     ],
-    "create_time": 1767682083,
-    "update_time": 1767682147,
+    "create_time": 1767932952,
+    "update_time": 1767932958,
     "_id": "chunk-ef566fa604fb11fa0fb712546748fe1f"
   },
   "chunk-552ebcf1fccab3b4f9bbbfd1567319d3": {
@@ -175,10 +175,10 @@
     "file_path": "Biofactor knowledge base 21112025.pdf",
     "llm_cache_list": [
       "default:extract:5cb95e6a5a77b1ae55be1b2be55544e9",
-      "default:extract:d4ae83740e19beb1e41f721cd4a917c2"
+      "default:extract:836de4e2f9ab39d40cbc38397d5ca086"
     ],
-    "create_time": 1767682083,
-    "update_time": 1767682154,
+    "create_time": 1767932952,
+    "update_time": 1767932963,
     "_id": "chunk-552ebcf1fccab3b4f9bbbfd1567319d3"
   },
   "chunk-28470b0be8e993e924e0177e59076cc3": {
@@ -189,10 +189,10 @@
     "file_path": "Biofactor knowledge base 21112025.pdf",
     "llm_cache_list": [
       "default:extract:9ba499c19da12f4b0c7b71607a890275",
-      "default:extract:439ea6a9fce18442969f909ed3d8478a"
+      "default:extract:eec26fffa7b84d1c83710d1a7a8a9769"
     ],
-    "create_time": 1767682083,
-    "update_time": 1767682155,
+    "create_time": 1767932952,
+    "update_time": 1767932958,
     "_id": "chunk-28470b0be8e993e924e0177e59076cc3"
   }
 }

@@ -156,18 +156,7 @@ def handle_chat(session_id, user_message):
         print(f"⚠️ Session {session_id} not found in database")
         session = {}
 
-    # 🚫 DOSAGE → direct answer always (no history to avoid language contamination)
-    if is_dosage_question(user_message):
-        print("✅ DOSAGE BRANCH RETURNING LIGHTRAG ANSWER")
-        t3 = time.time()
-        # Don't pass history - prevents language contamination from previous messages
-        answer = clean_response(query_lightrag(user_message, [], language=detected_language))
-        print(f"🤖 LightRAG query (took {time.time()-t3:.2f}s)")
-        messages.insert_one(message_doc(session_id, "assistant", answer))
-        print(f"⏱️ Total time: {time.time()-start_time:.2f}s")
-        return answer
-
-    # 📊 FACTUAL / COMPANY QUESTIONS → NEVER FOLLOW-UP, NO HISTORY
+    # � FACTUAL / COMPANY QUESTIONS → NEVER FOLLOW-UP, NO HISTORY
     # Don't pass history for factual questions to avoid entity confusion
     # Use factual=True to avoid forcing answers when no information exists
     if is_factual_company_question(user_message):
@@ -179,18 +168,81 @@ def handle_chat(session_id, user_message):
         print(f"⏱️ Total time: {time.time()-start_time:.2f}s")
         return answer
 
-    # 📚 DIRECT PRODUCT / KNOWLEDGE → answer directly (no history to avoid language contamination)
+    # 📚 DIRECT PRODUCT / KNOWLEDGE → answer directly (CHECK BEFORE DOSAGE!)
+    # This must come BEFORE dosage to handle "what is P-Factor" correctly
     if is_direct_knowledge_question(user_message):
         print("✅ DIRECT KNOWLEDGE QUESTION")
         t3 = time.time()
-        # Don't pass history - prevents language contamination from previous messages
-        answer = clean_response(query_lightrag(user_message, [], language=detected_language))
+        
+        # Use detected language (not session) - English question gets English answer
+        print(f"🌐 Using detected language for KNOWLEDGE: {detected_language}")
+        print(f"🔍 Original question: {user_message}")
+        
+        # Check if this is a follow-up reference
+        from app.services.chat_rules import is_followup_reference
+        is_followup = is_followup_reference(user_message)
+        print(f"🔗 Is follow-up? {is_followup}")
+        
+        if is_followup:
+            # Use recent context for follow-ups like "what about it?"
+            print("🔗 Follow-up reference detected, using recent context")
+            recent_history = get_history(session_id)[-4:]
+            print(f"📚 History (last 4 messages): {[msg['role'] + ': ' + msg['content'][:50] for msg in recent_history]}")
+            
+            # Extract only user messages to avoid language contamination
+            user_context = [msg for msg in recent_history if msg["role"] == "user"]
+            print(f"👤 User context messages: {len(user_context)}")
+            
+            answer = clean_response(query_lightrag(user_message, user_context, language=detected_language))
+        else:
+            # Direct question, no history needed
+            print("📝 Direct question, no history")
+            answer = clean_response(query_lightrag(user_message, [], language=detected_language))
+        
         print(f"🤖 LightRAG query (took {time.time()-t3:.2f}s)")
         messages.insert_one(message_doc(session_id, "assistant", answer))
         print(f"⏱️ Total time: {time.time()-start_time:.2f}s")
         return answer
 
-    # 🔁 FOLLOW-UP LOGIC FOR PROBLEM DIAGNOSIS
+    # � DOSAGE → direct answer (AFTER knowledge check)
+    if is_dosage_question(user_message):
+        print("✅ DOSAGE BRANCH RETURNING LIGHTRAG ANSWER")
+        t3 = time.time()
+        
+        # Check if this is a follow-up reference (e.g., "its dosage", "that product")
+        from app.services.chat_rules import is_followup_reference
+        is_followup = is_followup_reference(user_message)
+        
+        # Use detected language for dosage questions
+        # English question → English answer, Telugu → Telugu
+        print(f"🌐 Using detected language for DOSAGE: {detected_language}")
+        print(f"🔍 Original question: {user_message}")
+        print(f"🔗 Is follow-up? {is_followup}")
+        
+        if is_followup:
+            # For follow-up questions, extract product from history and build comprehensive query
+            print("🔗 Follow-up reference detected, extracting product from context")
+            recent_history = get_history(session_id)[-6:]  # Last 6 messages for more context
+            
+            # Build comprehensive query using ONLY user messages (not assistant responses)
+            # This prevents Telugu assistant responses from contaminating the query language
+            user_messages = [msg["content"] for msg in recent_history if msg["role"] == "user"]
+            context_text = " ".join(user_messages)
+            comprehensive_query = f"{context_text}. Now answer: {user_message}"
+            
+            print(f"📝 Comprehensive query (user messages only): {comprehensive_query[:100]}...")
+            answer = clean_response(query_lightrag(comprehensive_query, [], mode="naive", language=detected_language))
+        else:
+            # For direct dosage questions, no history needed
+            print("📝 Direct dosage question, no context needed")
+            answer = clean_response(query_lightrag(user_message, [], mode="naive", language=detected_language))
+        
+        print(f"🤖 LightRAG query (took {time.time()-t3:.2f}s)")
+        messages.insert_one(message_doc(session_id, "assistant", answer))
+        print(f"⏱️ Total time: {time.time()-start_time:.2f}s")
+        return answer
+
+    # �🔁 FOLLOW-UP LOGIC FOR PROBLEM DIAGNOSIS
     # Always ask follow-ups for diagnosis until we have enough context (language-agnostic)
     t_followup = time.time()
     if is_problem_diagnosis_question(user_message) or session.get("awaiting_followup"):

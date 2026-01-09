@@ -6,6 +6,12 @@ Translates Telugu ↔ English for better LLM understanding
 # Dictionary mapping Telugu agricultural terms to English and vice versa
 DOMAIN_DICTIONARY = {
 
+    # Products
+    "Invictus": ["ఇన్విక్టస్"],
+    "ఇన్విక్టస్": ["Invictus"],
+    "Poshak": ["పోషక్"],
+    "పోషక్": ["Poshak"],
+    
     "ఎఫ్‌వైఎమ్": ["పశువుల ఎరువు"],
     "మట్టి": ["నేల"],
     "శిలీంద్ర వ్యాధికారక క్రిములను":["శిలీంద్రాలను"], 
