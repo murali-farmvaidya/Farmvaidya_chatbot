@@ -443,6 +443,7 @@ Be specific with product names, doses (kg/liters), timing (months), and applicat
         # Try LightRAG first
         t_rag = time.time()
         answer = clean_response(query_lightrag(comprehensive_query, [], language=detected_language))
+        answer = ensure_language_match(answer, detected_language)
         print(f"🤖 LightRAG final answer (took {time.time()-t_rag:.2f}s)")
         
         # If LightRAG returns [no-context] or empty, use local knowledge base
@@ -458,14 +459,18 @@ Be specific with product names, doses (kg/liters), timing (months), and applicat
                 # Use local knowledge base
                 t_synth = time.time()
                 answer = synthesize_answer(soil_type, growth_stage, irrigation, ans3)
+                answer = ensure_language_match(answer, detected_language)
                 print(f"✅ Generated answer using local knowledge base (took {time.time()-t_synth:.2f}s)")
             except Exception as e:
                 print(f"❌ Error in local knowledge base: {e}")
                 answer = f"Based on your {growth_stage}-stage crop in {soil_type} soil with {irrigation} irrigation: Please consult our detailed guides or contact local agricultural experts for comprehensive fertilizer and irrigation recommendations."
+                answer = ensure_language_match(answer, detected_language)
     else:
-        # Not a diagnosis question or no follow-ups collected, just use direct query with history
+        # Not a diagnosis question or no follow-ups collected, just use direct query WITHOUT history
+        # History can contaminate language or context; for factual/knowledge use fresh query
         t_direct = time.time()
-        answer = clean_response(query_lightrag(user_message, history, language=detected_language))
+        answer = clean_response(query_lightrag(user_message, [], language=detected_language))
+        answer = ensure_language_match(answer, detected_language)
         print(f"🤖 Direct LightRAG query (took {time.time()-t_direct:.2f}s)")
     
     t_final_save = time.time()
